@@ -1,0 +1,74 @@
+\hypertarget{class_view}{}\section{View Class Reference}
+\label{class_view}\index{View@{View}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_view_aa275b1fe7cceb116f273e9ddbf2c7a43}{\+\_\+\+\_\+construct} (\hyperlink{class_request}{Request} \$peticion)
+\item 
+\hyperlink{class_view_a8cde0fbc4f40a29149bacd1e2c6fb47f}{renderizar} (\$vista, \$item=false)
+\item 
+\hyperlink{class_view_a0ad437d0b0d466d344b922433c996c41}{set\+Js} (array \$js)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_view_aa275b1fe7cceb116f273e9ddbf2c7a43}{}\index{View@{View}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!View@{View}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf Request}}]{\$peticion}
+\end{DoxyParamCaption}
+)}\label{class_view_aa275b1fe7cceb116f273e9ddbf2c7a43}
+Obtenemos el controlador en el que estamos a partir de la url 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_view_a8cde0fbc4f40a29149bacd1e2c6fb47f}{}\index{View@{View}!renderizar@{renderizar}}
+\index{renderizar@{renderizar}!View@{View}}
+\subsubsection[{renderizar}]{\setlength{\rightskip}{0pt plus 5cm}renderizar (
+\begin{DoxyParamCaption}
+\item[{}]{\$vista, }
+\item[{}]{\$item = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_view_a8cde0fbc4f40a29149bacd1e2c6fb47f}
+Funcion que se carga de ejecutar la vistas, por defecto no le pasamos nada se lo pasaremos en los controladores de las vistas Array de los elementos de menu
+
+Si el usuario es admin vera esta acciones
+
+El unico elemento de solo admins sera el de la vista asministrar
+
+Si estas logueado veras la vista de tus anuncios
+
+Si estas logueado tendras la funcion para cerrar session
+
+Si estas logueado veras la vista de tu Perfil
+
+Si no estas logueado veras la vista para hacer login
+
+Si no estas logueado veras la vista para registrarse
+
+Indicamos la ruta del css de la app
+
+Indicamos la ruta de las imagenes de la app
+
+Indicamos la ruta de los javascripts de la app
+
+indicamos que el menu es el array menu
+
+Indicamos que los js es la variable \$js
+
+Indicamos donde se encuentra la ruta de la vista seleccionada a partir del controlador que nos pasan
+
+Si la ruta es valida y existe, contruiremos la vista a partir del fichero header+fichero\+\_\+vista\+\_\+correspondiente+footer.
+
+Si no existe la ruta mostramos un error \hypertarget{class_view_a0ad437d0b0d466d344b922433c996c41}{}\index{View@{View}!set\+Js@{set\+Js}}
+\index{set\+Js@{set\+Js}!View@{View}}
+\subsubsection[{set\+Js}]{\setlength{\rightskip}{0pt plus 5cm}set\+Js (
+\begin{DoxyParamCaption}
+\item[{array}]{\$js}
+\end{DoxyParamCaption}
+)}\label{class_view_a0ad437d0b0d466d344b922433c996c41}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sys/\hyperlink{_view_8php}{View.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+\hypertarget{function_8html__radios_8php}{}\section{libs/smarty/libs/plugins/function.html\+\_\+radios.\+php File Reference}
+\label{function_8html__radios_8php}\index{libs/smarty/libs/plugins/function.\+html\+\_\+radios.\+php@{libs/smarty/libs/plugins/function.\+html\+\_\+radios.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_smarty}{Smarty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{function_8html__radios_8php_a67633add8da9fe806bbe36d788962149}{smarty\+\_\+function\+\_\+html\+\_\+radios} (\$params, \$template)
+\item 
+\hyperlink{function_8html__radios_8php_abea342af4aebcf9b15292addc7508ecb}{smarty\+\_\+function\+\_\+html\+\_\+radios\+\_\+output} (\$name, \$value, \$output, \$selected, \$extra, \$separator, \$labels, \$label\+\_\+ids, \$escape)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{function_8html__radios_8php_a67633add8da9fe806bbe36d788962149}{}\index{function.\+html\+\_\+radios.\+php@{function.\+html\+\_\+radios.\+php}!smarty\+\_\+function\+\_\+html\+\_\+radios@{smarty\+\_\+function\+\_\+html\+\_\+radios}}
+\index{smarty\+\_\+function\+\_\+html\+\_\+radios@{smarty\+\_\+function\+\_\+html\+\_\+radios}!function.\+html\+\_\+radios.\+php@{function.\+html\+\_\+radios.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+html\+\_\+radios}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+html\+\_\+radios (
+\begin{DoxyParamCaption}
+\item[{}]{\$params, }
+\item[{}]{\$template}
+\end{DoxyParamCaption}
+)}\label{function_8html__radios_8php_a67633add8da9fe806bbe36d788962149}
+\hyperlink{class_smarty}{Smarty} \{html\+\_\+radios\} function plugin
+
+File\+: \hyperlink{function_8html__radios_8php}{function.\+html\+\_\+radios.\+php}~\newline
+ Type\+: function~\newline
+ Name\+: html\+\_\+radios~\newline
+ Date\+: 24.\+Feb.\+2003~\newline
+ Purpose\+: Prints out a list of radio input types~\newline
+ Params\+: 
+\begin{DoxyPre}
+\begin{DoxyItemize}
+\item name       (optional) - string default "radio"
+\item values     (required) - array
+\item options    (required) - associative array
+\item checked    (optional) - array default not set
+\item separator  (optional) - ie ~\newline
+ or ~
+\item output     (optional) - the output next to each radio button
+\item assign     (optional) - assign the output as an array to this variable
+\item escape     (optional) - escape the content (not value), defaults to true
+
+Examples:
+
+\begin{DoxyPre}
+\{html\_radios values=$ids output=$names\}
+\{html\_radios values=$ids name='box' separator='~\newline
+' output=$names\}
+\{html\_radios values=$ids checked=$checked separator='~\newline
+' output=$names\}
+\end{DoxyPre}
+
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\hyperlink{}{\{html\_radios\}
+     (Smarty online manual)
+ Christopher Kvarme \href{mailto:christopher.kvarme@flashjab.com}{\tt christopher.kvarme@flashjab.com} 
+ credits to Monte Ohrt } 
+\begin{DoxyVersion}{Version}
+1.0
+
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em $params} & parameters
+\\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\_Internal\_Template} & {\em $template} & template object
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+ smarty\_function\_escape\_special\_chars()
+
+\end{DoxyReturn}
+\end{DoxyPre}
+\hypertarget{function_8html__radios_8php_abea342af4aebcf9b15292addc7508ecb}{}\index{function.\+html\+\_\+radios.\+php@{function.\+html\+\_\+radios.\+php}!smarty\+\_\+function\+\_\+html\+\_\+radios\+\_\+output@{smarty\+\_\+function\+\_\+html\+\_\+radios\+\_\+output}}
+\index{smarty\+\_\+function\+\_\+html\+\_\+radios\+\_\+output@{smarty\+\_\+function\+\_\+html\+\_\+radios\+\_\+output}!function.\+html\+\_\+radios.\+php@{function.\+html\+\_\+radios.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+html\+\_\+radios\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+html\+\_\+radios\+\_\+output (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value, }
+\item[{}]{\$output, }
+\item[{}]{\$selected, }
+\item[{}]{\$extra, }
+\item[{}]{\$separator, }
+\item[{}]{\$labels, }
+\item[{}]{\$label\+\_\+ids, }
+\item[{}]{\$escape}
+\end{DoxyParamCaption}
+)}\label{function_8html__radios_8php_abea342af4aebcf9b15292addc7508ecb}

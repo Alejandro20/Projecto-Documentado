@@ -1,0 +1,89 @@
+\hypertarget{classadministrador_controller}{}\section{administrador\+Controller Class Reference}
+\label{classadministrador_controller}\index{administrador\+Controller@{administrador\+Controller}}
+Inheritance diagram for administrador\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classadministrador_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadministrador_controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classadministrador_controller_a149eb92716c1084a935e04a8d95f7347}{index} ()
+\item 
+\hyperlink{classadministrador_controller_a0a5fa641376934097e076991eb9cb54b}{eliminar\+Usuario} (\$id)
+\item 
+\hyperlink{classadministrador_controller_a1b4aabb5532fb3eff39ef15e560d3622}{eliminar\+Anuncio} (\$id)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classadministrador_controller_a095c5d389db211932136b53f25f39685}{}\index{administrador\+Controller@{administrador\+Controller}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!administrador\+Controller@{administrador\+Controller}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classadministrador_controller_a095c5d389db211932136b53f25f39685}
+Esta sentencia hace que el controlador del administrador carge su model 
+
+\subsection{Member Function Documentation}
+\hypertarget{classadministrador_controller_a1b4aabb5532fb3eff39ef15e560d3622}{}\index{administrador\+Controller@{administrador\+Controller}!eliminar\+Anuncio@{eliminar\+Anuncio}}
+\index{eliminar\+Anuncio@{eliminar\+Anuncio}!administrador\+Controller@{administrador\+Controller}}
+\subsubsection[{eliminar\+Anuncio}]{\setlength{\rightskip}{0pt plus 5cm}eliminar\+Anuncio (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{classadministrador_controller_a1b4aabb5532fb3eff39ef15e560d3622}
+Funcion que controla la eliminacion de anuncios desde la vista administrador
+
+Comprobamos que nos pasan un id desde la vista
+
+Si no lo pasan, nos devuelve a la pantalla administrador
+
+Si nos pasan el id desde la vista, llamamos a la funcion del modelo para eliminar el usuario
+
+Con esta linia le pasamos a la funcion el id del usuario que se borrara
+
+Cuando se haya borrado, nos devolvera a la vista del administrador \hypertarget{classadministrador_controller_a0a5fa641376934097e076991eb9cb54b}{}\index{administrador\+Controller@{administrador\+Controller}!eliminar\+Usuario@{eliminar\+Usuario}}
+\index{eliminar\+Usuario@{eliminar\+Usuario}!administrador\+Controller@{administrador\+Controller}}
+\subsubsection[{eliminar\+Usuario}]{\setlength{\rightskip}{0pt plus 5cm}eliminar\+Usuario (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{classadministrador_controller_a0a5fa641376934097e076991eb9cb54b}
+Funcion que controla la eliminacion de usuarios desde la vista administrador
+
+Comprobamos que nos pasan un id desde la vista
+
+Si no lo pasan, nos devuelve a la pantalla administrador
+
+Si nos pasan el id desde la vista, llamamos a la funcion del modelo para eliminar el usuario
+
+Con esta linia le pasamos a la funcion el id del usuario que se borrara
+
+Cuando se haya borrado, nos devolvera a la vista del administrador \hypertarget{classadministrador_controller_a149eb92716c1084a935e04a8d95f7347}{}\index{administrador\+Controller@{administrador\+Controller}!index@{index}}
+\index{index@{index}!administrador\+Controller@{administrador\+Controller}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classadministrador_controller_a149eb92716c1084a935e04a8d95f7347}
+Esta funcion del controlador carga la vista del index
+
+Con este if se mostraran los usuarios y anuncios del sistema solo si estas logeado
+
+Esta funcion carga todos los usuarios del sistema
+
+Esta funcion carga todos los anuncios del sistema
+
+Esto define el titulo de la pestaña de la pagina
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/controllers/\hyperlink{administrador_controller_8php}{administrador\+Controller.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{function_8html__select__date_8php}{}\section{libs/smarty/libs/plugins/function.html\+\_\+select\+\_\+date.\+php File Reference}
+\label{function_8html__select__date_8php}\index{libs/smarty/libs/plugins/function.\+html\+\_\+select\+\_\+date.\+php@{libs/smarty/libs/plugins/function.\+html\+\_\+select\+\_\+date.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_smarty}{Smarty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{function_8html__select__date_8php_acac52aca8755ae323626a5208fd90959}{smarty\+\_\+function\+\_\+html\+\_\+select\+\_\+date} (\$params, \$template)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{function_8html__select__date_8php_acac52aca8755ae323626a5208fd90959}{}\index{function.\+html\+\_\+select\+\_\+date.\+php@{function.\+html\+\_\+select\+\_\+date.\+php}!smarty\+\_\+function\+\_\+html\+\_\+select\+\_\+date@{smarty\+\_\+function\+\_\+html\+\_\+select\+\_\+date}}
+\index{smarty\+\_\+function\+\_\+html\+\_\+select\+\_\+date@{smarty\+\_\+function\+\_\+html\+\_\+select\+\_\+date}!function.\+html\+\_\+select\+\_\+date.\+php@{function.\+html\+\_\+select\+\_\+date.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+html\+\_\+select\+\_\+date}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+html\+\_\+select\+\_\+date (
+\begin{DoxyParamCaption}
+\item[{}]{\$params, }
+\item[{}]{\$template}
+\end{DoxyParamCaption}
+)}\label{function_8html__select__date_8php_acac52aca8755ae323626a5208fd90959}
+\hyperlink{class_smarty}{Smarty} \{html\+\_\+select\+\_\+date\} plugin
+
+Type\+: function~\newline
+ Name\+: html\+\_\+select\+\_\+date~\newline
+ Purpose\+: Prints the dropdowns for date selection.
+
+Change\+Log\+: 
+\begin{DoxyPre}
+\begin{DoxyItemize}
+\item 1.0 initial release
+\item 1.1 added support for +/- N syntax for begin
+             and end year values. (Monte)
+\item 1.2 added support for yyyy-mm-dd syntax for
+             time value. (Jan Rosier)
+\item 1.3 added support for choosing format for
+             month values (Gary Loescher)
+\item 1.3.1 added support for choosing format for
+             day values (Marcus Bointon)
+\item 1.3.2 support negative timestamps, force year
+             dropdown to include given date unless explicitly set (Monte)
+\item 1.3.4 fix behaviour of 0000-00-00 00:00:00 dates to match that
+             of 0000-00-00 dates (cybot, boots)
+\item 2.0 complete rewrite for performance,  
+             added attributes month\_names, *\_id
+
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\hyperlink{}{\{html\_select\_date\}
+     (Smarty online manual)
+ 2.0
+ Andrei Zmievski 
+ Monte Ohrt } 
+\begin{DoxyAuthor}{Author}
+Rodney Rehm
+
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em $params} & parameters
+\\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\_Internal\_Template} & {\em $template} & template object
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+
+\end{DoxyReturn}
+\end{DoxyPre}

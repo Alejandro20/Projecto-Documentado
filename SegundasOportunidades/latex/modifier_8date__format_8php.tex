@@ -1,0 +1,53 @@
+\hypertarget{modifier_8date__format_8php}{}\section{libs/smarty/libs/plugins/modifier.date\+\_\+format.\+php File Reference}
+\label{modifier_8date__format_8php}\index{libs/smarty/libs/plugins/modifier.\+date\+\_\+format.\+php@{libs/smarty/libs/plugins/modifier.\+date\+\_\+format.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_smarty}{Smarty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{modifier_8date__format_8php_a72b0dedfe401b3e7721d6cecad4580c5}{smarty\+\_\+modifier\+\_\+date\+\_\+format} (\$string, \$format=null, \$default\+\_\+date=\textquotesingle{}\textquotesingle{}, \$formatter=\textquotesingle{}auto\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{modifier_8date__format_8php_a72b0dedfe401b3e7721d6cecad4580c5}{}\index{modifier.\+date\+\_\+format.\+php@{modifier.\+date\+\_\+format.\+php}!smarty\+\_\+modifier\+\_\+date\+\_\+format@{smarty\+\_\+modifier\+\_\+date\+\_\+format}}
+\index{smarty\+\_\+modifier\+\_\+date\+\_\+format@{smarty\+\_\+modifier\+\_\+date\+\_\+format}!modifier.\+date\+\_\+format.\+php@{modifier.\+date\+\_\+format.\+php}}
+\subsubsection[{smarty\+\_\+modifier\+\_\+date\+\_\+format}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+modifier\+\_\+date\+\_\+format (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$format = {\ttfamily null}, }
+\item[{}]{\$default\+\_\+date = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$formatter = {\ttfamily \textquotesingle{}auto\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{modifier_8date__format_8php_a72b0dedfe401b3e7721d6cecad4580c5}
+\hyperlink{class_smarty}{Smarty} date\+\_\+format modifier plugin
+
+Type\+: modifier~\newline
+ Name\+: date\+\_\+format~\newline
+ Purpose\+: format datestamps via strftime~\newline
+ Input\+:~\newline
+
+\begin{DoxyItemize}
+\item string\+: input date string
+\item format\+: strftime format for output
+\item default\+\_\+date\+: default date if \$string is empty
+\end{DoxyItemize}
+
+\hyperlink{}{date\+\_\+format (Smarty online manual)  Monte Ohrt } 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & input date string \\
+\hline
+string & {\em \$format} & strftime format for output \\
+\hline
+string & {\em \$default\+\_\+date} & default date if \$string is empty \\
+\hline
+string & {\em \$formatter} & either \textquotesingle{}strftime\textquotesingle{} or \textquotesingle{}auto\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string $\vert$void  \hyperlink{shared_8make__timestamp_8php_a219776015e8c473c0cc5a50c0c40bdc2}{smarty\+\_\+make\+\_\+timestamp()} 
+\end{DoxyReturn}
+Include the \hyperlink{shared_8make__timestamp_8php}{shared.\+make\+\_\+timestamp.\+php} plugin

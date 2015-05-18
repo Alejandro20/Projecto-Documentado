@@ -1,0 +1,212 @@
+\hypertarget{class_smarty___template___source}{}\section{Smarty\+\_\+\+Template\+\_\+\+Source Class Reference}
+\label{class_smarty___template___source}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+Inheritance diagram for Smarty\+\_\+\+Template\+\_\+\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_smarty___template___source}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___template___source_a1b175af6efed8fa7081e2c8cebe4a13d}{\+\_\+\+\_\+construct} (\hyperlink{class_smarty___resource}{Smarty\+\_\+\+Resource} \$handler, \hyperlink{class_smarty}{Smarty} \$smarty, \$resource, \$type, \$name, \$unique\+\_\+resource)
+\item 
+\hyperlink{class_smarty___template___source_ae8c99828f19fc3c3912da0efabf01022}{get\+Compiled} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template)
+\item 
+\hyperlink{class_smarty___template___source_af8c011d9b5a4c8aff68b7027bbaf67f3}{render\+Uncompiled} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template)
+\item 
+\hyperlink{class_smarty___template___source_a3a449beac9d0c7fdd8325b61b21f52a0}{\+\_\+\+\_\+set} (\$property\+\_\+name, \$value)
+\item 
+\hyperlink{class_smarty___template___source_a51458d48bdbac63ccde60e4ae3357388}{\+\_\+\+\_\+get} (\$property\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___template___source_a7696818dcf593c5f9471d7f76ea2e645}{\$compiler\+\_\+class} = null
+\item 
+\hyperlink{class_smarty___template___source_a134f002da1134c7b756f1d48c9b2ad56}{\$template\+\_\+lexer\+\_\+class} = null
+\item 
+\hyperlink{class_smarty___template___source_a5861bfb4f75ed665b42ce8eba8ae51f8}{\$template\+\_\+parser\+\_\+class} = null
+\item 
+\hyperlink{class_smarty___template___source_a109bbd7f4add27541707b191b73ef84a}{\$uid} = null
+\item 
+\hyperlink{class_smarty___template___source_abd4c7b8b084214b8d2533ba07fce6b83}{\$resource} = null
+\item 
+\hyperlink{class_smarty___template___source_a9a4a6fba2208984cabb3afacadf33919}{\$type} = null
+\item 
+\hyperlink{class_smarty___template___source_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name} = null
+\item 
+\hyperlink{class_smarty___template___source_a44edb9ab90ad990172ef3a2d9e83225d}{\$unique\+\_\+resource} = null
+\item 
+\hyperlink{class_smarty___template___source_a3bce02156476bcca5e7573793b12226c}{\$filepath} = null
+\item 
+\hyperlink{class_smarty___template___source_ab058dde32f958583924531d198c63225}{\$uncompiled} = null
+\item 
+\hyperlink{class_smarty___template___source_a0974ea7e61b7935a49e4f11000bdda19}{\$recompiled} = null
+\item 
+\hyperlink{class_smarty___template___source_a2409c247baf67a1d4c6b9a1789cfc088}{\$components} = null
+\item 
+\hyperlink{class_smarty___template___source_a9285a7f684c72e9bb78fdef1bcbe3fd0}{\$handler} = null
+\item 
+\hyperlink{class_smarty___template___source_ac3ae29e9ccbb2006fa26fd9eb2c12117}{\$smarty} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_smarty___template___source_a1b175af6efed8fa7081e2c8cebe4a13d}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Resource}}]{\$handler, }
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{}]{\$resource, }
+\item[{}]{\$type, }
+\item[{}]{\$name, }
+\item[{}]{\$unique\+\_\+resource}
+\end{DoxyParamCaption}
+)}\label{class_smarty___template___source_a1b175af6efed8fa7081e2c8cebe4a13d}
+create Source Object container
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___resource}{Smarty\+\_\+\+Resource} & {\em \$handler} & Resource Handler this source object communicates with \\
+\hline
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} instance this source object belongs to \\
+\hline
+string & {\em \$resource} & full template\+\_\+resource \\
+\hline
+string & {\em \$type} & type of resource \\
+\hline
+string & {\em \$name} & resource name \\
+\hline
+string & {\em \$unique\+\_\+resource} & unqiue resource name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty___template___source_a51458d48bdbac63ccde60e4ae3357388}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\+\_\+\+\_\+get@{\+\_\+\+\_\+get}}
+\index{\+\_\+\+\_\+get@{\+\_\+\+\_\+get}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\+\_\+\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{}]{\$property\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_smarty___template___source_a51458d48bdbac63ccde60e4ae3357388}
+$<$$<$magic$>$$>$ Generic getter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$property\+\_\+name} & valid\+: timestamp, exists, content \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if \$property\+\_\+name is not valid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___template___source_a3a449beac9d0c7fdd8325b61b21f52a0}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\+\_\+\+\_\+set@{\+\_\+\+\_\+set}}
+\index{\+\_\+\+\_\+set@{\+\_\+\+\_\+set}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\+\_\+\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{}]{\$property\+\_\+name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{class_smarty___template___source_a3a449beac9d0c7fdd8325b61b21f52a0}
+$<$$<$magic$>$$>$ Generic Setter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$property\+\_\+name} & valid\+: timestamp, exists, content, template \\
+\hline
+mixed & {\em \$value} & new value (is not checked) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if \$property\+\_\+name is not valid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___template___source_ae8c99828f19fc3c3912da0efabf01022}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!get\+Compiled@{get\+Compiled}}
+\index{get\+Compiled@{get\+Compiled}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{get\+Compiled}]{\setlength{\rightskip}{0pt plus 5cm}get\+Compiled (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template}
+\end{DoxyParamCaption}
+)}\label{class_smarty___template___source_ae8c99828f19fc3c3912da0efabf01022}
+get a Compiled Object of this source
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template objet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___template___compiled}{Smarty\+\_\+\+Template\+\_\+\+Compiled} compiled object 
+\end{DoxyReturn}
+\hypertarget{class_smarty___template___source_af8c011d9b5a4c8aff68b7027bbaf67f3}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!render\+Uncompiled@{render\+Uncompiled}}
+\index{render\+Uncompiled@{render\+Uncompiled}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{render\+Uncompiled}]{\setlength{\rightskip}{0pt plus 5cm}render\+Uncompiled (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template}
+\end{DoxyParamCaption}
+)}\label{class_smarty___template___source_af8c011d9b5a4c8aff68b7027bbaf67f3}
+render the uncompiled source
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\hypertarget{class_smarty___template___source_a7696818dcf593c5f9471d7f76ea2e645}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$compiler\+\_\+class@{\$compiler\+\_\+class}}
+\index{\$compiler\+\_\+class@{\$compiler\+\_\+class}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$compiler\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}\$compiler\+\_\+class = null}\label{class_smarty___template___source_a7696818dcf593c5f9471d7f76ea2e645}
+\hypertarget{class_smarty___template___source_a2409c247baf67a1d4c6b9a1789cfc088}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$components@{\$components}}
+\index{\$components@{\$components}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$components}]{\setlength{\rightskip}{0pt plus 5cm}\$components = null}\label{class_smarty___template___source_a2409c247baf67a1d4c6b9a1789cfc088}
+\hypertarget{class_smarty___template___source_a3bce02156476bcca5e7573793b12226c}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$filepath@{\$filepath}}
+\index{\$filepath@{\$filepath}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$filepath}]{\setlength{\rightskip}{0pt plus 5cm}\$filepath = null}\label{class_smarty___template___source_a3bce02156476bcca5e7573793b12226c}
+\hypertarget{class_smarty___template___source_a9285a7f684c72e9bb78fdef1bcbe3fd0}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$handler@{\$handler}}
+\index{\$handler@{\$handler}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$handler}]{\setlength{\rightskip}{0pt plus 5cm}\$handler = null}\label{class_smarty___template___source_a9285a7f684c72e9bb78fdef1bcbe3fd0}
+\hypertarget{class_smarty___template___source_ab2fc40d43824ea3e1ce5d86dee0d763b}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$name@{\$name}}
+\index{\$name@{\$name}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$name}]{\setlength{\rightskip}{0pt plus 5cm}\$name = null}\label{class_smarty___template___source_ab2fc40d43824ea3e1ce5d86dee0d763b}
+\hypertarget{class_smarty___template___source_a0974ea7e61b7935a49e4f11000bdda19}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$recompiled@{\$recompiled}}
+\index{\$recompiled@{\$recompiled}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$recompiled}]{\setlength{\rightskip}{0pt plus 5cm}\$recompiled = null}\label{class_smarty___template___source_a0974ea7e61b7935a49e4f11000bdda19}
+\hypertarget{class_smarty___template___source_abd4c7b8b084214b8d2533ba07fce6b83}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$resource@{\$resource}}
+\index{\$resource@{\$resource}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$resource}]{\setlength{\rightskip}{0pt plus 5cm}\$resource = null}\label{class_smarty___template___source_abd4c7b8b084214b8d2533ba07fce6b83}
+\hypertarget{class_smarty___template___source_ac3ae29e9ccbb2006fa26fd9eb2c12117}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$smarty@{\$smarty}}
+\index{\$smarty@{\$smarty}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$smarty}]{\setlength{\rightskip}{0pt plus 5cm}\$smarty = null}\label{class_smarty___template___source_ac3ae29e9ccbb2006fa26fd9eb2c12117}
+\hypertarget{class_smarty___template___source_a134f002da1134c7b756f1d48c9b2ad56}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$template\+\_\+lexer\+\_\+class@{\$template\+\_\+lexer\+\_\+class}}
+\index{\$template\+\_\+lexer\+\_\+class@{\$template\+\_\+lexer\+\_\+class}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$template\+\_\+lexer\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}\$template\+\_\+lexer\+\_\+class = null}\label{class_smarty___template___source_a134f002da1134c7b756f1d48c9b2ad56}
+\hypertarget{class_smarty___template___source_a5861bfb4f75ed665b42ce8eba8ae51f8}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$template\+\_\+parser\+\_\+class@{\$template\+\_\+parser\+\_\+class}}
+\index{\$template\+\_\+parser\+\_\+class@{\$template\+\_\+parser\+\_\+class}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$template\+\_\+parser\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}\$template\+\_\+parser\+\_\+class = null}\label{class_smarty___template___source_a5861bfb4f75ed665b42ce8eba8ae51f8}
+\hypertarget{class_smarty___template___source_a9a4a6fba2208984cabb3afacadf33919}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$type@{\$type}}
+\index{\$type@{\$type}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$type}]{\setlength{\rightskip}{0pt plus 5cm}\$type = null}\label{class_smarty___template___source_a9a4a6fba2208984cabb3afacadf33919}
+\hypertarget{class_smarty___template___source_a109bbd7f4add27541707b191b73ef84a}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$uid@{\$uid}}
+\index{\$uid@{\$uid}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$uid}]{\setlength{\rightskip}{0pt plus 5cm}\$uid = null}\label{class_smarty___template___source_a109bbd7f4add27541707b191b73ef84a}
+\hypertarget{class_smarty___template___source_ab058dde32f958583924531d198c63225}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$uncompiled@{\$uncompiled}}
+\index{\$uncompiled@{\$uncompiled}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$uncompiled}]{\setlength{\rightskip}{0pt plus 5cm}\$uncompiled = null}\label{class_smarty___template___source_ab058dde32f958583924531d198c63225}
+\hypertarget{class_smarty___template___source_a44edb9ab90ad990172ef3a2d9e83225d}{}\index{Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}!\$unique\+\_\+resource@{\$unique\+\_\+resource}}
+\index{\$unique\+\_\+resource@{\$unique\+\_\+resource}!Smarty\+\_\+\+Template\+\_\+\+Source@{Smarty\+\_\+\+Template\+\_\+\+Source}}
+\subsubsection[{\$unique\+\_\+resource}]{\setlength{\rightskip}{0pt plus 5cm}\$unique\+\_\+resource = null}\label{class_smarty___template___source_a44edb9ab90ad990172ef3a2d9e83225d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/sysplugins/\hyperlink{smarty__resource_8php}{smarty\+\_\+resource.\+php}\end{DoxyCompactItemize}

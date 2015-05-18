@@ -1,0 +1,93 @@
+\hypertarget{function_8html__options_8php}{}\section{libs/smarty/libs/plugins/function.html\+\_\+options.\+php File Reference}
+\label{function_8html__options_8php}\index{libs/smarty/libs/plugins/function.\+html\+\_\+options.\+php@{libs/smarty/libs/plugins/function.\+html\+\_\+options.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_smarty}{Smarty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{function_8html__options_8php_adb95a3a9426f03667ab7234674e797dc}{smarty\+\_\+function\+\_\+html\+\_\+options} (\$params, \$template)
+\item 
+\hyperlink{function_8html__options_8php_a5018aa7dfa1f9ee31b22bb46e3fe6748}{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optoutput} (\$key, \$value, \$selected, \$id, \$class, \&\$idx)
+\item 
+\hyperlink{function_8html__options_8php_aef999ceaf35366110925adfde591603e}{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optgroup} (\$key, \$values, \$selected, \$id, \$class, \&\$idx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{function_8html__options_8php_adb95a3a9426f03667ab7234674e797dc}{}\index{function.\+html\+\_\+options.\+php@{function.\+html\+\_\+options.\+php}!smarty\+\_\+function\+\_\+html\+\_\+options@{smarty\+\_\+function\+\_\+html\+\_\+options}}
+\index{smarty\+\_\+function\+\_\+html\+\_\+options@{smarty\+\_\+function\+\_\+html\+\_\+options}!function.\+html\+\_\+options.\+php@{function.\+html\+\_\+options.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+html\+\_\+options}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+html\+\_\+options (
+\begin{DoxyParamCaption}
+\item[{}]{\$params, }
+\item[{}]{\$template}
+\end{DoxyParamCaption}
+)}\label{function_8html__options_8php_adb95a3a9426f03667ab7234674e797dc}
+\hyperlink{class_smarty}{Smarty} \{html\+\_\+options\} function plugin
+
+Type\+: function~\newline
+ Name\+: html\+\_\+options~\newline
+ Purpose\+: Prints the list of $<$option$>$ tags generated from the passed parameters~\newline
+ Params\+: 
+\begin{DoxyPre}
+\begin{DoxyItemize}
+\item name       (optional) - string default "select"
+\item values     (required) - if no options supplied) - array
+\item options    (required) - if no values supplied) - associative array
+\item selected   (optional) - string default not set
+\item output     (required) - if not options supplied) - array
+\item id         (optional) - string default not set
+\item class      (optional) - string default not set
+
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\hyperlink{}{\{html\_image\}
+     (Smarty online manual)
+ Monte Ohrt } 
+\begin{DoxyAuthor}{Author}
+Ralf Strehle (minor optimization) <ralf dot="" strehle="" at="" yahoo="" dot="" de>="">
+
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em $params} & parameters
+\\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\_Internal\_Template} & {\em $template} & template object
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+ smarty\_function\_escape\_special\_chars()
+
+\end{DoxyReturn}
+\end{DoxyPre}
+\hypertarget{function_8html__options_8php_aef999ceaf35366110925adfde591603e}{}\index{function.\+html\+\_\+options.\+php@{function.\+html\+\_\+options.\+php}!smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optgroup@{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optgroup}}
+\index{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optgroup@{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optgroup}!function.\+html\+\_\+options.\+php@{function.\+html\+\_\+options.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optgroup}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optgroup (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$values, }
+\item[{}]{\$selected, }
+\item[{}]{\$id, }
+\item[{}]{\$class, }
+\item[{\&}]{\$idx}
+\end{DoxyParamCaption}
+)}\label{function_8html__options_8php_aef999ceaf35366110925adfde591603e}
+\hypertarget{function_8html__options_8php_a5018aa7dfa1f9ee31b22bb46e3fe6748}{}\index{function.\+html\+\_\+options.\+php@{function.\+html\+\_\+options.\+php}!smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optoutput@{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optoutput}}
+\index{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optoutput@{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optoutput}!function.\+html\+\_\+options.\+php@{function.\+html\+\_\+options.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optoutput}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+html\+\_\+options\+\_\+optoutput (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$value, }
+\item[{}]{\$selected, }
+\item[{}]{\$id, }
+\item[{}]{\$class, }
+\item[{\&}]{\$idx}
+\end{DoxyParamCaption}
+)}\label{function_8html__options_8php_a5018aa7dfa1f9ee31b22bb46e3fe6748}

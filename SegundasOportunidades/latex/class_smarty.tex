@@ -1,0 +1,1327 @@
+\hypertarget{class_smarty}{}\section{Smarty Class Reference}
+\label{class_smarty}\index{Smarty@{Smarty}}
+Inheritance diagram for Smarty\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_smarty}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{class_smarty_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct} ()
+\item 
+\hyperlink{class_smarty_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone} ()
+\item 
+\hyperlink{class_smarty_abc8e9e31bb15c8a44c3210ec551407c8}{\+\_\+\+\_\+get} (\$name)
+\item 
+\hyperlink{class_smarty_a83c2703c91959192f759992ad5640b67}{\+\_\+\+\_\+set} (\$name, \$value)
+\item 
+\hyperlink{class_smarty_af27994279443196cd9088aa3aeaf2734}{template\+Exists} (\$resource\+\_\+name)
+\item 
+\hyperlink{class_smarty_a7dec50d860b7b419b8e03738b777e23d}{get\+Global} (\$varname=null)
+\item 
+\hyperlink{class_smarty_aec638a0ca4f16926506acff87ceb0aaf}{clear\+All\+Cache} (\$exp\+\_\+time=null, \$type=null)
+\item 
+\hyperlink{class_smarty_aff41b8ccb37be52281bcbcc87b8c7e66}{clear\+Cache} (\$template\+\_\+name, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \$exp\+\_\+time=null, \$type=null)
+\item 
+\hyperlink{class_smarty_af93918d13380160df50af41d18eb4a09}{enable\+Security} (\$security\+\_\+class=null)
+\item 
+\hyperlink{class_smarty_a02e591ec307da39655fa94f41037b4bd}{disable\+Security} ()
+\item 
+\hyperlink{class_smarty_af59c69ae277a790f659b6fa9996277fa}{set\+Template\+Dir} (\$template\+\_\+dir)
+\item 
+\hyperlink{class_smarty_a38d8c17db171004b36f3cc18e885b23c}{add\+Template\+Dir} (\$template\+\_\+dir, \$key=null)
+\item 
+\hyperlink{class_smarty_a7118a17de64b2a71cf6085e67ec027ae}{get\+Template\+Dir} (\$index=null)
+\item 
+\hyperlink{class_smarty_ab4c8f3616dbf358ab8efa445b52dfa03}{set\+Config\+Dir} (\$config\+\_\+dir)
+\item 
+\hyperlink{class_smarty_acb2ea4415c56afaaa2bd06543c28c37b}{add\+Config\+Dir} (\$config\+\_\+dir, \$key=null)
+\item 
+\hyperlink{class_smarty_a7604f303978c5bcb3be5b32fe414a145}{get\+Config\+Dir} (\$index=null)
+\item 
+\hyperlink{class_smarty_a873aac031f8959adb0656b50f7e08da1}{set\+Plugins\+Dir} (\$plugins\+\_\+dir)
+\item 
+\hyperlink{class_smarty_a38e4a8b98e674d0087e8b4994c52f339}{add\+Plugins\+Dir} (\$plugins\+\_\+dir)
+\item 
+\hyperlink{class_smarty_a9d88a1d1661f7715a088da30c7923988}{get\+Plugins\+Dir} ()
+\item 
+\hyperlink{class_smarty_a53fa3b76ddf8efe99da1769a2fb8ebc2}{set\+Compile\+Dir} (\$compile\+\_\+dir)
+\item 
+\hyperlink{class_smarty_a25277db590df3efa755513c2483c8442}{get\+Compile\+Dir} ()
+\item 
+\hyperlink{class_smarty_aee1d7535f4c8f43b21808040629cde4f}{set\+Cache\+Dir} (\$cache\+\_\+dir)
+\item 
+\hyperlink{class_smarty_af1aaf85d6756805f7dabac5feb2fa952}{get\+Cache\+Dir} ()
+\item 
+\hyperlink{class_smarty_aa42715e252f461173bb9333f7a5d5331}{set\+Default\+Modifiers} (\$modifiers)
+\item 
+\hyperlink{class_smarty_a8d48a5ce2e5f2e85aca029bd99002a47}{add\+Default\+Modifiers} (\$modifiers)
+\item 
+\hyperlink{class_smarty_afff9ce9a461a6328d4c72f6db9c8cbea}{get\+Default\+Modifiers} ()
+\item 
+\hyperlink{class_smarty_a4c88d7759e6d9c3db2a4fa342fb51de8}{set\+Autoload\+Filters} (\$filters, \$type=null)
+\item 
+\hyperlink{class_smarty_a0c80e992e5d7b2537d734bd171320ef3}{add\+Autoload\+Filters} (\$filters, \$type=null)
+\item 
+\hyperlink{class_smarty_a7cf0060f285a8eec99641ec5e04828be}{get\+Autoload\+Filters} (\$type=null)
+\item 
+\hyperlink{class_smarty_ae610d8b4e8b1d981331997a305ca251d}{get\+Debug\+Template} ()
+\item 
+\hyperlink{class_smarty_a00b86222ed243e16f2baff09dfe9520d}{set\+Debug\+Template} (\$tpl\+\_\+name)
+\item 
+\hyperlink{class_smarty_aa9d5dc127ac405069eea53703fe12668}{create\+Template} (\$template, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \$parent=null, \$do\+\_\+clone=true)
+\item 
+\hyperlink{class_smarty_a896a380e37f5391029e1d079ac7ee1e9}{load\+Plugin} (\$plugin\+\_\+name, \$check=true)
+\item 
+\hyperlink{class_smarty_ad7b65685cb72a1e686482c5dd6e2b1d6}{compile\+All\+Templates} (\$extention= \textquotesingle{}.tpl\textquotesingle{}, \$force\+\_\+compile=false, \$time\+\_\+limit=0, \$max\+\_\+errors=null)
+\item 
+\hyperlink{class_smarty_ae3bebd6073dddd2e528c9c0b0e0a4ebd}{compile\+All\+Config} (\$extention= \textquotesingle{}.conf\textquotesingle{}, \$force\+\_\+compile=false, \$time\+\_\+limit=0, \$max\+\_\+errors=null)
+\item 
+\hyperlink{class_smarty_a28988af24bbe01d0107fc29c9fff26e5}{clear\+Compiled\+Template} (\$resource\+\_\+name=null, \$compile\+\_\+id=null, \$exp\+\_\+time=null)
+\item 
+\hyperlink{class_smarty_a3fb1a4a7e826939df9707fc9aa4a5c6b}{get\+Tags} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$template)
+\item 
+\hyperlink{class_smarty_af8c70f6b1712e564e97ae5742b0290f4}{test\+Install} (\&\$errors=null)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty_a6565461ac93814845c8395368d2eb047}{muting\+Error\+Handler} (\$errno, \$errstr, \$errfile, \$errline, \$errcontext)
+\item 
+static \hyperlink{class_smarty_a3c60bb37676992fdc406b34476168f9e}{mute\+Expected\+Errors} ()
+\item 
+static \hyperlink{class_smarty_a317f0a148011c641c316b2dc0270ed0e}{unmute\+Expected\+Errors} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_smarty_a38a3b7b2e496b24a1bf2976ac1552ed7}{S\+M\+A\+R\+T\+Y\+\_\+\+V\+E\+R\+S\+I\+O\+N} = \textquotesingle{}\hyperlink{class_smarty}{Smarty}-\/3.\+1.\+8\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_ae96cd6e8d429b91e56cd1914c5b5ce61}{S\+C\+O\+P\+E\+\_\+\+L\+O\+C\+A\+L} = 0
+\item 
+const \hyperlink{class_smarty_a8ea89b5e55b135aa28fcccba189e3bca}{S\+C\+O\+P\+E\+\_\+\+P\+A\+R\+E\+N\+T} = 1
+\item 
+const \hyperlink{class_smarty_a18f8c264effd9f09a2776427cbc2d005}{S\+C\+O\+P\+E\+\_\+\+R\+O\+O\+T} = 2
+\item 
+const \hyperlink{class_smarty_ab445d8c60ac47e2eade1790d3b5ead7e}{S\+C\+O\+P\+E\+\_\+\+G\+L\+O\+B\+A\+L} = 3
+\item 
+const \hyperlink{class_smarty_a494d9102d5d9efc9f8c858c21dd57347}{C\+A\+C\+H\+I\+N\+G\+\_\+\+O\+F\+F} = 0
+\item 
+const \hyperlink{class_smarty_acb47fdccfbe5022bea1ecfcf8e9c6533}{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T} = 1
+\item 
+const \hyperlink{class_smarty_a3ddb606194b408a8ed1fa13e86156357}{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+S\+A\+V\+E\+D} = 2
+\item 
+const \hyperlink{class_smarty_a22c112cddd1e27f2bf70cf574c85f56a}{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+F\+F} = 0
+\item 
+const \hyperlink{class_smarty_a65fdfe500b2118e0c0b64cc6372627db}{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+N} = 1
+\item 
+const \hyperlink{class_smarty_aaafe5f30bf960deb3e2b6dbc0d7878aa}{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+C\+A\+C\+H\+E\+M\+I\+S\+S} = 2
+\item 
+const \hyperlink{class_smarty_a5ffae087be1c42146449529dcc03524f}{P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U} = 0
+\item 
+const \hyperlink{class_smarty_ab9f2e77d0c6d296834391a411e880ae0}{P\+H\+P\+\_\+\+Q\+U\+O\+T\+E} = 1
+\item 
+const \hyperlink{class_smarty_a86dc83caae5f5b2b3a41d400727df9f9}{P\+H\+P\+\_\+\+R\+E\+M\+O\+V\+E} = 2
+\item 
+const \hyperlink{class_smarty_a95914b201d2627600faf1a65cb4e7115}{P\+H\+P\+\_\+\+A\+L\+L\+O\+W} = 3
+\item 
+const \hyperlink{class_smarty_adbf5a5e917688e56a5980bcf6257477a}{F\+I\+L\+T\+E\+R\+\_\+\+P\+O\+S\+T} = \textquotesingle{}post\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_ad093197eaa7160271f4668c971478ec9}{F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E} = \textquotesingle{}pre\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_aed61a81051bbb199555a03a2b45631b4}{F\+I\+L\+T\+E\+R\+\_\+\+O\+U\+T\+P\+U\+T} = \textquotesingle{}output\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_a07041c936875d9504110cdff7dafc6bc}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E} = \textquotesingle{}variable\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_a21d2a55919184c21a26c85523c6cadfb}{P\+L\+U\+G\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N} = \textquotesingle{}function\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_a2e63fca0e26cc83f27a50354418a01b7}{P\+L\+U\+G\+I\+N\+\_\+\+B\+L\+O\+C\+K} = \textquotesingle{}block\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_a65de331533aad88f59738c56ebd70c05}{P\+L\+U\+G\+I\+N\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R} = \textquotesingle{}compiler\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_a601f50b353718715e0c9c2ba4ab1b6d5}{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R} = \textquotesingle{}modifier\textquotesingle{}
+\item 
+const \hyperlink{class_smarty_a6d2292b274afbbc56b46bf0064257c21}{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+C\+O\+M\+P\+I\+L\+E\+R} = \textquotesingle{}modifiercompiler\textquotesingle{}
+\item 
+\hyperlink{class_smarty_a46ed4da4d4b243a11bb9ba4826d310e4}{\$auto\+\_\+literal} = true
+\item 
+\hyperlink{class_smarty_aaccca4d5f12266dfc813b9ebe920d4e0}{\$error\+\_\+unassigned} = false
+\item 
+\hyperlink{class_smarty_a7bdf6717c975c21ab609d6b8f7027c20}{\$use\+\_\+include\+\_\+path} = false
+\item 
+\hyperlink{class_smarty_a8d8ecb17a0338a52a5a6693618abbfe8}{\$joined\+\_\+template\+\_\+dir} = null
+\item 
+\hyperlink{class_smarty_a4b1843c13f0cbdeb4355965465666faf}{\$joined\+\_\+config\+\_\+dir} = null
+\item 
+\hyperlink{class_smarty_a9ff3231160bde6632ca8ad252918e3f0}{\$default\+\_\+template\+\_\+handler\+\_\+func} = null
+\item 
+\hyperlink{class_smarty_ab0f9856dab7dfa26d09a95ad15bae220}{\$default\+\_\+config\+\_\+handler\+\_\+func} = null
+\item 
+\hyperlink{class_smarty_a9186c4db9043d12dd9f4f654a0d30f68}{\$default\+\_\+plugin\+\_\+handler\+\_\+func} = null
+\item 
+\hyperlink{class_smarty_ac956f556d1b636556e96902d4d5377ff}{\$force\+\_\+compile} = false
+\item 
+\hyperlink{class_smarty_ab9662ea355e8e7c1f47ef0e568147512}{\$compile\+\_\+check} = true
+\item 
+\hyperlink{class_smarty_a9d2c3aa18168752d2a32b5aac08b25cd}{\$use\+\_\+sub\+\_\+dirs} = false
+\item 
+\hyperlink{class_smarty_a73f23bd0f148d47c24c36da40fcf29a8}{\$allow\+\_\+ambiguous\+\_\+resources} = false
+\item 
+\hyperlink{class_smarty_aa36073c4cda5c97981a5b99ca92208be}{\$caching} = false
+\item 
+\hyperlink{class_smarty_a9ff196d2db66487317e73d7a2c494646}{\$merge\+\_\+compiled\+\_\+includes} = false
+\item 
+\hyperlink{class_smarty_a5aaab753f75170fa670cbb602aa97119}{\$cache\+\_\+lifetime} = 3600
+\item 
+\hyperlink{class_smarty_a57e14bd7397e4236311ab75677092bbc}{\$force\+\_\+cache} = false
+\item 
+\hyperlink{class_smarty_aabdcf0100ec4fce78371b883f0c6cbf8}{\$cache\+\_\+id} = null
+\item 
+\hyperlink{class_smarty_a4c29af6f98e3049de95861b01a7bb00d}{\$compile\+\_\+id} = null
+\item 
+\hyperlink{class_smarty_a77e272b1cacbab4b26b4fe515e445178}{\$left\+\_\+delimiter} = \char`\"{}\{\char`\"{}
+\item 
+\hyperlink{class_smarty_ad3fe9ebfa998625e29836badfe1840bd}{\$right\+\_\+delimiter} = \char`\"{}\}\char`\"{}
+\item 
+\hyperlink{class_smarty_a678d027f0022db4a62539937fdf18a0f}{\$security\+\_\+class} = \textquotesingle{}\hyperlink{class_smarty___security}{Smarty\+\_\+\+Security}\textquotesingle{}
+\item 
+\hyperlink{class_smarty_a5268d7432b4de885ac265721a56fba85}{\$security\+\_\+policy} = null
+\item 
+\hyperlink{class_smarty_abb37c3c6b2bcb9a527c4139bffb7e6ca}{\$php\+\_\+handling} = self\+::\+P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U
+\item 
+\hyperlink{class_smarty_ae7309c9b39378a050c4e28c675bf614f}{\$allow\+\_\+php\+\_\+templates} = false
+\item 
+\hyperlink{class_smarty_a96c1c358ebd9cd14712b305f6baed2ff}{\$direct\+\_\+access\+\_\+security} = true
+\item 
+\hyperlink{class_smarty_a22d995c07dbbe5b426d4fda3931cfcca}{\$debugging} = false
+\item 
+\hyperlink{class_smarty_a9b02ae21521c28e6eeb53bd58777aa7b}{\$debugging\+\_\+ctrl} = \textquotesingle{}N\+O\+N\+E\textquotesingle{}
+\item 
+\hyperlink{class_smarty_a1936345582d4483c652b90bbf7a51cbc}{\$smarty\+\_\+debug\+\_\+id} = \textquotesingle{}S\+M\+A\+R\+T\+Y\+\_\+\+D\+E\+B\+U\+G\textquotesingle{}
+\item 
+\hyperlink{class_smarty_adbe83b13ba657998e0fb861b44ecfd59}{\$debug\+\_\+tpl} = null
+\item 
+\hyperlink{class_smarty_ad3fc8af82ab7da1fd9dc868b28938698}{\$error\+\_\+reporting} = null
+\item 
+\hyperlink{class_smarty_a6b23ebecb649056690e97d5704f61f0f}{\$get\+\_\+used\+\_\+tags} = false
+\item 
+\hyperlink{class_smarty_a728421c1493ea20b619459924184b06d}{\$config\+\_\+overwrite} = true
+\item 
+\hyperlink{class_smarty_ab3e274a6c3fd439b83380c17a71255bb}{\$config\+\_\+booleanize} = true
+\item 
+\hyperlink{class_smarty_add257cafa2cc7f2c68381f9bcc6f4d7b}{\$config\+\_\+read\+\_\+hidden} = false
+\item 
+\hyperlink{class_smarty_a79bb6ea80f5980f484a13d42fe2b3bd0}{\$compile\+\_\+locking} = true
+\item 
+\hyperlink{class_smarty_a8ad55b9e35aac5040561ff8cc1395633}{\$cache\+\_\+locking} = false
+\item 
+\hyperlink{class_smarty_a94ffd62ea226a86ad2fffffe1e6d6998}{\$locking\+\_\+timeout} = 10
+\item 
+\hyperlink{class_smarty_a2c096c8e6fc6d2febe1fee59c6e924f8}{\$template\+\_\+functions} = array()
+\item 
+\hyperlink{class_smarty_a35cf3764fb77e481ca92ef131a35ca7e}{\$default\+\_\+resource\+\_\+type} = \textquotesingle{}file\textquotesingle{}
+\item 
+\hyperlink{class_smarty_a2b8a0f7aa1e89dd601a17c5d37966b9e}{\$caching\+\_\+type} = \textquotesingle{}file\textquotesingle{}
+\item 
+\hyperlink{class_smarty_a7f675de4b5983d7e84f6573b7d4d453d}{\$properties} = array()
+\item 
+\hyperlink{class_smarty_a3617fe326b3d1e95e6b10ea35ecc6905}{\$default\+\_\+config\+\_\+type} = \textquotesingle{}file\textquotesingle{}
+\item 
+\hyperlink{class_smarty_a256e6c6abddc9a91dace09bbc9234a0b}{\$template\+\_\+objects} = array()
+\item 
+\hyperlink{class_smarty_a0734d0f7c5eea130baa18c0424ab07b0}{\$cache\+\_\+modified\+\_\+check} = false
+\item 
+\hyperlink{class_smarty_aa706d2dbce00ae10a1cf8fa49e53e903}{\$registered\+\_\+plugins} = array()
+\item 
+\hyperlink{class_smarty_ab943c28191f0e4f5d648d66aef9cf289}{\$plugin\+\_\+search\+\_\+order} = array(\textquotesingle{}function\textquotesingle{}, \textquotesingle{}block\textquotesingle{}, \textquotesingle{}compiler\textquotesingle{}, \textquotesingle{}class\textquotesingle{})
+\item 
+\hyperlink{class_smarty_a4aabbbb01d2968a5e108683bc4db09b2}{\$registered\+\_\+objects} = array()
+\item 
+\hyperlink{class_smarty_aa8f2a5bf79dcbe341a65e526ab20dee9}{\$registered\+\_\+classes} = array()
+\item 
+\hyperlink{class_smarty_a5fcb30291f6413ff9100e3f66f201764}{\$registered\+\_\+filters} = array()
+\item 
+\hyperlink{class_smarty_ab7db04d21656638787142239d7fe7118}{\$registered\+\_\+resources} = array()
+\item 
+\hyperlink{class_smarty_a8cb2cadafe33d876bcc5eab54aa8ccbf}{\$\+\_\+resource\+\_\+handlers} = array()
+\item 
+\hyperlink{class_smarty_a419a3cb24e76bf8b59991a0be944e87f}{\$registered\+\_\+cache\+\_\+resources} = array()
+\item 
+\hyperlink{class_smarty_aaa7b3fba7597adec16f41e315b5e50c9}{\$\+\_\+cacheresource\+\_\+handlers} = array()
+\item 
+\hyperlink{class_smarty_aca2078dde09728b223cdffe8209e6dcc}{\$autoload\+\_\+filters} = array()
+\item 
+\hyperlink{class_smarty_a48ec112144d4921e3a31fb1a5526ad2f}{\$default\+\_\+modifiers} = array()
+\item 
+\hyperlink{class_smarty_aba969aea1cf350a91f5eaf44b48daa56}{\$escape\+\_\+html} = false
+\item 
+\hyperlink{class_smarty_a73a034a7a0fbdd2c93f23fb6c9946ee9}{\$start\+\_\+time} = 0
+\item 
+\hyperlink{class_smarty_affa1e29315f40fe30ea516c7e8f2430e}{\$\+\_\+file\+\_\+perms} = 0644
+\item 
+\hyperlink{class_smarty_a917cec287e9c00b1c188e4a815b279b2}{\$\+\_\+dir\+\_\+perms} = 0771
+\item 
+\hyperlink{class_smarty_a8bc334635a0aa8e117a5e822ca71ee67}{\$\+\_\+tag\+\_\+stack} = array()
+\item 
+\hyperlink{class_smarty_ac3ae29e9ccbb2006fa26fd9eb2c12117}{\$smarty}
+\item 
+\hyperlink{class_smarty_a4c6ef40a0c9534d4c25ec77cd4e8d388}{\$\+\_\+current\+\_\+file} = null
+\item 
+\hyperlink{class_smarty_acb80fdbc8948da9101789788487b83ac}{\$\+\_\+parserdebug} = false
+\item 
+\hyperlink{class_smarty_aaec0e99c242be08eb8f87cbd498700c9}{\$merged\+\_\+templates\+\_\+func} = array()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty_a53565c9ede228644fe99fae6296cf693}{\$global\+\_\+tpl\+\_\+vars} = array()
+\item 
+static \hyperlink{class_smarty_a249a4c3134b46c30b8e3f4f2d097e862}{\$\+\_\+previous\+\_\+error\+\_\+handler} = null
+\item 
+static \hyperlink{class_smarty_abb10f08cd280a1b7e1b2e6cb6afc460c}{\$\+\_\+muted\+\_\+directories} = array()
+\item 
+static \hyperlink{class_smarty_a5a41ec0fc4477ef639ba3cf063816114}{\$\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G} = S\+M\+A\+R\+T\+Y\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G
+\item 
+static \hyperlink{class_smarty_ae5404cebc4fdd786067002ed91be9d7b}{\$\+\_\+\+C\+H\+A\+R\+S\+E\+T} = S\+M\+A\+R\+T\+Y\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+C\+H\+A\+R\+\_\+\+S\+E\+T
+\item 
+static \hyperlink{class_smarty_a10771c318c1ae4d6178476dbf20dbdda}{\$\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T} = S\+M\+A\+R\+T\+Y\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T
+\item 
+static \hyperlink{class_smarty_a504a79926c6aa6aae2f238d2e74ce84b}{\$\+\_\+\+U\+T\+F8\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R} = \textquotesingle{}u\textquotesingle{}
+\item 
+static \hyperlink{class_smarty_a8b74cd5266386c9651f86d02b4bf3bc4}{\$\+\_\+smarty\+\_\+vars} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_smarty_a095c5d389db211932136b53f25f39685}{}\index{Smarty@{Smarty}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Smarty@{Smarty}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a095c5d389db211932136b53f25f39685}
+\#@-\/ Initialize new \hyperlink{class_smarty}{Smarty} object \hypertarget{class_smarty_a421831a265621325e1fdd19aace0c758}{}\index{Smarty@{Smarty}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!Smarty@{Smarty}}
+\subsubsection[{\+\_\+\+\_\+destruct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a421831a265621325e1fdd19aace0c758}
+Class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty_ad0cb87b388bc74d63dc884accdca8713}{}\index{Smarty@{Smarty}!\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}}
+\index{\+\_\+\+\_\+clone@{\+\_\+\+\_\+clone}!Smarty@{Smarty}}
+\subsubsection[{\+\_\+\+\_\+clone}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_ad0cb87b388bc74d63dc884accdca8713}
+$<$$<$magic$>$$>$ set selfpointer on cloned object \hypertarget{class_smarty_abc8e9e31bb15c8a44c3210ec551407c8}{}\index{Smarty@{Smarty}!\+\_\+\+\_\+get@{\+\_\+\+\_\+get}}
+\index{\+\_\+\+\_\+get@{\+\_\+\+\_\+get}!Smarty@{Smarty}}
+\subsubsection[{\+\_\+\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_smarty_abc8e9e31bb15c8a44c3210ec551407c8}
+$<$$<$magic$>$$>$ Generic getter.
+
+Calls the appropriate getter function. Issues an E\+\_\+\+U\+S\+E\+R\+\_\+\+N\+O\+T\+I\+C\+E if no valid getter is found.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & property name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a83c2703c91959192f759992ad5640b67}{}\index{Smarty@{Smarty}!\+\_\+\+\_\+set@{\+\_\+\+\_\+set}}
+\index{\+\_\+\+\_\+set@{\+\_\+\+\_\+set}!Smarty@{Smarty}}
+\subsubsection[{\+\_\+\+\_\+set}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a83c2703c91959192f759992ad5640b67}
+$<$$<$magic$>$$>$ Generic setter.
+
+Calls the appropriate setter function. Issues an E\+\_\+\+U\+S\+E\+R\+\_\+\+N\+O\+T\+I\+C\+E if no valid setter is found.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & property name \\
+\hline
+mixed & {\em \$value} & parameter passed to setter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smarty_a0c80e992e5d7b2537d734bd171320ef3}{}\index{Smarty@{Smarty}!add\+Autoload\+Filters@{add\+Autoload\+Filters}}
+\index{add\+Autoload\+Filters@{add\+Autoload\+Filters}!Smarty@{Smarty}}
+\subsubsection[{add\+Autoload\+Filters}]{\setlength{\rightskip}{0pt plus 5cm}add\+Autoload\+Filters (
+\begin{DoxyParamCaption}
+\item[{}]{\$filters, }
+\item[{}]{\$type = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a0c80e992e5d7b2537d734bd171320ef3}
+Add autoload filters
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$filters} & filters to load automatically \\
+\hline
+string & {\em \$type} & \char`\"{}pre\char`\"{}, \char`\"{}output\char`\"{}, … specify the filter type to set. Defaults to none treating \$filters\textquotesingle{} keys as the appropriate types \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_acb2ea4415c56afaaa2bd06543c28c37b}{}\index{Smarty@{Smarty}!add\+Config\+Dir@{add\+Config\+Dir}}
+\index{add\+Config\+Dir@{add\+Config\+Dir}!Smarty@{Smarty}}
+\subsubsection[{add\+Config\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}add\+Config\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$config\+\_\+dir, }
+\item[{}]{\$key = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_acb2ea4415c56afaaa2bd06543c28c37b}
+Add config directory(s)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$config\+\_\+dir} & directory(s) of config sources \\
+\hline
+ & {\em string} & key of the array element to assign the config dir to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a8d48a5ce2e5f2e85aca029bd99002a47}{}\index{Smarty@{Smarty}!add\+Default\+Modifiers@{add\+Default\+Modifiers}}
+\index{add\+Default\+Modifiers@{add\+Default\+Modifiers}!Smarty@{Smarty}}
+\subsubsection[{add\+Default\+Modifiers}]{\setlength{\rightskip}{0pt plus 5cm}add\+Default\+Modifiers (
+\begin{DoxyParamCaption}
+\item[{}]{\$modifiers}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a8d48a5ce2e5f2e85aca029bd99002a47}
+Add default modifiers
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$modifiers} & modifier or list of modifiers to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a38e4a8b98e674d0087e8b4994c52f339}{}\index{Smarty@{Smarty}!add\+Plugins\+Dir@{add\+Plugins\+Dir}}
+\index{add\+Plugins\+Dir@{add\+Plugins\+Dir}!Smarty@{Smarty}}
+\subsubsection[{add\+Plugins\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}add\+Plugins\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$plugins\+\_\+dir}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a38e4a8b98e674d0087e8b4994c52f339}
+Adds directory of plugin files
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$smarty} & \\
+\hline
+ & {\em string} & \$ $\vert$array \$ plugins folder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a38d8c17db171004b36f3cc18e885b23c}{}\index{Smarty@{Smarty}!add\+Template\+Dir@{add\+Template\+Dir}}
+\index{add\+Template\+Dir@{add\+Template\+Dir}!Smarty@{Smarty}}
+\subsubsection[{add\+Template\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}add\+Template\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$template\+\_\+dir, }
+\item[{}]{\$key = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a38d8c17db171004b36f3cc18e885b23c}
+Add template directory(s)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$template\+\_\+dir} & directory(s) of template sources \\
+\hline
+string & {\em \$key} & of the array element to assign the template dir to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & when the given template directory is not valid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty_aec638a0ca4f16926506acff87ceb0aaf}{}\index{Smarty@{Smarty}!clear\+All\+Cache@{clear\+All\+Cache}}
+\index{clear\+All\+Cache@{clear\+All\+Cache}!Smarty@{Smarty}}
+\subsubsection[{clear\+All\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}clear\+All\+Cache (
+\begin{DoxyParamCaption}
+\item[{}]{\$exp\+\_\+time = {\ttfamily null}, }
+\item[{}]{\$type = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_aec638a0ca4f16926506acff87ceb0aaf}
+Empty cache folder
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$exp\+\_\+time} & expiration time \\
+\hline
+string & {\em \$type} & resource type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of cache files deleted 
+\end{DoxyReturn}
+\hypertarget{class_smarty_aff41b8ccb37be52281bcbcc87b8c7e66}{}\index{Smarty@{Smarty}!clear\+Cache@{clear\+Cache}}
+\index{clear\+Cache@{clear\+Cache}!Smarty@{Smarty}}
+\subsubsection[{clear\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Cache (
+\begin{DoxyParamCaption}
+\item[{}]{\$template\+\_\+name, }
+\item[{}]{\$cache\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$compile\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$exp\+\_\+time = {\ttfamily null}, }
+\item[{}]{\$type = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_aff41b8ccb37be52281bcbcc87b8c7e66}
+Empty cache for a specific template
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$template\+\_\+name} & template name \\
+\hline
+string & {\em \$cache\+\_\+id} & cache id \\
+\hline
+string & {\em \$compile\+\_\+id} & compile id \\
+\hline
+integer & {\em \$exp\+\_\+time} & expiration time \\
+\hline
+string & {\em \$type} & resource type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of cache files deleted 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a28988af24bbe01d0107fc29c9fff26e5}{}\index{Smarty@{Smarty}!clear\+Compiled\+Template@{clear\+Compiled\+Template}}
+\index{clear\+Compiled\+Template@{clear\+Compiled\+Template}!Smarty@{Smarty}}
+\subsubsection[{clear\+Compiled\+Template}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Compiled\+Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$resource\+\_\+name = {\ttfamily null}, }
+\item[{}]{\$compile\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$exp\+\_\+time = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a28988af24bbe01d0107fc29c9fff26e5}
+Delete compiled template file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$resource\+\_\+name} & template name \\
+\hline
+string & {\em \$compile\+\_\+id} & compile id \\
+\hline
+integer & {\em \$exp\+\_\+time} & expiration time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of template files deleted 
+\end{DoxyReturn}
+\hypertarget{class_smarty_ae3bebd6073dddd2e528c9c0b0e0a4ebd}{}\index{Smarty@{Smarty}!compile\+All\+Config@{compile\+All\+Config}}
+\index{compile\+All\+Config@{compile\+All\+Config}!Smarty@{Smarty}}
+\subsubsection[{compile\+All\+Config}]{\setlength{\rightskip}{0pt plus 5cm}compile\+All\+Config (
+\begin{DoxyParamCaption}
+\item[{}]{\$extention = {\ttfamily \textquotesingle{}.conf\textquotesingle{}}, }
+\item[{}]{\$force\+\_\+compile = {\ttfamily false}, }
+\item[{}]{\$time\+\_\+limit = {\ttfamily 0}, }
+\item[{}]{\$max\+\_\+errors = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_ae3bebd6073dddd2e528c9c0b0e0a4ebd}
+Compile all config files
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$extension} & file extension \\
+\hline
+bool & {\em \$force\+\_\+compile} & force all to recompile \\
+\hline
+int & {\em \$time\+\_\+limit} & \\
+\hline
+int & {\em \$max\+\_\+errors} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of template files recompiled 
+\end{DoxyReturn}
+\hypertarget{class_smarty_ad7b65685cb72a1e686482c5dd6e2b1d6}{}\index{Smarty@{Smarty}!compile\+All\+Templates@{compile\+All\+Templates}}
+\index{compile\+All\+Templates@{compile\+All\+Templates}!Smarty@{Smarty}}
+\subsubsection[{compile\+All\+Templates}]{\setlength{\rightskip}{0pt plus 5cm}compile\+All\+Templates (
+\begin{DoxyParamCaption}
+\item[{}]{\$extention = {\ttfamily \textquotesingle{}.tpl\textquotesingle{}}, }
+\item[{}]{\$force\+\_\+compile = {\ttfamily false}, }
+\item[{}]{\$time\+\_\+limit = {\ttfamily 0}, }
+\item[{}]{\$max\+\_\+errors = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_ad7b65685cb72a1e686482c5dd6e2b1d6}
+Compile all template files
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$extension} & file extension \\
+\hline
+bool & {\em \$force\+\_\+compile} & force all to recompile \\
+\hline
+int & {\em \$time\+\_\+limit} & \\
+\hline
+int & {\em \$max\+\_\+errors} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of template files recompiled 
+\end{DoxyReturn}
+\hypertarget{class_smarty_aa9d5dc127ac405069eea53703fe12668}{}\index{Smarty@{Smarty}!create\+Template@{create\+Template}}
+\index{create\+Template@{create\+Template}!Smarty@{Smarty}}
+\subsubsection[{create\+Template}]{\setlength{\rightskip}{0pt plus 5cm}create\+Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$template, }
+\item[{}]{\$cache\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$compile\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$parent = {\ttfamily null}, }
+\item[{}]{\$do\+\_\+clone = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_aa9d5dc127ac405069eea53703fe12668}
+creates a template object
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$template} & the resource handle of the template file \\
+\hline
+mixed & {\em \$cache\+\_\+id} & cache id to be used with this template \\
+\hline
+mixed & {\em \$compile\+\_\+id} & compile id to be used with this template \\
+\hline
+object & {\em \$parent} & next higher level of \hyperlink{class_smarty}{Smarty} variables \\
+\hline
+boolean & {\em \$do\+\_\+clone} & flag is \hyperlink{class_smarty}{Smarty} object shall be cloned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object template object 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a02e591ec307da39655fa94f41037b4bd}{}\index{Smarty@{Smarty}!disable\+Security@{disable\+Security}}
+\index{disable\+Security@{disable\+Security}!Smarty@{Smarty}}
+\subsubsection[{disable\+Security}]{\setlength{\rightskip}{0pt plus 5cm}disable\+Security (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a02e591ec307da39655fa94f41037b4bd}
+Disable security \begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_af93918d13380160df50af41d18eb4a09}{}\index{Smarty@{Smarty}!enable\+Security@{enable\+Security}}
+\index{enable\+Security@{enable\+Security}!Smarty@{Smarty}}
+\subsubsection[{enable\+Security}]{\setlength{\rightskip}{0pt plus 5cm}enable\+Security (
+\begin{DoxyParamCaption}
+\item[{}]{\$security\+\_\+class = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_af93918d13380160df50af41d18eb4a09}
+Loads security class and enables security
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \hyperlink{class_smarty___security}{Smarty\+\_\+\+Security} & {\em \$security\+\_\+class} & if a string is used, it must be class-\/name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & when an invalid class name is provided \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty_a7cf0060f285a8eec99641ec5e04828be}{}\index{Smarty@{Smarty}!get\+Autoload\+Filters@{get\+Autoload\+Filters}}
+\index{get\+Autoload\+Filters@{get\+Autoload\+Filters}!Smarty@{Smarty}}
+\subsubsection[{get\+Autoload\+Filters}]{\setlength{\rightskip}{0pt plus 5cm}get\+Autoload\+Filters (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a7cf0060f285a8eec99641ec5e04828be}
+Get autoload filters
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & type of filter to get autoloads for. Defaults to all autoload filters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array array( \textquotesingle{}type1\textquotesingle{} =$>$ array( \textquotesingle{}filter1\textquotesingle{}, \textquotesingle{}filter2\textquotesingle{}, … ) ) or array( \textquotesingle{}filter1\textquotesingle{}, \textquotesingle{}filter2\textquotesingle{}, …) if \$type was specified 
+\end{DoxyReturn}
+\hypertarget{class_smarty_af1aaf85d6756805f7dabac5feb2fa952}{}\index{Smarty@{Smarty}!get\+Cache\+Dir@{get\+Cache\+Dir}}
+\index{get\+Cache\+Dir@{get\+Cache\+Dir}!Smarty@{Smarty}}
+\subsubsection[{get\+Cache\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cache\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_af1aaf85d6756805f7dabac5feb2fa952}
+Get cache directory
+
+\begin{DoxyReturn}{Returns}
+string path of cache directory 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a25277db590df3efa755513c2483c8442}{}\index{Smarty@{Smarty}!get\+Compile\+Dir@{get\+Compile\+Dir}}
+\index{get\+Compile\+Dir@{get\+Compile\+Dir}!Smarty@{Smarty}}
+\subsubsection[{get\+Compile\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}get\+Compile\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a25277db590df3efa755513c2483c8442}
+Get compiled directory
+
+\begin{DoxyReturn}{Returns}
+string path to compiled templates 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a7604f303978c5bcb3be5b32fe414a145}{}\index{Smarty@{Smarty}!get\+Config\+Dir@{get\+Config\+Dir}}
+\index{get\+Config\+Dir@{get\+Config\+Dir}!Smarty@{Smarty}}
+\subsubsection[{get\+Config\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}get\+Config\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a7604f303978c5bcb3be5b32fe414a145}
+Get config directory
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & index of directory to get, null to get all \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$\vert$string configuration directory 
+\end{DoxyReturn}
+\hypertarget{class_smarty_ae610d8b4e8b1d981331997a305ca251d}{}\index{Smarty@{Smarty}!get\+Debug\+Template@{get\+Debug\+Template}}
+\index{get\+Debug\+Template@{get\+Debug\+Template}!Smarty@{Smarty}}
+\subsubsection[{get\+Debug\+Template}]{\setlength{\rightskip}{0pt plus 5cm}get\+Debug\+Template (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_ae610d8b4e8b1d981331997a305ca251d}
+return name of debugging template
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_smarty_afff9ce9a461a6328d4c72f6db9c8cbea}{}\index{Smarty@{Smarty}!get\+Default\+Modifiers@{get\+Default\+Modifiers}}
+\index{get\+Default\+Modifiers@{get\+Default\+Modifiers}!Smarty@{Smarty}}
+\subsubsection[{get\+Default\+Modifiers}]{\setlength{\rightskip}{0pt plus 5cm}get\+Default\+Modifiers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_afff9ce9a461a6328d4c72f6db9c8cbea}
+Get default modifiers
+
+\begin{DoxyReturn}{Returns}
+array list of default modifiers 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a7dec50d860b7b419b8e03738b777e23d}{}\index{Smarty@{Smarty}!get\+Global@{get\+Global}}
+\index{get\+Global@{get\+Global}!Smarty@{Smarty}}
+\subsubsection[{get\+Global}]{\setlength{\rightskip}{0pt plus 5cm}get\+Global (
+\begin{DoxyParamCaption}
+\item[{}]{\$varname = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a7dec50d860b7b419b8e03738b777e23d}
+Returns a single or all global variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$smarty} & \\
+\hline
+string & {\em \$varname} & variable name or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string variable value or or array of variables 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a9d88a1d1661f7715a088da30c7923988}{}\index{Smarty@{Smarty}!get\+Plugins\+Dir@{get\+Plugins\+Dir}}
+\index{get\+Plugins\+Dir@{get\+Plugins\+Dir}!Smarty@{Smarty}}
+\subsubsection[{get\+Plugins\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plugins\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a9d88a1d1661f7715a088da30c7923988}
+Get plugin directories
+
+\begin{DoxyReturn}{Returns}
+array list of plugin directories 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a3fb1a4a7e826939df9707fc9aa4a5c6b}{}\index{Smarty@{Smarty}!get\+Tags@{get\+Tags}}
+\index{get\+Tags@{get\+Tags}!Smarty@{Smarty}}
+\subsubsection[{get\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}get\+Tags (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$template}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a3fb1a4a7e826939df9707fc9aa4a5c6b}
+Return array of tag/attributes of all tags used by an template
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$templae} & template object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of tag/attributes 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a7118a17de64b2a71cf6085e67ec027ae}{}\index{Smarty@{Smarty}!get\+Template\+Dir@{get\+Template\+Dir}}
+\index{get\+Template\+Dir@{get\+Template\+Dir}!Smarty@{Smarty}}
+\subsubsection[{get\+Template\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}get\+Template\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a7118a17de64b2a71cf6085e67ec027ae}
+Get template directories
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & index of directory to get, null to get all \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$\vert$string list of template directories, or directory of \$index 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a896a380e37f5391029e1d079ac7ee1e9}{}\index{Smarty@{Smarty}!load\+Plugin@{load\+Plugin}}
+\index{load\+Plugin@{load\+Plugin}!Smarty@{Smarty}}
+\subsubsection[{load\+Plugin}]{\setlength{\rightskip}{0pt plus 5cm}load\+Plugin (
+\begin{DoxyParamCaption}
+\item[{}]{\$plugin\+\_\+name, }
+\item[{}]{\$check = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a896a380e37f5391029e1d079ac7ee1e9}
+Takes unknown classes and loads plugin files for them class name format\+: Smarty\+\_\+\+Plugin\+Type\+\_\+\+Plugin\+Name plugin filename format\+: plugintype.\+pluginname.\+php
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plugin\+\_\+name} & class plugin name to load \\
+\hline
+bool & {\em \$check} & check if already loaded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string $\vert$boolean filepath of loaded file or false 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a3c60bb37676992fdc406b34476168f9e}{}\index{Smarty@{Smarty}!mute\+Expected\+Errors@{mute\+Expected\+Errors}}
+\index{mute\+Expected\+Errors@{mute\+Expected\+Errors}!Smarty@{Smarty}}
+\subsubsection[{mute\+Expected\+Errors}]{\setlength{\rightskip}{0pt plus 5cm}static mute\+Expected\+Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a3c60bb37676992fdc406b34476168f9e}
+Enable error handler to mute expected messages
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a6565461ac93814845c8395368d2eb047}{}\index{Smarty@{Smarty}!muting\+Error\+Handler@{muting\+Error\+Handler}}
+\index{muting\+Error\+Handler@{muting\+Error\+Handler}!Smarty@{Smarty}}
+\subsubsection[{muting\+Error\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}static muting\+Error\+Handler (
+\begin{DoxyParamCaption}
+\item[{}]{\$errno, }
+\item[{}]{\$errstr, }
+\item[{}]{\$errfile, }
+\item[{}]{\$errline, }
+\item[{}]{\$errcontext}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a6565461ac93814845c8395368d2eb047}
+Error Handler to mute expected messages
+
+\hyperlink{}{integer \$errno Error level  boolean }\hypertarget{class_smarty_a4c88d7759e6d9c3db2a4fa342fb51de8}{}\index{Smarty@{Smarty}!set\+Autoload\+Filters@{set\+Autoload\+Filters}}
+\index{set\+Autoload\+Filters@{set\+Autoload\+Filters}!Smarty@{Smarty}}
+\subsubsection[{set\+Autoload\+Filters}]{\setlength{\rightskip}{0pt plus 5cm}set\+Autoload\+Filters (
+\begin{DoxyParamCaption}
+\item[{}]{\$filters, }
+\item[{}]{\$type = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a4c88d7759e6d9c3db2a4fa342fb51de8}
+Set autoload filters
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$filters} & filters to load automatically \\
+\hline
+string & {\em \$type} & \char`\"{}pre\char`\"{}, \char`\"{}output\char`\"{}, … specify the filter type to set. Defaults to none treating \$filters\textquotesingle{} keys as the appropriate types \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_aee1d7535f4c8f43b21808040629cde4f}{}\index{Smarty@{Smarty}!set\+Cache\+Dir@{set\+Cache\+Dir}}
+\index{set\+Cache\+Dir@{set\+Cache\+Dir}!Smarty@{Smarty}}
+\subsubsection[{set\+Cache\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}set\+Cache\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$cache\+\_\+dir}
+\end{DoxyParamCaption}
+)}\label{class_smarty_aee1d7535f4c8f43b21808040629cde4f}
+Set cache directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cache\+\_\+dir} & directory to store cached templates in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a53fa3b76ddf8efe99da1769a2fb8ebc2}{}\index{Smarty@{Smarty}!set\+Compile\+Dir@{set\+Compile\+Dir}}
+\index{set\+Compile\+Dir@{set\+Compile\+Dir}!Smarty@{Smarty}}
+\subsubsection[{set\+Compile\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}set\+Compile\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$compile\+\_\+dir}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a53fa3b76ddf8efe99da1769a2fb8ebc2}
+Set compile directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$compile\+\_\+dir} & directory to store compiled templates in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_ab4c8f3616dbf358ab8efa445b52dfa03}{}\index{Smarty@{Smarty}!set\+Config\+Dir@{set\+Config\+Dir}}
+\index{set\+Config\+Dir@{set\+Config\+Dir}!Smarty@{Smarty}}
+\subsubsection[{set\+Config\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}set\+Config\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$config\+\_\+dir}
+\end{DoxyParamCaption}
+)}\label{class_smarty_ab4c8f3616dbf358ab8efa445b52dfa03}
+Set config directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$template\+\_\+dir} & directory(s) of configuration sources \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a00b86222ed243e16f2baff09dfe9520d}{}\index{Smarty@{Smarty}!set\+Debug\+Template@{set\+Debug\+Template}}
+\index{set\+Debug\+Template@{set\+Debug\+Template}!Smarty@{Smarty}}
+\subsubsection[{set\+Debug\+Template}]{\setlength{\rightskip}{0pt plus 5cm}set\+Debug\+Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$tpl\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a00b86222ed243e16f2baff09dfe9520d}
+set the debug template
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tpl\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if file is not readable \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty_aa42715e252f461173bb9333f7a5d5331}{}\index{Smarty@{Smarty}!set\+Default\+Modifiers@{set\+Default\+Modifiers}}
+\index{set\+Default\+Modifiers@{set\+Default\+Modifiers}!Smarty@{Smarty}}
+\subsubsection[{set\+Default\+Modifiers}]{\setlength{\rightskip}{0pt plus 5cm}set\+Default\+Modifiers (
+\begin{DoxyParamCaption}
+\item[{}]{\$modifiers}
+\end{DoxyParamCaption}
+)}\label{class_smarty_aa42715e252f461173bb9333f7a5d5331}
+Set default modifiers
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$modifiers} & modifier or list of modifiers to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a873aac031f8959adb0656b50f7e08da1}{}\index{Smarty@{Smarty}!set\+Plugins\+Dir@{set\+Plugins\+Dir}}
+\index{set\+Plugins\+Dir@{set\+Plugins\+Dir}!Smarty@{Smarty}}
+\subsubsection[{set\+Plugins\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}set\+Plugins\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$plugins\+\_\+dir}
+\end{DoxyParamCaption}
+)}\label{class_smarty_a873aac031f8959adb0656b50f7e08da1}
+Set plugins directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$plugins\+\_\+dir} & directory(s) of plugins \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_af59c69ae277a790f659b6fa9996277fa}{}\index{Smarty@{Smarty}!set\+Template\+Dir@{set\+Template\+Dir}}
+\index{set\+Template\+Dir@{set\+Template\+Dir}!Smarty@{Smarty}}
+\subsubsection[{set\+Template\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}set\+Template\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$template\+\_\+dir}
+\end{DoxyParamCaption}
+)}\label{class_smarty_af59c69ae277a790f659b6fa9996277fa}
+Set template directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$template\+\_\+dir} & directory(s) of template sources \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty}{Smarty} current \hyperlink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty_af27994279443196cd9088aa3aeaf2734}{}\index{Smarty@{Smarty}!template\+Exists@{template\+Exists}}
+\index{template\+Exists@{template\+Exists}!Smarty@{Smarty}}
+\subsubsection[{template\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}template\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$resource\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_smarty_af27994279443196cd9088aa3aeaf2734}
+Check if a template resource exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$resource\+\_\+name} & template name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean status 
+\end{DoxyReturn}
+\hypertarget{class_smarty_af8c70f6b1712e564e97ae5742b0290f4}{}\index{Smarty@{Smarty}!test\+Install@{test\+Install}}
+\index{test\+Install@{test\+Install}!Smarty@{Smarty}}
+\subsubsection[{test\+Install}]{\setlength{\rightskip}{0pt plus 5cm}test\+Install (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$errors = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty_af8c70f6b1712e564e97ae5742b0290f4}
+Run installation test
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$errors} & Array to write errors into, rather than outputting them \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if setup is fine, false if something is wrong 
+\end{DoxyReturn}
+\hypertarget{class_smarty_a317f0a148011c641c316b2dc0270ed0e}{}\index{Smarty@{Smarty}!unmute\+Expected\+Errors@{unmute\+Expected\+Errors}}
+\index{unmute\+Expected\+Errors@{unmute\+Expected\+Errors}!Smarty@{Smarty}}
+\subsubsection[{unmute\+Expected\+Errors}]{\setlength{\rightskip}{0pt plus 5cm}static unmute\+Expected\+Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a317f0a148011c641c316b2dc0270ed0e}
+Disable error handler muting expected messages
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{class_smarty_aaa7b3fba7597adec16f41e315b5e50c9}{}\index{Smarty@{Smarty}!\$\+\_\+cacheresource\+\_\+handlers@{\$\+\_\+cacheresource\+\_\+handlers}}
+\index{\$\+\_\+cacheresource\+\_\+handlers@{\$\+\_\+cacheresource\+\_\+handlers}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+cacheresource\+\_\+handlers}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+cacheresource\+\_\+handlers = array()}\label{class_smarty_aaa7b3fba7597adec16f41e315b5e50c9}
+\hypertarget{class_smarty_ae5404cebc4fdd786067002ed91be9d7b}{}\index{Smarty@{Smarty}!\$\+\_\+\+C\+H\+A\+R\+S\+E\+T@{\$\+\_\+\+C\+H\+A\+R\+S\+E\+T}}
+\index{\$\+\_\+\+C\+H\+A\+R\+S\+E\+T@{\$\+\_\+\+C\+H\+A\+R\+S\+E\+T}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+\+C\+H\+A\+R\+S\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+\+C\+H\+A\+R\+S\+E\+T = S\+M\+A\+R\+T\+Y\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+C\+H\+A\+R\+\_\+\+S\+E\+T\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_ae5404cebc4fdd786067002ed91be9d7b}
+The character set to adhere to (e.\+g. \char`\"{}\+U\+T\+F-\/8\char`\"{}) \hypertarget{class_smarty_a4c6ef40a0c9534d4c25ec77cd4e8d388}{}\index{Smarty@{Smarty}!\$\+\_\+current\+\_\+file@{\$\+\_\+current\+\_\+file}}
+\index{\$\+\_\+current\+\_\+file@{\$\+\_\+current\+\_\+file}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+current\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+current\+\_\+file = null}\label{class_smarty_a4c6ef40a0c9534d4c25ec77cd4e8d388}
+\hypertarget{class_smarty_a10771c318c1ae4d6178476dbf20dbdda}{}\index{Smarty@{Smarty}!\$\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T@{\$\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T}}
+\index{\$\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T@{\$\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T = S\+M\+A\+R\+T\+Y\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+A\+T\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a10771c318c1ae4d6178476dbf20dbdda}
+The date format to be used internally (accepts date() and strftime()) \hypertarget{class_smarty_a917cec287e9c00b1c188e4a815b279b2}{}\index{Smarty@{Smarty}!\$\+\_\+dir\+\_\+perms@{\$\+\_\+dir\+\_\+perms}}
+\index{\$\+\_\+dir\+\_\+perms@{\$\+\_\+dir\+\_\+perms}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+dir\+\_\+perms}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+dir\+\_\+perms = 0771}\label{class_smarty_a917cec287e9c00b1c188e4a815b279b2}
+\hypertarget{class_smarty_affa1e29315f40fe30ea516c7e8f2430e}{}\index{Smarty@{Smarty}!\$\+\_\+file\+\_\+perms@{\$\+\_\+file\+\_\+perms}}
+\index{\$\+\_\+file\+\_\+perms@{\$\+\_\+file\+\_\+perms}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+file\+\_\+perms}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+file\+\_\+perms = 0644}\label{class_smarty_affa1e29315f40fe30ea516c7e8f2430e}
+\hypertarget{class_smarty_a5a41ec0fc4477ef639ba3cf063816114}{}\index{Smarty@{Smarty}!\$\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G@{\$\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G}}
+\index{\$\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G@{\$\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G = S\+M\+A\+R\+T\+Y\+\_\+\+M\+B\+S\+T\+R\+I\+N\+G\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a5a41ec0fc4477ef639ba3cf063816114}
+Flag denoting if Multibyte String functions are available \hypertarget{class_smarty_abb10f08cd280a1b7e1b2e6cb6afc460c}{}\index{Smarty@{Smarty}!\$\+\_\+muted\+\_\+directories@{\$\+\_\+muted\+\_\+directories}}
+\index{\$\+\_\+muted\+\_\+directories@{\$\+\_\+muted\+\_\+directories}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+muted\+\_\+directories}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+muted\+\_\+directories = array()\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_abb10f08cd280a1b7e1b2e6cb6afc460c}
+contains directories outside of S\+M\+A\+R\+T\+Y\+\_\+\+D\+I\+R that are to be muted by \hyperlink{class_smarty_a3c60bb37676992fdc406b34476168f9e}{mute\+Expected\+Errors()} \hypertarget{class_smarty_acb80fdbc8948da9101789788487b83ac}{}\index{Smarty@{Smarty}!\$\+\_\+parserdebug@{\$\+\_\+parserdebug}}
+\index{\$\+\_\+parserdebug@{\$\+\_\+parserdebug}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+parserdebug}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+parserdebug = false}\label{class_smarty_acb80fdbc8948da9101789788487b83ac}
+\hypertarget{class_smarty_a249a4c3134b46c30b8e3f4f2d097e862}{}\index{Smarty@{Smarty}!\$\+\_\+previous\+\_\+error\+\_\+handler@{\$\+\_\+previous\+\_\+error\+\_\+handler}}
+\index{\$\+\_\+previous\+\_\+error\+\_\+handler@{\$\+\_\+previous\+\_\+error\+\_\+handler}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+previous\+\_\+error\+\_\+handler}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+previous\+\_\+error\+\_\+handler = null\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a249a4c3134b46c30b8e3f4f2d097e862}
+error handler returned by set\+\_\+error\+\_\+hanlder() in \hyperlink{class_smarty_a3c60bb37676992fdc406b34476168f9e}{Smarty\+::mute\+Expected\+Errors()} \hypertarget{class_smarty_a8cb2cadafe33d876bcc5eab54aa8ccbf}{}\index{Smarty@{Smarty}!\$\+\_\+resource\+\_\+handlers@{\$\+\_\+resource\+\_\+handlers}}
+\index{\$\+\_\+resource\+\_\+handlers@{\$\+\_\+resource\+\_\+handlers}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+resource\+\_\+handlers}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+resource\+\_\+handlers = array()}\label{class_smarty_a8cb2cadafe33d876bcc5eab54aa8ccbf}
+\hypertarget{class_smarty_a8b74cd5266386c9651f86d02b4bf3bc4}{}\index{Smarty@{Smarty}!\$\+\_\+smarty\+\_\+vars@{\$\+\_\+smarty\+\_\+vars}}
+\index{\$\+\_\+smarty\+\_\+vars@{\$\+\_\+smarty\+\_\+vars}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+smarty\+\_\+vars}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+smarty\+\_\+vars = array()\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a8b74cd5266386c9651f86d02b4bf3bc4}
+\hypertarget{class_smarty_a8bc334635a0aa8e117a5e822ca71ee67}{}\index{Smarty@{Smarty}!\$\+\_\+tag\+\_\+stack@{\$\+\_\+tag\+\_\+stack}}
+\index{\$\+\_\+tag\+\_\+stack@{\$\+\_\+tag\+\_\+stack}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+tag\+\_\+stack}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+tag\+\_\+stack = array()}\label{class_smarty_a8bc334635a0aa8e117a5e822ca71ee67}
+\hypertarget{class_smarty_a504a79926c6aa6aae2f238d2e74ce84b}{}\index{Smarty@{Smarty}!\$\+\_\+\+U\+T\+F8\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R@{\$\+\_\+\+U\+T\+F8\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}}
+\index{\$\+\_\+\+U\+T\+F8\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R@{\$\+\_\+\+U\+T\+F8\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}!Smarty@{Smarty}}
+\subsubsection[{\$\+\_\+\+U\+T\+F8\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+\+U\+T\+F8\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R = \textquotesingle{}u\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a504a79926c6aa6aae2f238d2e74ce84b}
+Flag denoting if P\+C\+R\+E should run in U\+T\+F-\/8 mode \hypertarget{class_smarty_a73f23bd0f148d47c24c36da40fcf29a8}{}\index{Smarty@{Smarty}!\$allow\+\_\+ambiguous\+\_\+resources@{\$allow\+\_\+ambiguous\+\_\+resources}}
+\index{\$allow\+\_\+ambiguous\+\_\+resources@{\$allow\+\_\+ambiguous\+\_\+resources}!Smarty@{Smarty}}
+\subsubsection[{\$allow\+\_\+ambiguous\+\_\+resources}]{\setlength{\rightskip}{0pt plus 5cm}\$allow\+\_\+ambiguous\+\_\+resources = false}\label{class_smarty_a73f23bd0f148d47c24c36da40fcf29a8}
+\hypertarget{class_smarty_ae7309c9b39378a050c4e28c675bf614f}{}\index{Smarty@{Smarty}!\$allow\+\_\+php\+\_\+templates@{\$allow\+\_\+php\+\_\+templates}}
+\index{\$allow\+\_\+php\+\_\+templates@{\$allow\+\_\+php\+\_\+templates}!Smarty@{Smarty}}
+\subsubsection[{\$allow\+\_\+php\+\_\+templates}]{\setlength{\rightskip}{0pt plus 5cm}\$allow\+\_\+php\+\_\+templates = false}\label{class_smarty_ae7309c9b39378a050c4e28c675bf614f}
+\hypertarget{class_smarty_a46ed4da4d4b243a11bb9ba4826d310e4}{}\index{Smarty@{Smarty}!\$auto\+\_\+literal@{\$auto\+\_\+literal}}
+\index{\$auto\+\_\+literal@{\$auto\+\_\+literal}!Smarty@{Smarty}}
+\subsubsection[{\$auto\+\_\+literal}]{\setlength{\rightskip}{0pt plus 5cm}\$auto\+\_\+literal = true}\label{class_smarty_a46ed4da4d4b243a11bb9ba4826d310e4}
+\hypertarget{class_smarty_aca2078dde09728b223cdffe8209e6dcc}{}\index{Smarty@{Smarty}!\$autoload\+\_\+filters@{\$autoload\+\_\+filters}}
+\index{\$autoload\+\_\+filters@{\$autoload\+\_\+filters}!Smarty@{Smarty}}
+\subsubsection[{\$autoload\+\_\+filters}]{\setlength{\rightskip}{0pt plus 5cm}\$autoload\+\_\+filters = array()}\label{class_smarty_aca2078dde09728b223cdffe8209e6dcc}
+\hypertarget{class_smarty_aabdcf0100ec4fce78371b883f0c6cbf8}{}\index{Smarty@{Smarty}!\$cache\+\_\+id@{\$cache\+\_\+id}}
+\index{\$cache\+\_\+id@{\$cache\+\_\+id}!Smarty@{Smarty}}
+\subsubsection[{\$cache\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}\$cache\+\_\+id = null}\label{class_smarty_aabdcf0100ec4fce78371b883f0c6cbf8}
+\hypertarget{class_smarty_a5aaab753f75170fa670cbb602aa97119}{}\index{Smarty@{Smarty}!\$cache\+\_\+lifetime@{\$cache\+\_\+lifetime}}
+\index{\$cache\+\_\+lifetime@{\$cache\+\_\+lifetime}!Smarty@{Smarty}}
+\subsubsection[{\$cache\+\_\+lifetime}]{\setlength{\rightskip}{0pt plus 5cm}\$cache\+\_\+lifetime = 3600}\label{class_smarty_a5aaab753f75170fa670cbb602aa97119}
+\hypertarget{class_smarty_a8ad55b9e35aac5040561ff8cc1395633}{}\index{Smarty@{Smarty}!\$cache\+\_\+locking@{\$cache\+\_\+locking}}
+\index{\$cache\+\_\+locking@{\$cache\+\_\+locking}!Smarty@{Smarty}}
+\subsubsection[{\$cache\+\_\+locking}]{\setlength{\rightskip}{0pt plus 5cm}\$cache\+\_\+locking = false}\label{class_smarty_a8ad55b9e35aac5040561ff8cc1395633}
+\hypertarget{class_smarty_a0734d0f7c5eea130baa18c0424ab07b0}{}\index{Smarty@{Smarty}!\$cache\+\_\+modified\+\_\+check@{\$cache\+\_\+modified\+\_\+check}}
+\index{\$cache\+\_\+modified\+\_\+check@{\$cache\+\_\+modified\+\_\+check}!Smarty@{Smarty}}
+\subsubsection[{\$cache\+\_\+modified\+\_\+check}]{\setlength{\rightskip}{0pt plus 5cm}\$cache\+\_\+modified\+\_\+check = false}\label{class_smarty_a0734d0f7c5eea130baa18c0424ab07b0}
+\hypertarget{class_smarty_aa36073c4cda5c97981a5b99ca92208be}{}\index{Smarty@{Smarty}!\$caching@{\$caching}}
+\index{\$caching@{\$caching}!Smarty@{Smarty}}
+\subsubsection[{\$caching}]{\setlength{\rightskip}{0pt plus 5cm}\$caching = false}\label{class_smarty_aa36073c4cda5c97981a5b99ca92208be}
+\hypertarget{class_smarty_a2b8a0f7aa1e89dd601a17c5d37966b9e}{}\index{Smarty@{Smarty}!\$caching\+\_\+type@{\$caching\+\_\+type}}
+\index{\$caching\+\_\+type@{\$caching\+\_\+type}!Smarty@{Smarty}}
+\subsubsection[{\$caching\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}\$caching\+\_\+type = \textquotesingle{}file\textquotesingle{}}\label{class_smarty_a2b8a0f7aa1e89dd601a17c5d37966b9e}
+\hypertarget{class_smarty_ab9662ea355e8e7c1f47ef0e568147512}{}\index{Smarty@{Smarty}!\$compile\+\_\+check@{\$compile\+\_\+check}}
+\index{\$compile\+\_\+check@{\$compile\+\_\+check}!Smarty@{Smarty}}
+\subsubsection[{\$compile\+\_\+check}]{\setlength{\rightskip}{0pt plus 5cm}\$compile\+\_\+check = true}\label{class_smarty_ab9662ea355e8e7c1f47ef0e568147512}
+\hypertarget{class_smarty_a4c29af6f98e3049de95861b01a7bb00d}{}\index{Smarty@{Smarty}!\$compile\+\_\+id@{\$compile\+\_\+id}}
+\index{\$compile\+\_\+id@{\$compile\+\_\+id}!Smarty@{Smarty}}
+\subsubsection[{\$compile\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}\$compile\+\_\+id = null}\label{class_smarty_a4c29af6f98e3049de95861b01a7bb00d}
+\hypertarget{class_smarty_a79bb6ea80f5980f484a13d42fe2b3bd0}{}\index{Smarty@{Smarty}!\$compile\+\_\+locking@{\$compile\+\_\+locking}}
+\index{\$compile\+\_\+locking@{\$compile\+\_\+locking}!Smarty@{Smarty}}
+\subsubsection[{\$compile\+\_\+locking}]{\setlength{\rightskip}{0pt plus 5cm}\$compile\+\_\+locking = true}\label{class_smarty_a79bb6ea80f5980f484a13d42fe2b3bd0}
+\hypertarget{class_smarty_ab3e274a6c3fd439b83380c17a71255bb}{}\index{Smarty@{Smarty}!\$config\+\_\+booleanize@{\$config\+\_\+booleanize}}
+\index{\$config\+\_\+booleanize@{\$config\+\_\+booleanize}!Smarty@{Smarty}}
+\subsubsection[{\$config\+\_\+booleanize}]{\setlength{\rightskip}{0pt plus 5cm}\$config\+\_\+booleanize = true}\label{class_smarty_ab3e274a6c3fd439b83380c17a71255bb}
+\hypertarget{class_smarty_a728421c1493ea20b619459924184b06d}{}\index{Smarty@{Smarty}!\$config\+\_\+overwrite@{\$config\+\_\+overwrite}}
+\index{\$config\+\_\+overwrite@{\$config\+\_\+overwrite}!Smarty@{Smarty}}
+\subsubsection[{\$config\+\_\+overwrite}]{\setlength{\rightskip}{0pt plus 5cm}\$config\+\_\+overwrite = true}\label{class_smarty_a728421c1493ea20b619459924184b06d}
+\hypertarget{class_smarty_add257cafa2cc7f2c68381f9bcc6f4d7b}{}\index{Smarty@{Smarty}!\$config\+\_\+read\+\_\+hidden@{\$config\+\_\+read\+\_\+hidden}}
+\index{\$config\+\_\+read\+\_\+hidden@{\$config\+\_\+read\+\_\+hidden}!Smarty@{Smarty}}
+\subsubsection[{\$config\+\_\+read\+\_\+hidden}]{\setlength{\rightskip}{0pt plus 5cm}\$config\+\_\+read\+\_\+hidden = false}\label{class_smarty_add257cafa2cc7f2c68381f9bcc6f4d7b}
+\hypertarget{class_smarty_adbe83b13ba657998e0fb861b44ecfd59}{}\index{Smarty@{Smarty}!\$debug\+\_\+tpl@{\$debug\+\_\+tpl}}
+\index{\$debug\+\_\+tpl@{\$debug\+\_\+tpl}!Smarty@{Smarty}}
+\subsubsection[{\$debug\+\_\+tpl}]{\setlength{\rightskip}{0pt plus 5cm}\$debug\+\_\+tpl = null}\label{class_smarty_adbe83b13ba657998e0fb861b44ecfd59}
+\hypertarget{class_smarty_a22d995c07dbbe5b426d4fda3931cfcca}{}\index{Smarty@{Smarty}!\$debugging@{\$debugging}}
+\index{\$debugging@{\$debugging}!Smarty@{Smarty}}
+\subsubsection[{\$debugging}]{\setlength{\rightskip}{0pt plus 5cm}\$debugging = false}\label{class_smarty_a22d995c07dbbe5b426d4fda3931cfcca}
+\hypertarget{class_smarty_a9b02ae21521c28e6eeb53bd58777aa7b}{}\index{Smarty@{Smarty}!\$debugging\+\_\+ctrl@{\$debugging\+\_\+ctrl}}
+\index{\$debugging\+\_\+ctrl@{\$debugging\+\_\+ctrl}!Smarty@{Smarty}}
+\subsubsection[{\$debugging\+\_\+ctrl}]{\setlength{\rightskip}{0pt plus 5cm}\$debugging\+\_\+ctrl = \textquotesingle{}N\+O\+N\+E\textquotesingle{}}\label{class_smarty_a9b02ae21521c28e6eeb53bd58777aa7b}
+\hypertarget{class_smarty_ab0f9856dab7dfa26d09a95ad15bae220}{}\index{Smarty@{Smarty}!\$default\+\_\+config\+\_\+handler\+\_\+func@{\$default\+\_\+config\+\_\+handler\+\_\+func}}
+\index{\$default\+\_\+config\+\_\+handler\+\_\+func@{\$default\+\_\+config\+\_\+handler\+\_\+func}!Smarty@{Smarty}}
+\subsubsection[{\$default\+\_\+config\+\_\+handler\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+\_\+config\+\_\+handler\+\_\+func = null}\label{class_smarty_ab0f9856dab7dfa26d09a95ad15bae220}
+\hypertarget{class_smarty_a3617fe326b3d1e95e6b10ea35ecc6905}{}\index{Smarty@{Smarty}!\$default\+\_\+config\+\_\+type@{\$default\+\_\+config\+\_\+type}}
+\index{\$default\+\_\+config\+\_\+type@{\$default\+\_\+config\+\_\+type}!Smarty@{Smarty}}
+\subsubsection[{\$default\+\_\+config\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+\_\+config\+\_\+type = \textquotesingle{}file\textquotesingle{}}\label{class_smarty_a3617fe326b3d1e95e6b10ea35ecc6905}
+\hypertarget{class_smarty_a48ec112144d4921e3a31fb1a5526ad2f}{}\index{Smarty@{Smarty}!\$default\+\_\+modifiers@{\$default\+\_\+modifiers}}
+\index{\$default\+\_\+modifiers@{\$default\+\_\+modifiers}!Smarty@{Smarty}}
+\subsubsection[{\$default\+\_\+modifiers}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+\_\+modifiers = array()}\label{class_smarty_a48ec112144d4921e3a31fb1a5526ad2f}
+\hypertarget{class_smarty_a9186c4db9043d12dd9f4f654a0d30f68}{}\index{Smarty@{Smarty}!\$default\+\_\+plugin\+\_\+handler\+\_\+func@{\$default\+\_\+plugin\+\_\+handler\+\_\+func}}
+\index{\$default\+\_\+plugin\+\_\+handler\+\_\+func@{\$default\+\_\+plugin\+\_\+handler\+\_\+func}!Smarty@{Smarty}}
+\subsubsection[{\$default\+\_\+plugin\+\_\+handler\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+\_\+plugin\+\_\+handler\+\_\+func = null}\label{class_smarty_a9186c4db9043d12dd9f4f654a0d30f68}
+\hypertarget{class_smarty_a35cf3764fb77e481ca92ef131a35ca7e}{}\index{Smarty@{Smarty}!\$default\+\_\+resource\+\_\+type@{\$default\+\_\+resource\+\_\+type}}
+\index{\$default\+\_\+resource\+\_\+type@{\$default\+\_\+resource\+\_\+type}!Smarty@{Smarty}}
+\subsubsection[{\$default\+\_\+resource\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+\_\+resource\+\_\+type = \textquotesingle{}file\textquotesingle{}}\label{class_smarty_a35cf3764fb77e481ca92ef131a35ca7e}
+\hypertarget{class_smarty_a9ff3231160bde6632ca8ad252918e3f0}{}\index{Smarty@{Smarty}!\$default\+\_\+template\+\_\+handler\+\_\+func@{\$default\+\_\+template\+\_\+handler\+\_\+func}}
+\index{\$default\+\_\+template\+\_\+handler\+\_\+func@{\$default\+\_\+template\+\_\+handler\+\_\+func}!Smarty@{Smarty}}
+\subsubsection[{\$default\+\_\+template\+\_\+handler\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+\_\+template\+\_\+handler\+\_\+func = null}\label{class_smarty_a9ff3231160bde6632ca8ad252918e3f0}
+\hypertarget{class_smarty_a96c1c358ebd9cd14712b305f6baed2ff}{}\index{Smarty@{Smarty}!\$direct\+\_\+access\+\_\+security@{\$direct\+\_\+access\+\_\+security}}
+\index{\$direct\+\_\+access\+\_\+security@{\$direct\+\_\+access\+\_\+security}!Smarty@{Smarty}}
+\subsubsection[{\$direct\+\_\+access\+\_\+security}]{\setlength{\rightskip}{0pt plus 5cm}\$direct\+\_\+access\+\_\+security = true}\label{class_smarty_a96c1c358ebd9cd14712b305f6baed2ff}
+Should compiled-\/templates be prevented from being called directly?
+
+\{ \hypertarget{class_smarty_ad3fc8af82ab7da1fd9dc868b28938698}{}\index{Smarty@{Smarty}!\$error\+\_\+reporting@{\$error\+\_\+reporting}}
+\index{\$error\+\_\+reporting@{\$error\+\_\+reporting}!Smarty@{Smarty}}
+\subsubsection[{\$error\+\_\+reporting}]{\setlength{\rightskip}{0pt plus 5cm}\$error\+\_\+reporting = null}\label{class_smarty_ad3fc8af82ab7da1fd9dc868b28938698}
+\hypertarget{class_smarty_aaccca4d5f12266dfc813b9ebe920d4e0}{}\index{Smarty@{Smarty}!\$error\+\_\+unassigned@{\$error\+\_\+unassigned}}
+\index{\$error\+\_\+unassigned@{\$error\+\_\+unassigned}!Smarty@{Smarty}}
+\subsubsection[{\$error\+\_\+unassigned}]{\setlength{\rightskip}{0pt plus 5cm}\$error\+\_\+unassigned = false}\label{class_smarty_aaccca4d5f12266dfc813b9ebe920d4e0}
+\hypertarget{class_smarty_aba969aea1cf350a91f5eaf44b48daa56}{}\index{Smarty@{Smarty}!\$escape\+\_\+html@{\$escape\+\_\+html}}
+\index{\$escape\+\_\+html@{\$escape\+\_\+html}!Smarty@{Smarty}}
+\subsubsection[{\$escape\+\_\+html}]{\setlength{\rightskip}{0pt plus 5cm}\$escape\+\_\+html = false}\label{class_smarty_aba969aea1cf350a91f5eaf44b48daa56}
+\hypertarget{class_smarty_a57e14bd7397e4236311ab75677092bbc}{}\index{Smarty@{Smarty}!\$force\+\_\+cache@{\$force\+\_\+cache}}
+\index{\$force\+\_\+cache@{\$force\+\_\+cache}!Smarty@{Smarty}}
+\subsubsection[{\$force\+\_\+cache}]{\setlength{\rightskip}{0pt plus 5cm}\$force\+\_\+cache = false}\label{class_smarty_a57e14bd7397e4236311ab75677092bbc}
+\hypertarget{class_smarty_ac956f556d1b636556e96902d4d5377ff}{}\index{Smarty@{Smarty}!\$force\+\_\+compile@{\$force\+\_\+compile}}
+\index{\$force\+\_\+compile@{\$force\+\_\+compile}!Smarty@{Smarty}}
+\subsubsection[{\$force\+\_\+compile}]{\setlength{\rightskip}{0pt plus 5cm}\$force\+\_\+compile = false}\label{class_smarty_ac956f556d1b636556e96902d4d5377ff}
+\hypertarget{class_smarty_a6b23ebecb649056690e97d5704f61f0f}{}\index{Smarty@{Smarty}!\$get\+\_\+used\+\_\+tags@{\$get\+\_\+used\+\_\+tags}}
+\index{\$get\+\_\+used\+\_\+tags@{\$get\+\_\+used\+\_\+tags}!Smarty@{Smarty}}
+\subsubsection[{\$get\+\_\+used\+\_\+tags}]{\setlength{\rightskip}{0pt plus 5cm}\$get\+\_\+used\+\_\+tags = false}\label{class_smarty_a6b23ebecb649056690e97d5704f61f0f}
+\hypertarget{class_smarty_a53565c9ede228644fe99fae6296cf693}{}\index{Smarty@{Smarty}!\$global\+\_\+tpl\+\_\+vars@{\$global\+\_\+tpl\+\_\+vars}}
+\index{\$global\+\_\+tpl\+\_\+vars@{\$global\+\_\+tpl\+\_\+vars}!Smarty@{Smarty}}
+\subsubsection[{\$global\+\_\+tpl\+\_\+vars}]{\setlength{\rightskip}{0pt plus 5cm}\$global\+\_\+tpl\+\_\+vars = array()\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty_a53565c9ede228644fe99fae6296cf693}
+\#@-\/ assigned global tpl vars \hypertarget{class_smarty_a4b1843c13f0cbdeb4355965465666faf}{}\index{Smarty@{Smarty}!\$joined\+\_\+config\+\_\+dir@{\$joined\+\_\+config\+\_\+dir}}
+\index{\$joined\+\_\+config\+\_\+dir@{\$joined\+\_\+config\+\_\+dir}!Smarty@{Smarty}}
+\subsubsection[{\$joined\+\_\+config\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}\$joined\+\_\+config\+\_\+dir = null}\label{class_smarty_a4b1843c13f0cbdeb4355965465666faf}
+\hypertarget{class_smarty_a8d8ecb17a0338a52a5a6693618abbfe8}{}\index{Smarty@{Smarty}!\$joined\+\_\+template\+\_\+dir@{\$joined\+\_\+template\+\_\+dir}}
+\index{\$joined\+\_\+template\+\_\+dir@{\$joined\+\_\+template\+\_\+dir}!Smarty@{Smarty}}
+\subsubsection[{\$joined\+\_\+template\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}\$joined\+\_\+template\+\_\+dir = null}\label{class_smarty_a8d8ecb17a0338a52a5a6693618abbfe8}
+\hypertarget{class_smarty_a77e272b1cacbab4b26b4fe515e445178}{}\index{Smarty@{Smarty}!\$left\+\_\+delimiter@{\$left\+\_\+delimiter}}
+\index{\$left\+\_\+delimiter@{\$left\+\_\+delimiter}!Smarty@{Smarty}}
+\subsubsection[{\$left\+\_\+delimiter}]{\setlength{\rightskip}{0pt plus 5cm}\$left\+\_\+delimiter = \char`\"{}\{\char`\"{}}\label{class_smarty_a77e272b1cacbab4b26b4fe515e445178}
+\hypertarget{class_smarty_a94ffd62ea226a86ad2fffffe1e6d6998}{}\index{Smarty@{Smarty}!\$locking\+\_\+timeout@{\$locking\+\_\+timeout}}
+\index{\$locking\+\_\+timeout@{\$locking\+\_\+timeout}!Smarty@{Smarty}}
+\subsubsection[{\$locking\+\_\+timeout}]{\setlength{\rightskip}{0pt plus 5cm}\$locking\+\_\+timeout = 10}\label{class_smarty_a94ffd62ea226a86ad2fffffe1e6d6998}
+\hypertarget{class_smarty_a9ff196d2db66487317e73d7a2c494646}{}\index{Smarty@{Smarty}!\$merge\+\_\+compiled\+\_\+includes@{\$merge\+\_\+compiled\+\_\+includes}}
+\index{\$merge\+\_\+compiled\+\_\+includes@{\$merge\+\_\+compiled\+\_\+includes}!Smarty@{Smarty}}
+\subsubsection[{\$merge\+\_\+compiled\+\_\+includes}]{\setlength{\rightskip}{0pt plus 5cm}\$merge\+\_\+compiled\+\_\+includes = false}\label{class_smarty_a9ff196d2db66487317e73d7a2c494646}
+\hypertarget{class_smarty_aaec0e99c242be08eb8f87cbd498700c9}{}\index{Smarty@{Smarty}!\$merged\+\_\+templates\+\_\+func@{\$merged\+\_\+templates\+\_\+func}}
+\index{\$merged\+\_\+templates\+\_\+func@{\$merged\+\_\+templates\+\_\+func}!Smarty@{Smarty}}
+\subsubsection[{\$merged\+\_\+templates\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}\$merged\+\_\+templates\+\_\+func = array()}\label{class_smarty_aaec0e99c242be08eb8f87cbd498700c9}
+\hypertarget{class_smarty_abb37c3c6b2bcb9a527c4139bffb7e6ca}{}\index{Smarty@{Smarty}!\$php\+\_\+handling@{\$php\+\_\+handling}}
+\index{\$php\+\_\+handling@{\$php\+\_\+handling}!Smarty@{Smarty}}
+\subsubsection[{\$php\+\_\+handling}]{\setlength{\rightskip}{0pt plus 5cm}\$php\+\_\+handling = self\+::\+P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U}\label{class_smarty_abb37c3c6b2bcb9a527c4139bffb7e6ca}
+\hypertarget{class_smarty_ab943c28191f0e4f5d648d66aef9cf289}{}\index{Smarty@{Smarty}!\$plugin\+\_\+search\+\_\+order@{\$plugin\+\_\+search\+\_\+order}}
+\index{\$plugin\+\_\+search\+\_\+order@{\$plugin\+\_\+search\+\_\+order}!Smarty@{Smarty}}
+\subsubsection[{\$plugin\+\_\+search\+\_\+order}]{\setlength{\rightskip}{0pt plus 5cm}\$plugin\+\_\+search\+\_\+order = array(\textquotesingle{}function\textquotesingle{}, \textquotesingle{}block\textquotesingle{}, \textquotesingle{}compiler\textquotesingle{}, \textquotesingle{}class\textquotesingle{})}\label{class_smarty_ab943c28191f0e4f5d648d66aef9cf289}
+\hypertarget{class_smarty_a7f675de4b5983d7e84f6573b7d4d453d}{}\index{Smarty@{Smarty}!\$properties@{\$properties}}
+\index{\$properties@{\$properties}!Smarty@{Smarty}}
+\subsubsection[{\$properties}]{\setlength{\rightskip}{0pt plus 5cm}\$properties = array()}\label{class_smarty_a7f675de4b5983d7e84f6573b7d4d453d}
+\hypertarget{class_smarty_a419a3cb24e76bf8b59991a0be944e87f}{}\index{Smarty@{Smarty}!\$registered\+\_\+cache\+\_\+resources@{\$registered\+\_\+cache\+\_\+resources}}
+\index{\$registered\+\_\+cache\+\_\+resources@{\$registered\+\_\+cache\+\_\+resources}!Smarty@{Smarty}}
+\subsubsection[{\$registered\+\_\+cache\+\_\+resources}]{\setlength{\rightskip}{0pt plus 5cm}\$registered\+\_\+cache\+\_\+resources = array()}\label{class_smarty_a419a3cb24e76bf8b59991a0be944e87f}
+\hypertarget{class_smarty_aa8f2a5bf79dcbe341a65e526ab20dee9}{}\index{Smarty@{Smarty}!\$registered\+\_\+classes@{\$registered\+\_\+classes}}
+\index{\$registered\+\_\+classes@{\$registered\+\_\+classes}!Smarty@{Smarty}}
+\subsubsection[{\$registered\+\_\+classes}]{\setlength{\rightskip}{0pt plus 5cm}\$registered\+\_\+classes = array()}\label{class_smarty_aa8f2a5bf79dcbe341a65e526ab20dee9}
+\hypertarget{class_smarty_a5fcb30291f6413ff9100e3f66f201764}{}\index{Smarty@{Smarty}!\$registered\+\_\+filters@{\$registered\+\_\+filters}}
+\index{\$registered\+\_\+filters@{\$registered\+\_\+filters}!Smarty@{Smarty}}
+\subsubsection[{\$registered\+\_\+filters}]{\setlength{\rightskip}{0pt plus 5cm}\$registered\+\_\+filters = array()}\label{class_smarty_a5fcb30291f6413ff9100e3f66f201764}
+\hypertarget{class_smarty_a4aabbbb01d2968a5e108683bc4db09b2}{}\index{Smarty@{Smarty}!\$registered\+\_\+objects@{\$registered\+\_\+objects}}
+\index{\$registered\+\_\+objects@{\$registered\+\_\+objects}!Smarty@{Smarty}}
+\subsubsection[{\$registered\+\_\+objects}]{\setlength{\rightskip}{0pt plus 5cm}\$registered\+\_\+objects = array()}\label{class_smarty_a4aabbbb01d2968a5e108683bc4db09b2}
+\hypertarget{class_smarty_aa706d2dbce00ae10a1cf8fa49e53e903}{}\index{Smarty@{Smarty}!\$registered\+\_\+plugins@{\$registered\+\_\+plugins}}
+\index{\$registered\+\_\+plugins@{\$registered\+\_\+plugins}!Smarty@{Smarty}}
+\subsubsection[{\$registered\+\_\+plugins}]{\setlength{\rightskip}{0pt plus 5cm}\$registered\+\_\+plugins = array()}\label{class_smarty_aa706d2dbce00ae10a1cf8fa49e53e903}
+\hypertarget{class_smarty_ab7db04d21656638787142239d7fe7118}{}\index{Smarty@{Smarty}!\$registered\+\_\+resources@{\$registered\+\_\+resources}}
+\index{\$registered\+\_\+resources@{\$registered\+\_\+resources}!Smarty@{Smarty}}
+\subsubsection[{\$registered\+\_\+resources}]{\setlength{\rightskip}{0pt plus 5cm}\$registered\+\_\+resources = array()}\label{class_smarty_ab7db04d21656638787142239d7fe7118}
+\hypertarget{class_smarty_ad3fe9ebfa998625e29836badfe1840bd}{}\index{Smarty@{Smarty}!\$right\+\_\+delimiter@{\$right\+\_\+delimiter}}
+\index{\$right\+\_\+delimiter@{\$right\+\_\+delimiter}!Smarty@{Smarty}}
+\subsubsection[{\$right\+\_\+delimiter}]{\setlength{\rightskip}{0pt plus 5cm}\$right\+\_\+delimiter = \char`\"{}\}\char`\"{}}\label{class_smarty_ad3fe9ebfa998625e29836badfe1840bd}
+\hypertarget{class_smarty_a678d027f0022db4a62539937fdf18a0f}{}\index{Smarty@{Smarty}!\$security\+\_\+class@{\$security\+\_\+class}}
+\index{\$security\+\_\+class@{\$security\+\_\+class}!Smarty@{Smarty}}
+\subsubsection[{\$security\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}\$security\+\_\+class = \textquotesingle{}{\bf Smarty\+\_\+\+Security}\textquotesingle{}}\label{class_smarty_a678d027f0022db4a62539937fdf18a0f}
+\hypertarget{class_smarty_a5268d7432b4de885ac265721a56fba85}{}\index{Smarty@{Smarty}!\$security\+\_\+policy@{\$security\+\_\+policy}}
+\index{\$security\+\_\+policy@{\$security\+\_\+policy}!Smarty@{Smarty}}
+\subsubsection[{\$security\+\_\+policy}]{\setlength{\rightskip}{0pt plus 5cm}\$security\+\_\+policy = null}\label{class_smarty_a5268d7432b4de885ac265721a56fba85}
+\hypertarget{class_smarty_ac3ae29e9ccbb2006fa26fd9eb2c12117}{}\index{Smarty@{Smarty}!\$smarty@{\$smarty}}
+\index{\$smarty@{\$smarty}!Smarty@{Smarty}}
+\subsubsection[{\$smarty}]{\setlength{\rightskip}{0pt plus 5cm}\$smarty}\label{class_smarty_ac3ae29e9ccbb2006fa26fd9eb2c12117}
+\hypertarget{class_smarty_a1936345582d4483c652b90bbf7a51cbc}{}\index{Smarty@{Smarty}!\$smarty\+\_\+debug\+\_\+id@{\$smarty\+\_\+debug\+\_\+id}}
+\index{\$smarty\+\_\+debug\+\_\+id@{\$smarty\+\_\+debug\+\_\+id}!Smarty@{Smarty}}
+\subsubsection[{\$smarty\+\_\+debug\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}\$smarty\+\_\+debug\+\_\+id = \textquotesingle{}S\+M\+A\+R\+T\+Y\+\_\+\+D\+E\+B\+U\+G\textquotesingle{}}\label{class_smarty_a1936345582d4483c652b90bbf7a51cbc}
+\hypertarget{class_smarty_a73a034a7a0fbdd2c93f23fb6c9946ee9}{}\index{Smarty@{Smarty}!\$start\+\_\+time@{\$start\+\_\+time}}
+\index{\$start\+\_\+time@{\$start\+\_\+time}!Smarty@{Smarty}}
+\subsubsection[{\$start\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}\$start\+\_\+time = 0}\label{class_smarty_a73a034a7a0fbdd2c93f23fb6c9946ee9}
+\hypertarget{class_smarty_a2c096c8e6fc6d2febe1fee59c6e924f8}{}\index{Smarty@{Smarty}!\$template\+\_\+functions@{\$template\+\_\+functions}}
+\index{\$template\+\_\+functions@{\$template\+\_\+functions}!Smarty@{Smarty}}
+\subsubsection[{\$template\+\_\+functions}]{\setlength{\rightskip}{0pt plus 5cm}\$template\+\_\+functions = array()}\label{class_smarty_a2c096c8e6fc6d2febe1fee59c6e924f8}
+\hypertarget{class_smarty_a256e6c6abddc9a91dace09bbc9234a0b}{}\index{Smarty@{Smarty}!\$template\+\_\+objects@{\$template\+\_\+objects}}
+\index{\$template\+\_\+objects@{\$template\+\_\+objects}!Smarty@{Smarty}}
+\subsubsection[{\$template\+\_\+objects}]{\setlength{\rightskip}{0pt plus 5cm}\$template\+\_\+objects = array()}\label{class_smarty_a256e6c6abddc9a91dace09bbc9234a0b}
+\hypertarget{class_smarty_a7bdf6717c975c21ab609d6b8f7027c20}{}\index{Smarty@{Smarty}!\$use\+\_\+include\+\_\+path@{\$use\+\_\+include\+\_\+path}}
+\index{\$use\+\_\+include\+\_\+path@{\$use\+\_\+include\+\_\+path}!Smarty@{Smarty}}
+\subsubsection[{\$use\+\_\+include\+\_\+path}]{\setlength{\rightskip}{0pt plus 5cm}\$use\+\_\+include\+\_\+path = false}\label{class_smarty_a7bdf6717c975c21ab609d6b8f7027c20}
+\hypertarget{class_smarty_a9d2c3aa18168752d2a32b5aac08b25cd}{}\index{Smarty@{Smarty}!\$use\+\_\+sub\+\_\+dirs@{\$use\+\_\+sub\+\_\+dirs}}
+\index{\$use\+\_\+sub\+\_\+dirs@{\$use\+\_\+sub\+\_\+dirs}!Smarty@{Smarty}}
+\subsubsection[{\$use\+\_\+sub\+\_\+dirs}]{\setlength{\rightskip}{0pt plus 5cm}\$use\+\_\+sub\+\_\+dirs = false}\label{class_smarty_a9d2c3aa18168752d2a32b5aac08b25cd}
+\hypertarget{class_smarty_acb47fdccfbe5022bea1ecfcf8e9c6533}{}\index{Smarty@{Smarty}!C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T@{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T}}
+\index{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T@{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T}!Smarty@{Smarty}}
+\subsubsection[{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}const C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T = 1}\label{class_smarty_acb47fdccfbe5022bea1ecfcf8e9c6533}
+\hypertarget{class_smarty_a3ddb606194b408a8ed1fa13e86156357}{}\index{Smarty@{Smarty}!C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+S\+A\+V\+E\+D@{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+S\+A\+V\+E\+D}}
+\index{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+S\+A\+V\+E\+D@{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+S\+A\+V\+E\+D}!Smarty@{Smarty}}
+\subsubsection[{C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+S\+A\+V\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}const C\+A\+C\+H\+I\+N\+G\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+S\+A\+V\+E\+D = 2}\label{class_smarty_a3ddb606194b408a8ed1fa13e86156357}
+\hypertarget{class_smarty_a494d9102d5d9efc9f8c858c21dd57347}{}\index{Smarty@{Smarty}!C\+A\+C\+H\+I\+N\+G\+\_\+\+O\+F\+F@{C\+A\+C\+H\+I\+N\+G\+\_\+\+O\+F\+F}}
+\index{C\+A\+C\+H\+I\+N\+G\+\_\+\+O\+F\+F@{C\+A\+C\+H\+I\+N\+G\+\_\+\+O\+F\+F}!Smarty@{Smarty}}
+\subsubsection[{C\+A\+C\+H\+I\+N\+G\+\_\+\+O\+F\+F}]{\setlength{\rightskip}{0pt plus 5cm}const C\+A\+C\+H\+I\+N\+G\+\_\+\+O\+F\+F = 0}\label{class_smarty_a494d9102d5d9efc9f8c858c21dd57347}
+define caching modes \hypertarget{class_smarty_aaafe5f30bf960deb3e2b6dbc0d7878aa}{}\index{Smarty@{Smarty}!C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+C\+A\+C\+H\+E\+M\+I\+S\+S@{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+C\+A\+C\+H\+E\+M\+I\+S\+S}}
+\index{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+C\+A\+C\+H\+E\+M\+I\+S\+S@{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+C\+A\+C\+H\+E\+M\+I\+S\+S}!Smarty@{Smarty}}
+\subsubsection[{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+C\+A\+C\+H\+E\+M\+I\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}const C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+C\+A\+C\+H\+E\+M\+I\+S\+S = 2}\label{class_smarty_aaafe5f30bf960deb3e2b6dbc0d7878aa}
+\hypertarget{class_smarty_a22c112cddd1e27f2bf70cf574c85f56a}{}\index{Smarty@{Smarty}!C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+F\+F@{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+F\+F}}
+\index{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+F\+F@{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+F\+F}!Smarty@{Smarty}}
+\subsubsection[{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+F\+F}]{\setlength{\rightskip}{0pt plus 5cm}const C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+F\+F = 0}\label{class_smarty_a22c112cddd1e27f2bf70cf574c85f56a}
+define compile check modes \hypertarget{class_smarty_a65fdfe500b2118e0c0b64cc6372627db}{}\index{Smarty@{Smarty}!C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+N@{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+N}}
+\index{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+N@{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+N}!Smarty@{Smarty}}
+\subsubsection[{C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const C\+O\+M\+P\+I\+L\+E\+C\+H\+E\+C\+K\+\_\+\+O\+N = 1}\label{class_smarty_a65fdfe500b2118e0c0b64cc6372627db}
+\hypertarget{class_smarty_aed61a81051bbb199555a03a2b45631b4}{}\index{Smarty@{Smarty}!F\+I\+L\+T\+E\+R\+\_\+\+O\+U\+T\+P\+U\+T@{F\+I\+L\+T\+E\+R\+\_\+\+O\+U\+T\+P\+U\+T}}
+\index{F\+I\+L\+T\+E\+R\+\_\+\+O\+U\+T\+P\+U\+T@{F\+I\+L\+T\+E\+R\+\_\+\+O\+U\+T\+P\+U\+T}!Smarty@{Smarty}}
+\subsubsection[{F\+I\+L\+T\+E\+R\+\_\+\+O\+U\+T\+P\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}const F\+I\+L\+T\+E\+R\+\_\+\+O\+U\+T\+P\+U\+T = \textquotesingle{}output\textquotesingle{}}\label{class_smarty_aed61a81051bbb199555a03a2b45631b4}
+\hypertarget{class_smarty_adbf5a5e917688e56a5980bcf6257477a}{}\index{Smarty@{Smarty}!F\+I\+L\+T\+E\+R\+\_\+\+P\+O\+S\+T@{F\+I\+L\+T\+E\+R\+\_\+\+P\+O\+S\+T}}
+\index{F\+I\+L\+T\+E\+R\+\_\+\+P\+O\+S\+T@{F\+I\+L\+T\+E\+R\+\_\+\+P\+O\+S\+T}!Smarty@{Smarty}}
+\subsubsection[{F\+I\+L\+T\+E\+R\+\_\+\+P\+O\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}const F\+I\+L\+T\+E\+R\+\_\+\+P\+O\+S\+T = \textquotesingle{}post\textquotesingle{}}\label{class_smarty_adbf5a5e917688e56a5980bcf6257477a}
+filter types \hypertarget{class_smarty_ad093197eaa7160271f4668c971478ec9}{}\index{Smarty@{Smarty}!F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E@{F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E}}
+\index{F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E@{F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E}!Smarty@{Smarty}}
+\subsubsection[{F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E}]{\setlength{\rightskip}{0pt plus 5cm}const F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E = \textquotesingle{}pre\textquotesingle{}}\label{class_smarty_ad093197eaa7160271f4668c971478ec9}
+\hypertarget{class_smarty_a07041c936875d9504110cdff7dafc6bc}{}\index{Smarty@{Smarty}!F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E@{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E}}
+\index{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E@{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E}!Smarty@{Smarty}}
+\subsubsection[{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E = \textquotesingle{}variable\textquotesingle{}}\label{class_smarty_a07041c936875d9504110cdff7dafc6bc}
+\hypertarget{class_smarty_a95914b201d2627600faf1a65cb4e7115}{}\index{Smarty@{Smarty}!P\+H\+P\+\_\+\+A\+L\+L\+O\+W@{P\+H\+P\+\_\+\+A\+L\+L\+O\+W}}
+\index{P\+H\+P\+\_\+\+A\+L\+L\+O\+W@{P\+H\+P\+\_\+\+A\+L\+L\+O\+W}!Smarty@{Smarty}}
+\subsubsection[{P\+H\+P\+\_\+\+A\+L\+L\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}const P\+H\+P\+\_\+\+A\+L\+L\+O\+W = 3}\label{class_smarty_a95914b201d2627600faf1a65cb4e7115}
+\hypertarget{class_smarty_a5ffae087be1c42146449529dcc03524f}{}\index{Smarty@{Smarty}!P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U@{P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U}}
+\index{P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U@{P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U}!Smarty@{Smarty}}
+\subsubsection[{P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U}]{\setlength{\rightskip}{0pt plus 5cm}const P\+H\+P\+\_\+\+P\+A\+S\+S\+T\+H\+R\+U = 0}\label{class_smarty_a5ffae087be1c42146449529dcc03524f}
+modes for handling of \char`\"{}$<$?php ... ?$>$\char`\"{} tags in templates. \hypertarget{class_smarty_ab9f2e77d0c6d296834391a411e880ae0}{}\index{Smarty@{Smarty}!P\+H\+P\+\_\+\+Q\+U\+O\+T\+E@{P\+H\+P\+\_\+\+Q\+U\+O\+T\+E}}
+\index{P\+H\+P\+\_\+\+Q\+U\+O\+T\+E@{P\+H\+P\+\_\+\+Q\+U\+O\+T\+E}!Smarty@{Smarty}}
+\subsubsection[{P\+H\+P\+\_\+\+Q\+U\+O\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}const P\+H\+P\+\_\+\+Q\+U\+O\+T\+E = 1}\label{class_smarty_ab9f2e77d0c6d296834391a411e880ae0}
+\hypertarget{class_smarty_a86dc83caae5f5b2b3a41d400727df9f9}{}\index{Smarty@{Smarty}!P\+H\+P\+\_\+\+R\+E\+M\+O\+V\+E@{P\+H\+P\+\_\+\+R\+E\+M\+O\+V\+E}}
+\index{P\+H\+P\+\_\+\+R\+E\+M\+O\+V\+E@{P\+H\+P\+\_\+\+R\+E\+M\+O\+V\+E}!Smarty@{Smarty}}
+\subsubsection[{P\+H\+P\+\_\+\+R\+E\+M\+O\+V\+E}]{\setlength{\rightskip}{0pt plus 5cm}const P\+H\+P\+\_\+\+R\+E\+M\+O\+V\+E = 2}\label{class_smarty_a86dc83caae5f5b2b3a41d400727df9f9}
+\hypertarget{class_smarty_a2e63fca0e26cc83f27a50354418a01b7}{}\index{Smarty@{Smarty}!P\+L\+U\+G\+I\+N\+\_\+\+B\+L\+O\+C\+K@{P\+L\+U\+G\+I\+N\+\_\+\+B\+L\+O\+C\+K}}
+\index{P\+L\+U\+G\+I\+N\+\_\+\+B\+L\+O\+C\+K@{P\+L\+U\+G\+I\+N\+\_\+\+B\+L\+O\+C\+K}!Smarty@{Smarty}}
+\subsubsection[{P\+L\+U\+G\+I\+N\+\_\+\+B\+L\+O\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}const P\+L\+U\+G\+I\+N\+\_\+\+B\+L\+O\+C\+K = \textquotesingle{}block\textquotesingle{}}\label{class_smarty_a2e63fca0e26cc83f27a50354418a01b7}
+\hypertarget{class_smarty_a65de331533aad88f59738c56ebd70c05}{}\index{Smarty@{Smarty}!P\+L\+U\+G\+I\+N\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R@{P\+L\+U\+G\+I\+N\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R}}
+\index{P\+L\+U\+G\+I\+N\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R@{P\+L\+U\+G\+I\+N\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R}!Smarty@{Smarty}}
+\subsubsection[{P\+L\+U\+G\+I\+N\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}const P\+L\+U\+G\+I\+N\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R = \textquotesingle{}compiler\textquotesingle{}}\label{class_smarty_a65de331533aad88f59738c56ebd70c05}
+\hypertarget{class_smarty_a21d2a55919184c21a26c85523c6cadfb}{}\index{Smarty@{Smarty}!P\+L\+U\+G\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N@{P\+L\+U\+G\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}}
+\index{P\+L\+U\+G\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N@{P\+L\+U\+G\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}!Smarty@{Smarty}}
+\subsubsection[{P\+L\+U\+G\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const P\+L\+U\+G\+I\+N\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N = \textquotesingle{}function\textquotesingle{}}\label{class_smarty_a21d2a55919184c21a26c85523c6cadfb}
+plugin types \hypertarget{class_smarty_a601f50b353718715e0c9c2ba4ab1b6d5}{}\index{Smarty@{Smarty}!P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R@{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}}
+\index{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R@{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}!Smarty@{Smarty}}
+\subsubsection[{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}const P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R = \textquotesingle{}modifier\textquotesingle{}}\label{class_smarty_a601f50b353718715e0c9c2ba4ab1b6d5}
+\hypertarget{class_smarty_a6d2292b274afbbc56b46bf0064257c21}{}\index{Smarty@{Smarty}!P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+C\+O\+M\+P\+I\+L\+E\+R@{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+C\+O\+M\+P\+I\+L\+E\+R}}
+\index{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+C\+O\+M\+P\+I\+L\+E\+R@{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+C\+O\+M\+P\+I\+L\+E\+R}!Smarty@{Smarty}}
+\subsubsection[{P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+C\+O\+M\+P\+I\+L\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}const P\+L\+U\+G\+I\+N\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R\+C\+O\+M\+P\+I\+L\+E\+R = \textquotesingle{}modifiercompiler\textquotesingle{}}\label{class_smarty_a6d2292b274afbbc56b46bf0064257c21}
+\hypertarget{class_smarty_ab445d8c60ac47e2eade1790d3b5ead7e}{}\index{Smarty@{Smarty}!S\+C\+O\+P\+E\+\_\+\+G\+L\+O\+B\+A\+L@{S\+C\+O\+P\+E\+\_\+\+G\+L\+O\+B\+A\+L}}
+\index{S\+C\+O\+P\+E\+\_\+\+G\+L\+O\+B\+A\+L@{S\+C\+O\+P\+E\+\_\+\+G\+L\+O\+B\+A\+L}!Smarty@{Smarty}}
+\subsubsection[{S\+C\+O\+P\+E\+\_\+\+G\+L\+O\+B\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}const S\+C\+O\+P\+E\+\_\+\+G\+L\+O\+B\+A\+L = 3}\label{class_smarty_ab445d8c60ac47e2eade1790d3b5ead7e}
+\hypertarget{class_smarty_ae96cd6e8d429b91e56cd1914c5b5ce61}{}\index{Smarty@{Smarty}!S\+C\+O\+P\+E\+\_\+\+L\+O\+C\+A\+L@{S\+C\+O\+P\+E\+\_\+\+L\+O\+C\+A\+L}}
+\index{S\+C\+O\+P\+E\+\_\+\+L\+O\+C\+A\+L@{S\+C\+O\+P\+E\+\_\+\+L\+O\+C\+A\+L}!Smarty@{Smarty}}
+\subsubsection[{S\+C\+O\+P\+E\+\_\+\+L\+O\+C\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}const S\+C\+O\+P\+E\+\_\+\+L\+O\+C\+A\+L = 0}\label{class_smarty_ae96cd6e8d429b91e56cd1914c5b5ce61}
+define variable scopes \hypertarget{class_smarty_a8ea89b5e55b135aa28fcccba189e3bca}{}\index{Smarty@{Smarty}!S\+C\+O\+P\+E\+\_\+\+P\+A\+R\+E\+N\+T@{S\+C\+O\+P\+E\+\_\+\+P\+A\+R\+E\+N\+T}}
+\index{S\+C\+O\+P\+E\+\_\+\+P\+A\+R\+E\+N\+T@{S\+C\+O\+P\+E\+\_\+\+P\+A\+R\+E\+N\+T}!Smarty@{Smarty}}
+\subsubsection[{S\+C\+O\+P\+E\+\_\+\+P\+A\+R\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}const S\+C\+O\+P\+E\+\_\+\+P\+A\+R\+E\+N\+T = 1}\label{class_smarty_a8ea89b5e55b135aa28fcccba189e3bca}
+\hypertarget{class_smarty_a18f8c264effd9f09a2776427cbc2d005}{}\index{Smarty@{Smarty}!S\+C\+O\+P\+E\+\_\+\+R\+O\+O\+T@{S\+C\+O\+P\+E\+\_\+\+R\+O\+O\+T}}
+\index{S\+C\+O\+P\+E\+\_\+\+R\+O\+O\+T@{S\+C\+O\+P\+E\+\_\+\+R\+O\+O\+T}!Smarty@{Smarty}}
+\subsubsection[{S\+C\+O\+P\+E\+\_\+\+R\+O\+O\+T}]{\setlength{\rightskip}{0pt plus 5cm}const S\+C\+O\+P\+E\+\_\+\+R\+O\+O\+T = 2}\label{class_smarty_a18f8c264effd9f09a2776427cbc2d005}
+\hypertarget{class_smarty_a38a3b7b2e496b24a1bf2976ac1552ed7}{}\index{Smarty@{Smarty}!S\+M\+A\+R\+T\+Y\+\_\+\+V\+E\+R\+S\+I\+O\+N@{S\+M\+A\+R\+T\+Y\+\_\+\+V\+E\+R\+S\+I\+O\+N}}
+\index{S\+M\+A\+R\+T\+Y\+\_\+\+V\+E\+R\+S\+I\+O\+N@{S\+M\+A\+R\+T\+Y\+\_\+\+V\+E\+R\+S\+I\+O\+N}!Smarty@{Smarty}}
+\subsubsection[{S\+M\+A\+R\+T\+Y\+\_\+\+V\+E\+R\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const S\+M\+A\+R\+T\+Y\+\_\+\+V\+E\+R\+S\+I\+O\+N = \textquotesingle{}{\bf Smarty}-\/3.\+1.\+8\textquotesingle{}}\label{class_smarty_a38a3b7b2e496b24a1bf2976ac1552ed7}
+\#@+ constant definitions smarty version 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/\hyperlink{_smarty_8class_8php}{Smarty.\+class.\+php}\end{DoxyCompactItemize}

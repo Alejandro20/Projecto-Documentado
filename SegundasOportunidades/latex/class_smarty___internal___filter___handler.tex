@@ -1,0 +1,40 @@
+\hypertarget{class_smarty___internal___filter___handler}{}\section{Smarty\+\_\+\+Internal\+\_\+\+Filter\+\_\+\+Handler Class Reference}
+\label{class_smarty___internal___filter___handler}\index{Smarty\+\_\+\+Internal\+\_\+\+Filter\+\_\+\+Handler@{Smarty\+\_\+\+Internal\+\_\+\+Filter\+\_\+\+Handler}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___internal___filter___handler_ad0cf81fc7205cfe3ed81281218cc7078}{run\+Filter} (\$type, \$content, \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$template)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty___internal___filter___handler_ad0cf81fc7205cfe3ed81281218cc7078}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Filter\+\_\+\+Handler@{Smarty\+\_\+\+Internal\+\_\+\+Filter\+\_\+\+Handler}!run\+Filter@{run\+Filter}}
+\index{run\+Filter@{run\+Filter}!Smarty\+\_\+\+Internal\+\_\+\+Filter\+\_\+\+Handler@{Smarty\+\_\+\+Internal\+\_\+\+Filter\+\_\+\+Handler}}
+\subsubsection[{run\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}static run\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$content, }
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$template}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___internal___filter___handler_ad0cf81fc7205cfe3ed81281218cc7078}
+Run filters over content
+
+The filters will be lazy loaded if required class name format\+: Smarty\+\_\+\+Filter\+Type\+\_\+\+Filter\+Name plugin filename format\+: filtertype.\+filtername.\+php Smarty2 filter plugins could be used
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the type of filter (\textquotesingle{}pre\textquotesingle{},\textquotesingle{}post\textquotesingle{},\textquotesingle{}output\textquotesingle{}) which shall run \\
+\hline
+string & {\em \$content} & the content which shall be processed by the filters \\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$template} & template object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the filtered content 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/sysplugins/\hyperlink{smarty__internal__filter__handler_8php}{smarty\+\_\+internal\+\_\+filter\+\_\+handler.\+php}\end{DoxyCompactItemize}

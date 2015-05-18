@@ -1,0 +1,45 @@
+\hypertarget{modifier_8escape_8php}{}\section{libs/smarty/libs/plugins/modifier.escape.\+php File Reference}
+\label{modifier_8escape_8php}\index{libs/smarty/libs/plugins/modifier.\+escape.\+php@{libs/smarty/libs/plugins/modifier.\+escape.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_smarty}{Smarty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{modifier_8escape_8php_aa28e33dcc45e836489ac3a2fd9471e2a}{smarty\+\_\+modifier\+\_\+escape} (\$string, \$esc\+\_\+type= \textquotesingle{}html\textquotesingle{}, \$char\+\_\+set=null, \$double\+\_\+encode=true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{modifier_8escape_8php_aa28e33dcc45e836489ac3a2fd9471e2a}{}\index{modifier.\+escape.\+php@{modifier.\+escape.\+php}!smarty\+\_\+modifier\+\_\+escape@{smarty\+\_\+modifier\+\_\+escape}}
+\index{smarty\+\_\+modifier\+\_\+escape@{smarty\+\_\+modifier\+\_\+escape}!modifier.\+escape.\+php@{modifier.\+escape.\+php}}
+\subsubsection[{smarty\+\_\+modifier\+\_\+escape}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+modifier\+\_\+escape (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$esc\+\_\+type = {\ttfamily \textquotesingle{}html\textquotesingle{}}, }
+\item[{}]{\$char\+\_\+set = {\ttfamily null}, }
+\item[{}]{\$double\+\_\+encode = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{modifier_8escape_8php_aa28e33dcc45e836489ac3a2fd9471e2a}
+\hyperlink{class_smarty}{Smarty} escape modifier plugin
+
+Type\+: modifier~\newline
+ Name\+: escape~\newline
+ Purpose\+: escape string for output
+
+\hyperlink{}{count\+\_\+characters (Smarty online manual)  Monte Ohrt } 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & input string \\
+\hline
+string & {\em \$esc\+\_\+type} & escape type \\
+\hline
+string & {\em \$char\+\_\+set} & character set, used for htmlspecialchars() or htmlentities() \\
+\hline
+boolean & {\em \$double\+\_\+encode} & encode already encoded entitites again, used for htmlspecialchars() or htmlentities() \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string escaped input string 
+\end{DoxyReturn}

@@ -1,0 +1,44 @@
+\hypertarget{class_core}{}\section{Core Class Reference}
+\label{class_core}\index{Core@{Core}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_core_a528a505f0db0549d0fe6beda8b6c0b3d}{iniciar} (\hyperlink{class_request}{Request} \$peticion)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_core_a528a505f0db0549d0fe6beda8b6c0b3d}{}\index{Core@{Core}!iniciar@{iniciar}}
+\index{iniciar@{iniciar}!Core@{Core}}
+\subsubsection[{iniciar}]{\setlength{\rightskip}{0pt plus 5cm}static iniciar (
+\begin{DoxyParamCaption}
+\item[{{\bf Request}}]{\$peticion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_core_a528a505f0db0549d0fe6beda8b6c0b3d}
+A esta funcion se le pasa la url El controlador es el resultado de la funcion get\+Controlador()
+
+Buscamos la ruta del controlador a partir de la variable \$controller
+
+Obtenemos el metodo a traves de la funcion get\+Metodo()
+
+Obtenemos los argumentos a traves de la funcion get\+Args()
+
+Comprobamos que la ruta es accesible
+
+Abrimos un nuevo controlador
+
+Si el controlador es accesible llamamos a los metodos
+
+Obtenemos los metodos que nos pasan
+
+si no nos pasan por defecto sera el index
+
+Si hay argumentos llamaremos a los argumentos
+
+Llamamos a los argumentos a partir del controlador i el modelo pertinente
+
+Si no exiten, mostraremos un error 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sys/\hyperlink{_core_8php}{Core.\+php}\end{DoxyCompactItemize}

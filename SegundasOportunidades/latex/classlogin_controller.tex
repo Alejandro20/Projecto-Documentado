@@ -1,0 +1,82 @@
+\hypertarget{classlogin_controller}{}\section{login\+Controller Class Reference}
+\label{classlogin_controller}\index{login\+Controller@{login\+Controller}}
+Inheritance diagram for login\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlogin_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlogin_controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classlogin_controller_a149eb92716c1084a935e04a8d95f7347}{index} ()
+\item 
+\hyperlink{classlogin_controller_a1d24abe6f7f5ac946c230def323b1eda}{cerrar} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlogin_controller_a095c5d389db211932136b53f25f39685}{}\index{login\+Controller@{login\+Controller}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!login\+Controller@{login\+Controller}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classlogin_controller_a095c5d389db211932136b53f25f39685}
+Cargamos el modelo de login para la vista login 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlogin_controller_a1d24abe6f7f5ac946c230def323b1eda}{}\index{login\+Controller@{login\+Controller}!cerrar@{cerrar}}
+\index{cerrar@{cerrar}!login\+Controller@{login\+Controller}}
+\subsubsection[{cerrar}]{\setlength{\rightskip}{0pt plus 5cm}cerrar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classlogin_controller_a1d24abe6f7f5ac946c230def323b1eda}
+Funcion que se encarga de pasar la orden de cerrar una session \hypertarget{classlogin_controller_a149eb92716c1084a935e04a8d95f7347}{}\index{login\+Controller@{login\+Controller}!index@{index}}
+\index{index@{index}!login\+Controller@{login\+Controller}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classlogin_controller_a149eb92716c1084a935e04a8d95f7347}
+Funcion que se encarga de cargar el index del login Si estas logeado te redirecciona
+
+Indicamos el titulo de la pestaña de la pagina
+
+Comprobamos que se haya seleccionado el boton para comenzar el proceso de login
+
+Enviamos los datos por \$\+\_\+\+P\+O\+S\+T
+
+Si no tiene usuario mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Si no tiene password mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Seleccionamos al usuario a partir del usuario y la password que nos pasan
+
+Si no existe nos mostraran mensajes de error
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+1 indica que el usuario esta habilitado
+
+Si el usuario no esta habilitado no mostrara un error
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Obtenemos los datos de session del usuario que se ha logeado
+
+Nos redirecciona al index de la pagina por defecto
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/controllers/\hyperlink{login_controller_8php}{login\+Controller.\+php}\end{DoxyCompactItemize}

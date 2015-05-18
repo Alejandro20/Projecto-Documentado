@@ -1,0 +1,295 @@
+\hypertarget{class_smarty___internal___template_compiler_base}{}\section{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base Class Reference}
+\label{class_smarty___internal___template_compiler_base}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+Inheritance diagram for Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_smarty___internal___template_compiler_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a22797f5775a86723f2432e241400a178}{compile\+Template} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$template)
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_aeca44d38ff756e04286bba202f1b9f5c}{compile\+Tag} (\$tag, \$args, \$parameter=array())
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a6956cee98955fafaf546c0bf0966865c}{call\+Tag\+Compiler} (\$tag, \$args, \$param1=null, \$param2=null, \$param3=null)
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a58cf0a4fc76f22bcd34a262656952406}{get\+Plugin} (\$plugin\+\_\+name, \$plugin\+\_\+type)
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_ad7ec5ed8325ebd16588d7d8f4c50c417}{get\+Plugin\+From\+Default\+Handler} (\$tag, \$plugin\+\_\+type)
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_add66eb02adf3f5c8b1b29ec921b1bb8a}{process\+Nocache\+Code} (\$content, \$is\+\_\+code)
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a734ce513daeda31c92e3058d6be46d75}{trigger\+\_\+template\+\_\+error} (\$args=null, \$line=null)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_ab9e88f51f3985af88d5b523ac2805466}{\$suppress\+Nocache\+Processing} = false
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_abd6026dad53c4dc92f2ca11955a6f828}{\$suppress\+Merged\+Templates} = false
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a8bc334635a0aa8e117a5e822ca71ee67}{\$\+\_\+tag\+\_\+stack} = array()
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_aa3e9534005fd516d941f6a5569896e01}{\$template} = null
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a668b99c1dc878dfad4e0b20805a5dc6d}{\$merged\+\_\+templates} = array()
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a9e2feffb0a75c8e64dc6fe858f41f671}{\$inheritance} = false
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a25fc2d4db83b77134e74337012a3d470}{\$default\+\_\+handler\+\_\+plugins} = array()
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_aecc61c448defa8dbd8f471e2a06e759c}{\$default\+\_\+modifier\+\_\+list} = null
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a7868de724a26cf0c234c9768c6cb1ca4}{\$force\+Nocache} = false
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_aa16c2e916d26706e370d818f37ae7412}{\$suppress\+Header} = false
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_ac036a6dcef2daf9f9c94d54bc5b9f29f}{\$suppress\+Template\+Property\+Header} = false
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a5e7d998d12b28a7a21ba0fe0de6238d6}{\$write\+\_\+compiled\+\_\+code} = true
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_a62c074800ffcb529d38b6b47dc166648}{\$compiles\+\_\+template\+\_\+function} = false
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_af96e3a9c4ae43c99d008a3f5140d16f4}{\$called\+\_\+functions} = array()
+\item 
+\hyperlink{class_smarty___internal___template_compiler_base_acc270a691f094e2be485f9d42f2734ae}{\$modifier\+\_\+plugins} = array()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___internal___template_compiler_base_ad12ff4075977e3008f4f2c7fd783a7ca}{\$\+\_\+tag\+\_\+objects} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_smarty___internal___template_compiler_base_a095c5d389db211932136b53f25f39685}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_compiler_base_a095c5d389db211932136b53f25f39685}
+Initialize compiler 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty___internal___template_compiler_base_a6956cee98955fafaf546c0bf0966865c}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!call\+Tag\+Compiler@{call\+Tag\+Compiler}}
+\index{call\+Tag\+Compiler@{call\+Tag\+Compiler}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{call\+Tag\+Compiler}]{\setlength{\rightskip}{0pt plus 5cm}call\+Tag\+Compiler (
+\begin{DoxyParamCaption}
+\item[{}]{\$tag, }
+\item[{}]{\$args, }
+\item[{}]{\$param1 = {\ttfamily null}, }
+\item[{}]{\$param2 = {\ttfamily null}, }
+\item[{}]{\$param3 = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_compiler_base_a6956cee98955fafaf546c0bf0966865c}
+lazy loads internal compile plugin for tag and calls the compile methode
+
+compile objects cached for reuse. class name format\+: Smarty\+\_\+\+Internal\+\_\+\+Compile\+\_\+\+Tag\+Name plugin filename format\+: Smarty\+\_\+\+Internal\+\_\+\+Tagname.\+php
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag} & tag name \\
+\hline
+array & {\em \$args} & list of tag attributes \\
+\hline
+mixed & {\em \$param1} & optional parameter \\
+\hline
+mixed & {\em \$param2} & optional parameter \\
+\hline
+mixed & {\em \$param3} & optional parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string compiled code 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_compiler_base_aeca44d38ff756e04286bba202f1b9f5c}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!compile\+Tag@{compile\+Tag}}
+\index{compile\+Tag@{compile\+Tag}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{compile\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}compile\+Tag (
+\begin{DoxyParamCaption}
+\item[{}]{\$tag, }
+\item[{}]{\$args, }
+\item[{}]{\$parameter = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_compiler_base_aeca44d38ff756e04286bba202f1b9f5c}
+Compile Tag
+
+This is a call back from the lexer/parser It executes the required compile plugin for the \hyperlink{class_smarty}{Smarty} tag
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag} & tag name \\
+\hline
+array & {\em \$args} & array with tag attributes \\
+\hline
+array & {\em \$parameter} & array with compilation parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string compiled code 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_compiler_base_a22797f5775a86723f2432e241400a178}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!compile\+Template@{compile\+Template}}
+\index{compile\+Template@{compile\+Template}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{compile\+Template}]{\setlength{\rightskip}{0pt plus 5cm}compile\+Template (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$template}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_compiler_base_a22797f5775a86723f2432e241400a178}
+Method to compile a \hyperlink{class_smarty}{Smarty} template
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$template} & template object to compile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if compiling succeeded, false if it failed 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_compiler_base_a58cf0a4fc76f22bcd34a262656952406}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!get\+Plugin@{get\+Plugin}}
+\index{get\+Plugin@{get\+Plugin}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{get\+Plugin}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plugin (
+\begin{DoxyParamCaption}
+\item[{}]{\$plugin\+\_\+name, }
+\item[{}]{\$plugin\+\_\+type}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_compiler_base_a58cf0a4fc76f22bcd34a262656952406}
+Check for plugins and return function name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pugin\+\_\+name} & name of plugin or function \\
+\hline
+string & {\em \$plugin\+\_\+type} & type of plugin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string call name of function 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_compiler_base_ad7ec5ed8325ebd16588d7d8f4c50c417}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!get\+Plugin\+From\+Default\+Handler@{get\+Plugin\+From\+Default\+Handler}}
+\index{get\+Plugin\+From\+Default\+Handler@{get\+Plugin\+From\+Default\+Handler}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{get\+Plugin\+From\+Default\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}get\+Plugin\+From\+Default\+Handler (
+\begin{DoxyParamCaption}
+\item[{}]{\$tag, }
+\item[{}]{\$plugin\+\_\+type}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_compiler_base_ad7ec5ed8325ebd16588d7d8f4c50c417}
+Check for plugins by default plugin handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag} & name of tag \\
+\hline
+string & {\em \$plugin\+\_\+type} & type of plugin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if found 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_compiler_base_add66eb02adf3f5c8b1b29ec921b1bb8a}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!process\+Nocache\+Code@{process\+Nocache\+Code}}
+\index{process\+Nocache\+Code@{process\+Nocache\+Code}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{process\+Nocache\+Code}]{\setlength{\rightskip}{0pt plus 5cm}process\+Nocache\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$content, }
+\item[{}]{\$is\+\_\+code}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_compiler_base_add66eb02adf3f5c8b1b29ec921b1bb8a}
+Inject inline code for nocache template sections
+
+This method gets the content of each template element from the parser. If the content is compiled code and it should be not cached the code is injected into the rendered output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & content of template element \\
+\hline
+boolean & {\em \$is\+\_\+code} & true if content is compiled code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string content 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_compiler_base_a734ce513daeda31c92e3058d6be46d75}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!trigger\+\_\+template\+\_\+error@{trigger\+\_\+template\+\_\+error}}
+\index{trigger\+\_\+template\+\_\+error@{trigger\+\_\+template\+\_\+error}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{trigger\+\_\+template\+\_\+error}]{\setlength{\rightskip}{0pt plus 5cm}trigger\+\_\+template\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{}]{\$args = {\ttfamily null}, }
+\item[{}]{\$line = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_compiler_base_a734ce513daeda31c92e3058d6be46d75}
+display compiler error messages without dying
+
+If parameter \$args is empty it is a parser detected syntax error. In this case the parser is called to obtain information about expected tokens.
+
+If parameter \$args contains a string this is used as error message
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$args} & individual error message or null \\
+\hline
+string & {\em \$line} & line-\/number \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_compiler_exception}{Smarty\+Compiler\+Exception}} & when an unexpected token is found \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Field Documentation}
+\hypertarget{class_smarty___internal___template_compiler_base_ad12ff4075977e3008f4f2c7fd783a7ca}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$\+\_\+tag\+\_\+objects@{\$\+\_\+tag\+\_\+objects}}
+\index{\$\+\_\+tag\+\_\+objects@{\$\+\_\+tag\+\_\+objects}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$\+\_\+tag\+\_\+objects}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+tag\+\_\+objects = array()\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___internal___template_compiler_base_ad12ff4075977e3008f4f2c7fd783a7ca}
+\hypertarget{class_smarty___internal___template_compiler_base_a8bc334635a0aa8e117a5e822ca71ee67}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$\+\_\+tag\+\_\+stack@{\$\+\_\+tag\+\_\+stack}}
+\index{\$\+\_\+tag\+\_\+stack@{\$\+\_\+tag\+\_\+stack}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$\+\_\+tag\+\_\+stack}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+tag\+\_\+stack = array()}\label{class_smarty___internal___template_compiler_base_a8bc334635a0aa8e117a5e822ca71ee67}
+\hypertarget{class_smarty___internal___template_compiler_base_af96e3a9c4ae43c99d008a3f5140d16f4}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$called\+\_\+functions@{\$called\+\_\+functions}}
+\index{\$called\+\_\+functions@{\$called\+\_\+functions}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$called\+\_\+functions}]{\setlength{\rightskip}{0pt plus 5cm}\$called\+\_\+functions = array()}\label{class_smarty___internal___template_compiler_base_af96e3a9c4ae43c99d008a3f5140d16f4}
+\hypertarget{class_smarty___internal___template_compiler_base_a62c074800ffcb529d38b6b47dc166648}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$compiles\+\_\+template\+\_\+function@{\$compiles\+\_\+template\+\_\+function}}
+\index{\$compiles\+\_\+template\+\_\+function@{\$compiles\+\_\+template\+\_\+function}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$compiles\+\_\+template\+\_\+function}]{\setlength{\rightskip}{0pt plus 5cm}\$compiles\+\_\+template\+\_\+function = false}\label{class_smarty___internal___template_compiler_base_a62c074800ffcb529d38b6b47dc166648}
+\hypertarget{class_smarty___internal___template_compiler_base_a25fc2d4db83b77134e74337012a3d470}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$default\+\_\+handler\+\_\+plugins@{\$default\+\_\+handler\+\_\+plugins}}
+\index{\$default\+\_\+handler\+\_\+plugins@{\$default\+\_\+handler\+\_\+plugins}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$default\+\_\+handler\+\_\+plugins}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+\_\+handler\+\_\+plugins = array()}\label{class_smarty___internal___template_compiler_base_a25fc2d4db83b77134e74337012a3d470}
+\hypertarget{class_smarty___internal___template_compiler_base_aecc61c448defa8dbd8f471e2a06e759c}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$default\+\_\+modifier\+\_\+list@{\$default\+\_\+modifier\+\_\+list}}
+\index{\$default\+\_\+modifier\+\_\+list@{\$default\+\_\+modifier\+\_\+list}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$default\+\_\+modifier\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+\_\+modifier\+\_\+list = null}\label{class_smarty___internal___template_compiler_base_aecc61c448defa8dbd8f471e2a06e759c}
+\hypertarget{class_smarty___internal___template_compiler_base_a7868de724a26cf0c234c9768c6cb1ca4}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$force\+Nocache@{\$force\+Nocache}}
+\index{\$force\+Nocache@{\$force\+Nocache}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$force\+Nocache}]{\setlength{\rightskip}{0pt plus 5cm}\$force\+Nocache = false}\label{class_smarty___internal___template_compiler_base_a7868de724a26cf0c234c9768c6cb1ca4}
+\hypertarget{class_smarty___internal___template_compiler_base_a9e2feffb0a75c8e64dc6fe858f41f671}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$inheritance@{\$inheritance}}
+\index{\$inheritance@{\$inheritance}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$inheritance}]{\setlength{\rightskip}{0pt plus 5cm}\$inheritance = false}\label{class_smarty___internal___template_compiler_base_a9e2feffb0a75c8e64dc6fe858f41f671}
+\hypertarget{class_smarty___internal___template_compiler_base_a668b99c1dc878dfad4e0b20805a5dc6d}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$merged\+\_\+templates@{\$merged\+\_\+templates}}
+\index{\$merged\+\_\+templates@{\$merged\+\_\+templates}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$merged\+\_\+templates}]{\setlength{\rightskip}{0pt plus 5cm}\$merged\+\_\+templates = array()}\label{class_smarty___internal___template_compiler_base_a668b99c1dc878dfad4e0b20805a5dc6d}
+\hypertarget{class_smarty___internal___template_compiler_base_acc270a691f094e2be485f9d42f2734ae}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$modifier\+\_\+plugins@{\$modifier\+\_\+plugins}}
+\index{\$modifier\+\_\+plugins@{\$modifier\+\_\+plugins}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$modifier\+\_\+plugins}]{\setlength{\rightskip}{0pt plus 5cm}\$modifier\+\_\+plugins = array()}\label{class_smarty___internal___template_compiler_base_acc270a691f094e2be485f9d42f2734ae}
+\hypertarget{class_smarty___internal___template_compiler_base_aa16c2e916d26706e370d818f37ae7412}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$suppress\+Header@{\$suppress\+Header}}
+\index{\$suppress\+Header@{\$suppress\+Header}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$suppress\+Header}]{\setlength{\rightskip}{0pt plus 5cm}\$suppress\+Header = false}\label{class_smarty___internal___template_compiler_base_aa16c2e916d26706e370d818f37ae7412}
+\hypertarget{class_smarty___internal___template_compiler_base_abd6026dad53c4dc92f2ca11955a6f828}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$suppress\+Merged\+Templates@{\$suppress\+Merged\+Templates}}
+\index{\$suppress\+Merged\+Templates@{\$suppress\+Merged\+Templates}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$suppress\+Merged\+Templates}]{\setlength{\rightskip}{0pt plus 5cm}\$suppress\+Merged\+Templates = false}\label{class_smarty___internal___template_compiler_base_abd6026dad53c4dc92f2ca11955a6f828}
+\hypertarget{class_smarty___internal___template_compiler_base_ab9e88f51f3985af88d5b523ac2805466}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$suppress\+Nocache\+Processing@{\$suppress\+Nocache\+Processing}}
+\index{\$suppress\+Nocache\+Processing@{\$suppress\+Nocache\+Processing}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$suppress\+Nocache\+Processing}]{\setlength{\rightskip}{0pt plus 5cm}\$suppress\+Nocache\+Processing = false}\label{class_smarty___internal___template_compiler_base_ab9e88f51f3985af88d5b523ac2805466}
+\hypertarget{class_smarty___internal___template_compiler_base_ac036a6dcef2daf9f9c94d54bc5b9f29f}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$suppress\+Template\+Property\+Header@{\$suppress\+Template\+Property\+Header}}
+\index{\$suppress\+Template\+Property\+Header@{\$suppress\+Template\+Property\+Header}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$suppress\+Template\+Property\+Header}]{\setlength{\rightskip}{0pt plus 5cm}\$suppress\+Template\+Property\+Header = false}\label{class_smarty___internal___template_compiler_base_ac036a6dcef2daf9f9c94d54bc5b9f29f}
+\hypertarget{class_smarty___internal___template_compiler_base_aa3e9534005fd516d941f6a5569896e01}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$template@{\$template}}
+\index{\$template@{\$template}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$template}]{\setlength{\rightskip}{0pt plus 5cm}\$template = null}\label{class_smarty___internal___template_compiler_base_aa3e9534005fd516d941f6a5569896e01}
+\hypertarget{class_smarty___internal___template_compiler_base_a5e7d998d12b28a7a21ba0fe0de6238d6}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}!\$write\+\_\+compiled\+\_\+code@{\$write\+\_\+compiled\+\_\+code}}
+\index{\$write\+\_\+compiled\+\_\+code@{\$write\+\_\+compiled\+\_\+code}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Compiler\+Base}}
+\subsubsection[{\$write\+\_\+compiled\+\_\+code}]{\setlength{\rightskip}{0pt plus 5cm}\$write\+\_\+compiled\+\_\+code = true}\label{class_smarty___internal___template_compiler_base_a5e7d998d12b28a7a21ba0fe0de6238d6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/sysplugins/\hyperlink{smarty__internal__templatecompilerbase_8php}{smarty\+\_\+internal\+\_\+templatecompilerbase.\+php}\end{DoxyCompactItemize}

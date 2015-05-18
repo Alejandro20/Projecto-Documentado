@@ -1,0 +1,82 @@
+\hypertarget{function_8mailto_8php}{}\section{libs/smarty/libs/plugins/function.mailto.\+php File Reference}
+\label{function_8mailto_8php}\index{libs/smarty/libs/plugins/function.\+mailto.\+php@{libs/smarty/libs/plugins/function.\+mailto.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_smarty}{Smarty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{function_8mailto_8php_ada181c83c1a371f2d12592e68f47e8ca}{smarty\+\_\+function\+\_\+mailto} (\$params, \$template)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{function_8mailto_8php_ada181c83c1a371f2d12592e68f47e8ca}{}\index{function.\+mailto.\+php@{function.\+mailto.\+php}!smarty\+\_\+function\+\_\+mailto@{smarty\+\_\+function\+\_\+mailto}}
+\index{smarty\+\_\+function\+\_\+mailto@{smarty\+\_\+function\+\_\+mailto}!function.\+mailto.\+php@{function.\+mailto.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+mailto}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+mailto (
+\begin{DoxyParamCaption}
+\item[{}]{\$params, }
+\item[{}]{\$template}
+\end{DoxyParamCaption}
+)}\label{function_8mailto_8php_ada181c83c1a371f2d12592e68f47e8ca}
+\hyperlink{class_smarty}{Smarty} \{mailto\} function plugin
+
+Type\+: function~\newline
+ Name\+: mailto~\newline
+ Date\+: May 21, 2002 Purpose\+: automate mailto address link creation, and optionally encode them.~\newline
+ Params\+: 
+\begin{DoxyPre}
+\begin{DoxyItemize}
+\item address    - (required) - e-mail address
+\item text       - (optional) - text to display, default is address
+\item encode     - (optional) - can be one of:
+                            * none : no encoding (default)
+                            * javascript : encode with javascript
+                            * javascript\_charcode : encode with javascript charcode
+                            * hex : encode with hexidecimal (no javascript)
+\item cc         - (optional) - address(es) to carbon copy
+\item bcc        - (optional) - address(es) to blind carbon copy
+\item subject    - (optional) - e-mail subject
+\item newsgroups - (optional) - newsgroup(s) to post to
+\item followupto - (optional) - address(es) to follow up to
+\item extra      - (optional) - extra tags for the href link
+
+Examples:
+
+\begin{DoxyPre}
+\{mailto address="me@domain.com"\}
+\{mailto address="me@domain.com" encode="javascript"\}
+\{mailto address="me@domain.com" encode="hex"\}
+\{mailto address="me@domain.com" subject="Hello to you!"\}
+\{mailto address="me@domain.com" cc="you@domain.com,they@domain.com"\}
+\{mailto address="me@domain.com" extra='class="mailto"'\}
+\end{DoxyPre}
+
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\hyperlink{}{\{mailto\}
+         (Smarty online manual)
+ 1.2
+ Monte Ohrt }
+\begin{DoxyAuthor}{Author}
+credits to Jason Sweat (added cc, bcc and subject functionality)
+
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em $params} & parameters
+\\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\_Internal\_Template} & {\em $template} & template object
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+
+\end{DoxyReturn}
+\end{DoxyPre}

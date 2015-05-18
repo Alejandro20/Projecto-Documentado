@@ -1,0 +1,1266 @@
+\hypertarget{namespacecmf}{}\section{cmf Namespace Reference}
+\label{namespacecmf}\index{cmf@{cmf}}
+
+
+\subsection{Detailed Description}
+Class upload
+
+\begin{DoxyVersion}{Version}
+0.\+31 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Colin Verot \href{mailto:colin@verot.net}{\tt colin@verot.\+net}  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Colin Verot
+\end{DoxyCopyright}
+external
+
+Class upload
+
+{\bfseries What does it do?}
+
+It manages file uploads for you. In short, it manages the uploaded file, and allows you to do whatever you want with the file, especially if it is an image, and as many times as you want.
+
+It is the ideal class to quickly integrate file upload in your site. If the file is an image, you can convert, resize, crop it in many ways. You can also apply filters, add borders, text, watermarks, etc... That\textquotesingle{}s all you need for a gallery script for instance. Supported formats are P\+N\+G, J\+P\+G, G\+I\+F and B\+M\+P.
+
+You can also use the class to work on local files, which is especially useful to use the image manipulation features. The class also supports Flash uploaders.
+
+The class works with P\+H\+P 4 and 5, and its error messages can be localized at will.
+
+{\bfseries How does it work?}
+
+You instanciate the class with the \$\+\_\+\+F\+I\+L\+E\+S\mbox{[}\textquotesingle{}my\+\_\+field\textquotesingle{}\mbox{]} array where my\+\_\+field is the field name from your upload form. The class will check if the original file has been uploaded to its temporary location (alternatively, you can instanciate the class with a local filename).
+
+You can then set a number of processing variables to act on the file. For instance, you can rename the file, and if it is an image, convert and resize it in many ways. You can also set what will the class do if the file already exists.
+
+Then you call the function \hyperlink{}{process} to actually perform the actions according to the processing parameters you set above. It will create new instances of the original file, so the original file remains the same between each process. The file will be manipulated, and copied to the given location. The processing variables will be reset once it is done.
+
+You can repeat setting up a new set of processing variables, and calling \hyperlink{}{process} again as many times as you want. When you have finished, you can call \hyperlink{}{clean} to delete the original uploaded file.
+
+If you don\textquotesingle{}t set any processing parameters and call \hyperlink{}{process} just after instanciating the class. The uploaded file will be simply copied to the given location without any alteration or checks.
+
+Don\textquotesingle{}t forget to add {\itshape enctype=\char`\"{}multipart/form-\/data\char`\"{}} in your form tag $<$form$>$ if you want your form to upload the file.
+
+{\bfseries How to use it?}~\newline
+ Create a simple H\+T\+M\+L file, with a form such as\+: 
+\begin{DoxyPre}
+<form enctype="multipart/form-data" method="post" action="upload.php">
+  <input type="file" size="32" name="image\_field" value="">
+  <input type="submit" name="Submit" value="upload">
+</form>
+\end{DoxyPre}
+ Create a file called upload.\+php\+: 
+\begin{DoxyPre}
+ $handle = new upload($\_FILES['image\_field']);
+ if ($handle->uploaded) \{
+     $handle->file\_new\_name\_body   = 'image\_resized';
+     $handle->image\_resize         = true;
+     $handle->image\_x              = 100;
+     $handle->image\_ratio\_y        = true;
+     $handle->process('/home/user/files/');
+     if ($handle->processed) \{
+         echo 'image resized';
+         $handle->clean();
+     \} else \{
+         echo 'error : ' . $handle->error;
+     \}
+ \}
+\end{DoxyPre}
+
+
+{\bfseries How to process local files?}~\newline
+ Use the class as following, the rest being the same as above\+: 
+\begin{DoxyPre}
+ $handle = new upload('/home/user/myfile.jpg');
+\end{DoxyPre}
+
+
+{\bfseries How to set the language?}~\newline
+ Instantiate the class with a second argument being the language code\+: 
+\begin{DoxyPre}
+ $handle = new upload($\_FILES['image\_field'], 'fr\_FR');
+ $handle = new upload('/home/user/myfile.jpg', 'fr\_FR');
+\end{DoxyPre}
+
+
+{\bfseries How to output the resulting file or picture directly to the browser?}~\newline
+ Simply call \hyperlink{}{process}() without an argument (or with null as first argument)\+: 
+\begin{DoxyPre}
+ $handle = new upload($\_FILES['image\_field']);
+ header('Content-type: ' . $handle->file\_src\_mime);
+ echo $handle->Process();
+ die();
+\end{DoxyPre}
+ Or if you want to force the download of the file\+: 
+\begin{DoxyPre}
+ $handle = new upload($\_FILES['image\_field']);
+ header('Content-type: ' . $handle->file\_src\_mime);
+ header("Content-Disposition: attachment; filename=".rawurlencode($handle->file\_src\_name).";");
+ echo $handle->Process();
+ die();
+\end{DoxyPre}
+
+
+{\bfseries Processing parameters} (reset after each process) 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{file\+\_\+new\+\_\+name\+\_\+body}} replaces the name body (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->file\_new\_name\_body = 'new name';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{file\+\_\+name\+\_\+body\+\_\+add}} appends to the name body (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->file\_name\_body\_add = '\_uploaded';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{file\+\_\+name\+\_\+body\+\_\+pre}} prepends to the name body (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->file\_name\_body\_pre = 'thumb\_';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{file\+\_\+new\+\_\+name\+\_\+ext}} replaces the file extension (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->file\_new\_name\_ext = 'txt';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{file\+\_\+safe\+\_\+name}} formats the filename (spaces changed to \+\_\+) (default\+: true)~\newline
+ 
+\begin{DoxyPre}$handle->file\_safe\_name = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{file\+\_\+force\+\_\+extension}} forces an extension if there is\textquotesingle{}t any (default\+: true)~\newline
+ 
+\begin{DoxyPre}$handle->file\_force\_extension = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{file\+\_\+overwrite}} sets behaviour if file already exists (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->file\_overwrite = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{file\+\_\+auto\+\_\+rename}} automatically renames file if it already exists (default\+: true)~\newline
+ 
+\begin{DoxyPre}$handle->file\_auto\_rename = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{dir\+\_\+auto\+\_\+create}} automatically creates destination directory if missing (default\+: true)~\newline
+ 
+\begin{DoxyPre}$handle->auto\_create\_dir = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{dir\+\_\+auto\+\_\+chmod}} automatically attempts to chmod the destination directory if not writeable (default\+: true)~\newline
+ 
+\begin{DoxyPre}$handle->dir\_auto\_chmod = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{dir\+\_\+chmod}} chmod used when creating directory or if directory not writeable (default\+: 0777)~\newline
+ 
+\begin{DoxyPre}$handle->dir\_chmod = 0777;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{file\+\_\+max\+\_\+size}} sets maximum upload size (default\+: upload\+\_\+max\+\_\+filesize from php.\+ini)~\newline
+ 
+\begin{DoxyPre}$handle->file\_max\_size = '1024'; // 1KB\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{mime\+\_\+check}} sets if the class check the M\+I\+M\+E against the \hyperlink{}{allowed} list (default\+: true)~\newline
+ 
+\begin{DoxyPre}$handle->mime\_check = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{no\+\_\+script}} sets if the class turns scripts into text files (default\+: true)~\newline
+ 
+\begin{DoxyPre}$handle->no\_script = false;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{allowed}} array of allowed mime-\/types (or one string). wildcard accepted, as in image/$\ast$ (default\+: check \hyperlink{}{Init})~\newline
+ 
+\begin{DoxyPre}$handle->allowed = array('application/pdf','application/msword', 'image/*');\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{forbidden}} array of forbidden mime-\/types (or one string). wildcard accepted, as in image/$\ast$ (default\+: check \hyperlink{}{Init})~\newline
+ 
+\begin{DoxyPre}$handle->forbidden = array('application/*');\end{DoxyPre}
+ 
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+convert}} if set, image will be converted (possible values \+: \textquotesingle{}\textquotesingle{}$\vert$\textquotesingle{}png\textquotesingle{}$\vert$\textquotesingle{}jpeg\textquotesingle{}$\vert$\textquotesingle{}gif\textquotesingle{}$\vert$\textquotesingle{}bmp\textquotesingle{}; default\+: \textquotesingle{}\textquotesingle{})~\newline
+ 
+\begin{DoxyPre}$handle->image\_convert = 'jpg';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+background\+\_\+color}} if set, will forcibly fill transparent areas with the color, in hexadecimal (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_background\_color = '#FF00FF';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+default\+\_\+color}} fallback color background color for non alpha-\/transparent output formats, such as J\+P\+E\+G or B\+M\+P, in hexadecimal (default\+: \#\+F\+F\+F\+F\+F\+F)~\newline
+ 
+\begin{DoxyPre}$handle->image\_default\_color = '#FF00FF';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{jpeg\+\_\+quality}} sets the compression quality for J\+P\+E\+G images (default\+: 85)~\newline
+ 
+\begin{DoxyPre}$handle->jpeg\_quality = 50;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{jpeg\+\_\+size}} if set to a size in bytes, will approximate \hyperlink{}{jpeg\+\_\+quality} so the output image fits within the size (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->jpeg\_size = 3072;\end{DoxyPre}
+ 
+\end{DoxyItemize}The following eight settings can be used to invalidate an upload if the file is an image (note that {\itshape open\+\_\+basedir} restrictions prevent the use of these settings) 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+max\+\_\+width}} if set to a dimension in pixels, the upload will be invalid if the image width is greater (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_max\_width = 200;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+max\+\_\+height}} if set to a dimension in pixels, the upload will be invalid if the image height is greater (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_max\_height = 100;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+max\+\_\+pixels}} if set to a number of pixels, the upload will be invalid if the image number of pixels is greater (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_max\_pixels = 50000;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+max\+\_\+ratio}} if set to a aspect ratio (width/height), the upload will be invalid if the image apect ratio is greater (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_max\_ratio = 1.5;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+min\+\_\+width}} if set to a dimension in pixels, the upload will be invalid if the image width is lower (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_min\_width = 100;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+min\+\_\+height}} if set to a dimension in pixels, the upload will be invalid if the image height is lower (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_min\_height = 500;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+min\+\_\+pixels}} if set to a number of pixels, the upload will be invalid if the image number of pixels is lower (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_min\_pixels = 20000;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+min\+\_\+ratio}} if set to a aspect ratio (width/height), the upload will be invalid if the image apect ratio is lower (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_min\_ratio = 0.5;\end{DoxyPre}
+ 
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+resize}} determines is an image will be resized (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_resize = true;\end{DoxyPre}
+ 
+\end{DoxyItemize}The following variables are used only if \hyperlink{}{image\+\_\+resize} == true 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+x}} destination image width (default\+: 150)~\newline
+ 
+\begin{DoxyPre}$handle->image\_x = 100;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+y}} destination image height (default\+: 150)~\newline
+ 
+\begin{DoxyPre}$handle->image\_y = 200;\end{DoxyPre}
+ 
+\end{DoxyItemize}Use either one of the following 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+ratio}} if true, resize image conserving the original sizes ratio, using \hyperlink{}{image\+\_\+x} A\+N\+D \hyperlink{}{image\+\_\+y} as max sizes if true (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_ratio = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+ratio\+\_\+crop}} if true, resize image conserving the original sizes ratio, using \hyperlink{}{image\+\_\+x} A\+N\+D \hyperlink{}{image\+\_\+y} as max sizes, and cropping excedent to fill the space. setting can also be a string, with one or more from \textquotesingle{}T\+B\+L\+R\textquotesingle{}, indicating which side of the image will be kept while cropping (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_ratio\_crop = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+ratio\+\_\+fill}} if true, resize image conserving the original sizes ratio, using \hyperlink{}{image\+\_\+x} A\+N\+D \hyperlink{}{image\+\_\+y} as max sizes, fitting the image in the space and coloring the remaining space. setting can also be a string, with one or more from \textquotesingle{}T\+B\+L\+R\textquotesingle{}, indicating which side of the space the image will be in (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_ratio\_fill = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+ratio\+\_\+no\+\_\+zoom\+\_\+in}} same as \hyperlink{}{image\+\_\+ratio}, but won\textquotesingle{}t resize if the source image is smaller than \hyperlink{}{image\+\_\+x} x \hyperlink{}{image\+\_\+y} (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_ratio\_no\_zoom\_in = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+ratio\+\_\+no\+\_\+zoom\+\_\+out}} same as \hyperlink{}{image\+\_\+ratio}, but won\textquotesingle{}t resize if the source image is bigger than \hyperlink{}{image\+\_\+x} x \hyperlink{}{image\+\_\+y} (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_ratio\_no\_zoom\_out = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+ratio\+\_\+x}} if true, resize image, calculating \hyperlink{}{image\+\_\+x} from \hyperlink{}{image\+\_\+y} and conserving the original sizes ratio (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_ratio\_x = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+ratio\+\_\+y}} if true, resize image, calculating \hyperlink{}{image\+\_\+y} from \hyperlink{}{image\+\_\+x} and conserving the original sizes ratio (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_ratio\_y = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+ratio\+\_\+pixels}} if set to a long integer, resize image, calculating \hyperlink{}{image\+\_\+y} and \hyperlink{}{image\+\_\+x} to match a the number of pixels (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_ratio\_pixels = 25000;\end{DoxyPre}
+ 
+\end{DoxyItemize}The following image manipulations require G\+D2+ 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+brightness}} if set, corrects the brightness. value between -\/127 and 127 (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_brightness = 40;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+contrast}} if set, corrects the contrast. value between -\/127 and 127 (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_contrast = 50;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+opacity}} if set, changes the image opacity. value between 0 and 100 (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_opacity = 50;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+tint\+\_\+color}} if set, will tint the image with a color, value as hexadecimal \#\+F\+F\+F\+F\+F\+F (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_tint\_color = '#FF0000';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+overlay\+\_\+color}} if set, will add a colored overlay, value as hexadecimal \#\+F\+F\+F\+F\+F\+F (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_overlay\_color = '#FF0000';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+overlay\+\_\+opacity}} used when \hyperlink{}{image\+\_\+overlay\+\_\+color} is set, determines the opacity (default\+: 50)~\newline
+ 
+\begin{DoxyPre}$handle->image\_overlay\_opacity = 20;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+negative}} inverts the colors in the image (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_negative = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+greyscale}} transforms an image into greyscale (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_greyscale = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+threshold}} applies a threshold filter. value between -\/127 and 127 (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_threshold = 20;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+unsharp}} applies an unsharp mask, with alpha transparency support (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_unsharp = true;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+unsharp\+\_\+amount}} unsharp mask amount, typically 50 -\/ 200 (default\+: 80)~\newline
+ 
+\begin{DoxyPre}$handle->image\_unsharp\_amount = 120;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+unsharp\+\_\+radius}} unsharp mask radius, typically 0.\+5 -\/ 1 (default\+: 0.\+5)~\newline
+ 
+\begin{DoxyPre}$handle->image\_unsharp\_radius = 0.8;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+unsharp\+\_\+threshold}} unsharp mask threshold, typically 0 -\/ 5 (default\+: 1)~\newline
+ 
+\begin{DoxyPre}$handle->image\_unsharp\_threshold = 0;\end{DoxyPre}
+ 
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+text}} creates a text label on the image, value is a string, with eventual replacement tokens (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text = 'test';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+direction}} text label direction, either \textquotesingle{}h\textquotesingle{} horizontal or \textquotesingle{}v\textquotesingle{} vertical (default\+: \textquotesingle{}h\textquotesingle{})~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_direction = 'v';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+color}} text color for the text label, in hexadecimal (default\+: \#\+F\+F\+F\+F\+F\+F)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_color = '#FF0000';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+opacity}} text opacity on the text label, integer between 0 and 100 (default\+: 100)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_opacity = 50;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+background}} text label background color, in hexadecimal (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_background = '#FFFFFF';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+background\+\_\+opacity}} text label background opacity, integer between 0 and 100 (default\+: 100)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_background\_opacity = 50;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+font}} built-\/in font for the text label, from 1 to 5. 1 is the smallest (default\+: 5)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_font = 4;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+x}} absolute text label position, in pixels from the left border. can be negative (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_x = 5;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+y}} absolute text label position, in pixels from the top border. can be negative (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_y = 5;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+position}} text label position withing the image, a combination of one or two from \textquotesingle{}T\+B\+L\+R\textquotesingle{}\+: top, bottom, left, right (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_position = 'LR';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+padding}} text label padding, in pixels. can be overridden by \hyperlink{}{image\+\_\+text\+\_\+padding\+\_\+x} and \hyperlink{}{image\+\_\+text\+\_\+padding\+\_\+y} (default\+: 0)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_padding = 5;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+padding\+\_\+x}} text label horizontal padding (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_padding\_x = 2;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+padding\+\_\+y}} text label vertical padding (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_padding\_y = 10;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+alignment}} text alignment when text has multiple lines, either \textquotesingle{}L\textquotesingle{}, \textquotesingle{}C\textquotesingle{} or \textquotesingle{}R\textquotesingle{} (default\+: \textquotesingle{}C\textquotesingle{})~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_alignment = 'R';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+text\+\_\+line\+\_\+spacing}} space between lines in pixels, when text has multiple lines (default\+: 0)~\newline
+ 
+\begin{DoxyPre}$handle->image\_text\_line\_spacing = 3;\end{DoxyPre}
+ 
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+flip}} flips image, wither \textquotesingle{}h\textquotesingle{} horizontal or \textquotesingle{}v\textquotesingle{} vertical (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_flip = 'h';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+rotate}} rotates image. possible values are 90, 180 and 270 (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_rotate = 90;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+crop}} crops image. accepts 4, 2 or 1 values as \textquotesingle{}T R B L\textquotesingle{} or \textquotesingle{}T\+B L\+R\textquotesingle{} or \textquotesingle{}T\+B\+L\+R\textquotesingle{}. dimension can be 20, or 20px or 20\% (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_crop = array(50,40,30,20); OR '-20 20'...\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+precrop}} crops image, before an eventual resizing. accepts 4, 2 or 1 values as \textquotesingle{}T R B L\textquotesingle{} or \textquotesingle{}T\+B L\+R\textquotesingle{} or \textquotesingle{}T\+B\+L\+R\textquotesingle{}. dimension can be 20, or 20px or 20\% (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_precrop = array(50,40,30,20); OR '-20 20'...\end{DoxyPre}
+ 
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+bevel}} adds a bevel border to the image. value is thickness in pixels (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_bevel = 20;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+bevel\+\_\+color1}} top and left bevel color, in hexadecimal (default\+: \#\+F\+F\+F\+F\+F\+F)~\newline
+ 
+\begin{DoxyPre}$handle->image\_bevel\_color1 = '#FFFFFF';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+bevel\+\_\+color2}} bottom and right bevel color, in hexadecimal (default\+: \#000000)~\newline
+ 
+\begin{DoxyPre}$handle->image\_bevel\_color2 = '\#000000';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+border}} adds a unicolor border to the image. accepts 4, 2 or 1 values as \textquotesingle{}T R B L\textquotesingle{} or \textquotesingle{}T\+B L\+R\textquotesingle{} or \textquotesingle{}T\+B\+L\+R\textquotesingle{}. dimension can be 20, or 20px or 20\% (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_border = '3px'; OR '-20 20' OR array(3,2)...\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+border\+\_\+color}} border color, in hexadecimal (default\+: \#\+F\+F\+F\+F\+F\+F)~\newline
+ 
+\begin{DoxyPre}$handle->image\_border\_color = '#FFFFFF';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+border\+\_\+opacity}} border opacity, integer between 0 and 100 (default\+: 100)~\newline
+ 
+\begin{DoxyPre}$handle->image\_border\_opacity = 50;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+border\+\_\+transparent}} adds a fading-\/to-\/transparent border to the image. accepts 4, 2 or 1 values as \textquotesingle{}T R B L\textquotesingle{} or \textquotesingle{}T\+B L\+R\textquotesingle{} or \textquotesingle{}T\+B\+L\+R\textquotesingle{}. dimension can be 20, or 20px or 20\% (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_border\_transparent = '3px'; OR '-20 20' OR array(3,2)...\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+frame}} type of frame\+: 1=flat 2=crossed (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_frame = 2;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+frame\+\_\+colors}} list of hex colors, in an array or a space separated string (default\+: \textquotesingle{}\#\+F\+F\+F\+F\+F\+F \#999999 \#666666 \#000000\textquotesingle{})~\newline
+ 
+\begin{DoxyPre}$handle->image\_frame\_colors = array('\#999999',  '#FF0000', '\#666666', '\#333333', '\#000000');\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+frame\+\_\+opacity}} frame opacity, integer between 0 and 100 (default\+: 100)~\newline
+ 
+\begin{DoxyPre}$handle->image\_frame\_opacity = 50;\end{DoxyPre}
+ 
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+watermark}} adds a watermark on the image, value is a local filename. accepted files are G\+I\+F, J\+P\+G, B\+M\+P, P\+N\+G and P\+N\+G alpha (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_watermark = 'watermark.png';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+watermark\+\_\+x}} absolute watermark position, in pixels from the left border. can be negative (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_watermark\_x = 5;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+watermark\+\_\+y}} absolute watermark position, in pixels from the top border. can be negative (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_watermark\_y = 5;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+watermark\+\_\+position}} watermark position withing the image, a combination of one or two from \textquotesingle{}T\+B\+L\+R\textquotesingle{}\+: top, bottom, left, right (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_watermark\_position = 'LR';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+watermark\+\_\+no\+\_\+zoom\+\_\+in}} prevents the watermark to be resized up if it is smaller than the image (default\+: true)~\newline
+ 
+\begin{DoxyPre}$handle->image\_watermark\_no\_zoom\_in = false;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+watermark\+\_\+no\+\_\+zoom\+\_\+out}} prevents the watermark to be resized down if it is bigger than the image (default\+: false)~\newline
+ 
+\begin{DoxyPre}$handle->image\_watermark\_no\_zoom\_out = true;\end{DoxyPre}
+ 
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+reflection\+\_\+height}} if set, a reflection will be added. Format is either in pixels or percentage, such as 40, \textquotesingle{}40\textquotesingle{}, \textquotesingle{}40px\textquotesingle{} or \textquotesingle{}40\textquotesingle{} (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_reflection\_height = '25';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+reflection\+\_\+space}} space in pixels between the source image and the reflection, can be negative (default\+: null)~\newline
+ 
+\begin{DoxyPre}$handle->image\_reflection\_space = 3;\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+reflection\+\_\+color}} reflection background color, in hexadecimal. Now deprecated in favor of \hyperlink{}{image\+\_\+default\+\_\+color} (default\+: \#\+F\+F\+F\+F\+F\+F)~\newline
+ 
+\begin{DoxyPre}$handle->image\_default\_color = '\#000000';\end{DoxyPre}
+ 
+\item {\bfseries \hyperlink{}{image\+\_\+reflection\+\_\+opacity}} opacity level at which the reflection starts, integer between 0 and 100 (default\+: 60)~\newline
+ 
+\begin{DoxyPre}$handle->image\_reflection\_opacity = 60;\end{DoxyPre}
+ 
+\end{DoxyItemize}
+
+{\bfseries Values that can be read before calling \hyperlink{}{process}()} 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{file\+\_\+src\+\_\+name}} Source file name 
+\item {\bfseries \hyperlink{}{file\+\_\+src\+\_\+name\+\_\+body}} Source file name body 
+\item {\bfseries \hyperlink{}{file\+\_\+src\+\_\+name\+\_\+ext}} Source file extension 
+\item {\bfseries \hyperlink{}{file\+\_\+src\+\_\+pathname}} Source file complete path and name 
+\item {\bfseries \hyperlink{}{file\+\_\+src\+\_\+mime}} Source file mime type 
+\item {\bfseries \hyperlink{}{file\+\_\+src\+\_\+size}} Source file size in bytes 
+\item {\bfseries \hyperlink{}{file\+\_\+src\+\_\+error}} Upload error code 
+\item {\bfseries \hyperlink{}{file\+\_\+is\+\_\+image}} Boolean flag, true if the file is a supported image type 
+\end{DoxyItemize}If the file is a supported image type (and {\itshape open\+\_\+basedir} restrictions allow it) 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+src\+\_\+x}} Source file width in pixels 
+\item {\bfseries \hyperlink{}{image\+\_\+src\+\_\+y}} Source file height in pixels 
+\item {\bfseries \hyperlink{}{image\+\_\+src\+\_\+pixels}} Source file number of pixels 
+\item {\bfseries \hyperlink{}{image\+\_\+src\+\_\+type}} Source file type (png, jpg, gif or bmp) 
+\item {\bfseries \hyperlink{}{image\+\_\+src\+\_\+bits}} Source file color depth 
+\end{DoxyItemize}
+
+{\bfseries Values that can be read after calling \hyperlink{}{process}()} 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{file\+\_\+dst\+\_\+path}} Destination file path 
+\item {\bfseries \hyperlink{}{file\+\_\+dst\+\_\+name\+\_\+body}} Destination file name body 
+\item {\bfseries \hyperlink{}{file\+\_\+dst\+\_\+name\+\_\+ext}} Destination file extension 
+\item {\bfseries \hyperlink{}{file\+\_\+dst\+\_\+name}} Destination file name 
+\item {\bfseries \hyperlink{}{file\+\_\+dst\+\_\+pathname}} Destination file complete path and name 
+\end{DoxyItemize}If the file is a supported image type 
+\begin{DoxyItemize}
+\item {\bfseries \hyperlink{}{image\+\_\+dst\+\_\+x}} Destination file width 
+\item {\bfseries \hyperlink{}{image\+\_\+dst\+\_\+y}} Destination file height 
+\item {\bfseries \hyperlink{}{image\+\_\+convert}} Destination file format 
+\end{DoxyItemize}
+
+{\bfseries Requirements}
+
+Most of the image operations require G\+D. G\+D2 is greatly recommended
+
+The class is compatible with P\+H\+P 4.\+3+, and compatible with P\+H\+P5
+
+{\bfseries Changelog} 
+\begin{DoxyItemize}
+\item {\bfseries v 0.\+31} 11/04/2011~\newline
+
+\begin{DoxyItemize}
+\item added application/x-\/rar M\+I\+M\+E type~\newline
+
+\item make sure exec() and ini\+\_\+get\+\_\+all()function are not disabled if we want to use them~\newline
+
+\item make sure that we don\textquotesingle{}t divide by zero when calculating J\+P\+E\+G size~\newline
+
+\item \hyperlink{}{allowed} and \hyperlink{}{forbidden} can now accept strings~\newline
+
+\item try to guess the file extension from the M\+I\+M\+E type if there is no file extension~\newline
+
+\item better class properties when changing the file extension~\newline
+
+\item added \hyperlink{}{file\+\_\+force\+\_\+extension} to allow extension-\/less files if needed~\newline
+
+\item better file safe conversion of the filename~\newline
+
+\item allow shorthand byte values, such as 1\+K, 2\+M, 3\+G for \hyperlink{}{file\+\_\+max\+\_\+size} and \hyperlink{}{jpeg\+\_\+size}~\newline
+
+\item added \hyperlink{}{image\+\_\+opacity} to change picture opacity~\newline
+
+\item added \hyperlink{}{image\+\_\+border\+\_\+opacity} to allow semi-\/transparent borders~\newline
+
+\item added \hyperlink{}{image\+\_\+frame\+\_\+opacity} to allow semi-\/transparent frames~\newline
+
+\item added \hyperlink{}{image\+\_\+border\+\_\+transparent} to allow borders fading to transparent~\newline
+
+\item duplicated \hyperlink{}{image\+\_\+overlay\+\_\+percent} into \hyperlink{}{image\+\_\+overlay\+\_\+opacity}~\newline
+
+\item duplicated \hyperlink{}{image\+\_\+text\+\_\+percent} into \hyperlink{}{image\+\_\+text\+\_\+opacity}~\newline
+
+\item duplicated \hyperlink{}{image\+\_\+text\+\_\+background\+\_\+percent} into \hyperlink{}{image\+\_\+text\+\_\+background\+\_\+opacity} 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+30} 05/09/2010~\newline
+
+\begin{DoxyItemize}
+\item implemented an unsharp mask, with alpha transparency support, activated if \hyperlink{}{image\+\_\+unsharp} is true. added \hyperlink{}{image\+\_\+unsharp\+\_\+amount}, \hyperlink{}{image\+\_\+unsharp\+\_\+radius}, and \hyperlink{}{image\+\_\+unsharp\+\_\+threshold}~\newline
+
+\item added text/rtf M\+I\+M\+E type, and no\+\_\+script exception~\newline
+
+\item corrected bug when \hyperlink{}{no\+\_\+script} is activated and several process() are called~\newline
+
+\item better error handling for finfo~\newline
+
+\item display upload\+\_\+max\+\_\+filesize information from php.\+ini in the log~\newline
+
+\item automatic extension for extension-\/less images~\newline
+
+\item fixed \hyperlink{}{image\+\_\+ratio\+\_\+fill} top and left filling~\newline
+
+\item fixed alphablending issue when applying a transparent P\+N\+G watermark on a transparent P\+N\+G~\newline
+
+\item added \hyperlink{}{image\+\_\+watermark\+\_\+no\+\_\+zoom\+\_\+in} and \hyperlink{}{image\+\_\+watermark\+\_\+no\+\_\+zoom\+\_\+out} to allow the watermark to be resized down (or up) to fit in the image. By default, the watermark may be resized down, but not up. 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+29} 03/02/2010~\newline
+
+\begin{DoxyItemize}
+\item added protection against malicious images~\newline
+
+\item added zip and torrent M\+I\+M\+E type~\newline
+
+\item replaced split() with explode()~\newline
+
+\item initialise image\+\_\+dst\+\_\+x/y with image\+\_\+src\+\_\+x/y~\newline
+
+\item removed \hyperlink{}{mime\+\_\+fileinfo}, \hyperlink{}{mime\+\_\+file}, \hyperlink{}{mime\+\_\+magic} and \hyperlink{}{mime\+\_\+getimagesize} from the docs since they are used before \hyperlink{}{process}~\newline
+
+\item added more extensions and M\+I\+M\+E types~\newline
+
+\item improved M\+I\+M\+E type validation~\newline
+
+\item improved logging 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+28} 10/08/2009~\newline
+
+\begin{DoxyItemize}
+\item replaced ereg functions to be compatible with P\+H\+P 5.\+3~\newline
+
+\item added flv M\+I\+M\+E type~\newline
+
+\item improved M\+I\+M\+E type detection~\newline
+
+\item added \hyperlink{}{file\+\_\+name\+\_\+body\+\_\+pre} to prepend a string to the file name~\newline
+
+\item added \hyperlink{}{mime\+\_\+fileinfo}, \hyperlink{}{mime\+\_\+file}, \hyperlink{}{mime\+\_\+magic} and \hyperlink{}{mime\+\_\+getimagesize} so that it is possible to deactivate some M\+I\+M\+E type checking method~\newline
+
+\item use exec() rather than shell\+\_\+exec(), to play better with safe mode ~\newline
+
+\item added some error messages~\newline
+
+\item fix bug when checking on conditions, \hyperlink{}{processed} wasn\textquotesingle{}t propagated properly 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+27} 14/05/2009~\newline
+
+\begin{DoxyItemize}
+\item look for the language files directory from {\bfseries F\+I\+L\+E}~\newline
+
+\item deactivate \hyperlink{}{file\+\_\+auto\+\_\+rename} if \hyperlink{}{file\+\_\+overwrite} is set~\newline
+
+\item improved transparency replacement for true color images~\newline
+
+\item fixed calls to newer version of U\+N\+I\+X file utility~\newline
+
+\item fixed error when using P\+E\+C\+L Fileinfo extension in S\+A\+F\+E M\+O\+D\+E, and when using the finfo class~\newline
+
+\item added \hyperlink{}{image\+\_\+precrop} to crop the image before an eventual resizing 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+26} 13/11/2008~\newline
+
+\begin{DoxyItemize}
+\item rewrote conversion from palette to true color to handle transparency better~\newline
+
+\item fixed imagecopymergealpha() when the overlayed image is of wrong dimensions~\newline
+
+\item fixed imagecreatenew() when the image to create have less than 1 pixels width or height~\newline
+
+\item rewrote M\+I\+M\+E type detection to be more secure and not rely on browser information; now using Fileinfo P\+E\+C\+L extension, U\+N\+I\+X file() command, M\+I\+M\+E magic, and getimagesize(), in that order~\newline
+
+\item added support for Flash uploaders~\newline
+
+\item some bug fixing and error handling 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+25} 17/11/2007~\newline
+
+\begin{DoxyItemize}
+\item added translation files and mechanism to instantiate the class with a language different from English~\newline
+
+\item added \hyperlink{}{forbidden} to set an array of forbidden M\+I\+M\+E types~\newline
+
+\item implemented support for simple wildcards in \hyperlink{}{allowed} and \hyperlink{}{forbidden}, such as image/$\ast$~\newline
+
+\item preset the file extension to the desired conversion format when converting an image~\newline
+
+\item added read and write support for B\+M\+P images~\newline
+
+\item added a flag \hyperlink{}{file\+\_\+is\+\_\+image} to determine if the file is a supported image type~\newline
+
+\item the class now provides some information about the image, before calling \hyperlink{}{process}(). Available are \hyperlink{}{image\+\_\+src\+\_\+x}, \hyperlink{}{image\+\_\+src\+\_\+y} and the newly introduced \hyperlink{}{image\+\_\+src\+\_\+bits}, \hyperlink{}{image\+\_\+src\+\_\+pixels} and \hyperlink{}{image\+\_\+src\+\_\+type}. Note that this will not work if {\itshape open\+\_\+basedir} restrictions are in place~\newline
+
+\item improved logging; now provides useful system information~\newline
+
+\item added some more pre-\/processing checks for files that are images\+: \hyperlink{}{image\+\_\+max\+\_\+width}, \hyperlink{}{image\+\_\+max\+\_\+height}, \hyperlink{}{image\+\_\+max\+\_\+pixels}, \hyperlink{}{image\+\_\+max\+\_\+ratio}, \hyperlink{}{image\+\_\+min\+\_\+width}, \hyperlink{}{image\+\_\+min\+\_\+height}, \hyperlink{}{image\+\_\+min\+\_\+pixels} and \hyperlink{}{image\+\_\+min\+\_\+ratio}~\newline
+
+\item added \hyperlink{}{image\+\_\+ratio\+\_\+pixels} to resize an image to a number of pixels, keeping aspect ratio~\newline
+
+\item added \hyperlink{}{image\+\_\+is\+\_\+palette} and \hyperlink{}{image\+\_\+is\+\_\+transparent} and \hyperlink{}{image\+\_\+transparent\+\_\+color} for G\+I\+F images~\newline
+
+\item added \hyperlink{}{image\+\_\+default\+\_\+color} to define a fallback color for non alpha-\/transparent output formats, such as J\+P\+E\+G or B\+M\+P~\newline
+
+\item changed \hyperlink{}{image\+\_\+background\+\_\+color}, which now forces transparent areas to be painted~\newline
+
+\item improved reflections and color overlays so that it works with alpha transparent images~\newline
+
+\item \hyperlink{}{image\+\_\+reflection\+\_\+color} is now deprecated in favour of \hyperlink{}{image\+\_\+default\+\_\+color}~\newline
+
+\item transparent P\+N\+Gs are now processed in true color, and fully preserving the alpha channel when doing merges~\newline
+
+\item transparent G\+I\+Fs are now automatically detected. \hyperlink{}{preserve\+\_\+transparency} is deprecated~\newline
+
+\item transparent true color images can be saved as G\+I\+F while retaining transparency, semi transparent areas being merged with \hyperlink{}{image\+\_\+default\+\_\+color}~\newline
+
+\item transparent true color images can be saved as J\+P\+G/\+B\+M\+P with the semi transparent areas being merged with \hyperlink{}{image\+\_\+default\+\_\+color}~\newline
+
+\item fixed conversion of images to true color~\newline
+
+\item the class can now output the uploaded files content as the return value of process() if the function is called with an empty or null argumenti, or no argument 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+24} 25/05/2007~\newline
+
+\begin{DoxyItemize}
+\item added \hyperlink{}{image\+\_\+background\+\_\+color}, to set the default background color of an image~\newline
+
+\item added possibility of using replacement tokens in text labels~\newline
+
+\item changed default J\+P\+E\+G quality to 85~\newline
+
+\item fixed a small bug when using greyscale filter and associated filters~\newline
+
+\item added \hyperlink{}{image\+\_\+ratio\+\_\+fill} in order to fit an image within some dimensions and color the remaining space. Very similar to \hyperlink{}{image\+\_\+ratio\+\_\+crop}~\newline
+
+\item improved the recursive creation of directories~\newline
+
+\item the class now converts palette based images to true colors before doing graphic manipulations 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+23} 23/12/2006~\newline
+
+\begin{DoxyItemize}
+\item fixed a bug when processing more than once the same uploaded file. If there is an open\+\_\+basedir restriction, the class now creates a temporary file for the first call to process(). This file will be used for subsequent processes, and will be deleted upon calling clean() 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+22} 16/12/2006~\newline
+
+\begin{DoxyItemize}
+\item added automatic creation of a temporary file if the upload directory is not within open\+\_\+basedir~\newline
+
+\item fixed a bug which was preventing to work on a local file by overwriting it with its processed copy~\newline
+
+\item added M\+I\+M\+E types video/x-\/ms-\/wmv and image/x-\/png and fixed P\+N\+G support for I\+E weird M\+I\+M\+E types~\newline
+
+\item modified \hyperlink{}{image\+\_\+ratio\+\_\+crop} so it can accept one or more from string \textquotesingle{}T\+B\+L\+R\textquotesingle{}, determining which side of the image is kept while cropping~\newline
+
+\item added support for multiple lines in the text, using \char`\"{}\textbackslash{}n\char`\"{} as a line break~\newline
+
+\item added \hyperlink{}{image\+\_\+text\+\_\+line\+\_\+spacing} which allow to set the space between several lines of text~\newline
+
+\item added \hyperlink{}{image\+\_\+text\+\_\+alignment} which allow to set the alignment when text has several lines~\newline
+
+\item \hyperlink{}{image\+\_\+text\+\_\+font} can now be set to the path of a G\+D\+F font to load external fonts~\newline
+
+\item added \hyperlink{}{image\+\_\+reflection\+\_\+height} to create a reflection of the source image, which height is in pixels or percentage~\newline
+
+\item added \hyperlink{}{image\+\_\+reflection\+\_\+space} to set the space in pixels between the source image and the reflection~\newline
+
+\item added \hyperlink{}{image\+\_\+reflection\+\_\+color} to set the reflection background color~\newline
+
+\item added \hyperlink{}{image\+\_\+reflection\+\_\+opacity} to set the initial level of opacity of the reflection 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+21} 30/09/2006~\newline
+
+\begin{DoxyItemize}
+\item added \hyperlink{}{image\+\_\+ratio\+\_\+crop} which resizes within \hyperlink{}{image\+\_\+x} and \hyperlink{}{image\+\_\+y}, keeping ratio, but filling the space by cropping excedent of image~\newline
+
+\item added \hyperlink{}{mime\+\_\+check}, which default is true, to set checks against \hyperlink{}{allowed} M\+I\+M\+E list~\newline
+
+\item if M\+I\+M\+E is empty, the class now triggers an error~\newline
+
+\item color \#000000 is O\+K for \hyperlink{}{image\+\_\+text\+\_\+color}, and related text transparency bug fixed~\newline
+
+\item \hyperlink{}{gd\+\_\+version}() now uses gd\+\_\+info(), or else phpinfo()~\newline
+
+\item fixed path issue when the destination path has no trailing slash on Windows systems ~\newline
+
+\item removed inline functions to be fully P\+H\+P5 compatible  
+\end{DoxyItemize}
+\item {\bfseries v 0.\+20} 11/08/2006~\newline
+
+\begin{DoxyItemize}
+\item added some more error checking and messages (G\+D presence, permissions...)~\newline
+
+\item fix when uploading files without extension~\newline
+
+\item changed values for \hyperlink{}{image\+\_\+brightness} and \hyperlink{}{image\+\_\+contrast} to be between -\/127 and 127~\newline
+
+\item added \hyperlink{}{dir\+\_\+auto\+\_\+create} to automatically and recursively create destination directory if missing.~\newline
+
+\item added \hyperlink{}{dir\+\_\+auto\+\_\+chmod} to automatically chmod the destination directory if not writeable.~\newline
+
+\item added \hyperlink{}{dir\+\_\+chmod} to set the default chmod to use.~\newline
+
+\item added \hyperlink{}{image\+\_\+crop} to crop images~\newline
+
+\item added \hyperlink{}{image\+\_\+negative} to invert the colors on the image~\newline
+
+\item added \hyperlink{}{image\+\_\+greyscale} to turn the image into greyscale~\newline
+
+\item added \hyperlink{}{image\+\_\+threshold} to apply a threshold filter on the image~\newline
+
+\item added \hyperlink{}{image\+\_\+bevel}, \hyperlink{}{image\+\_\+bevel\+\_\+color1} and \hyperlink{}{image\+\_\+bevel\+\_\+color2} to add a bevel border~\newline
+
+\item added \hyperlink{}{image\+\_\+border} and \hyperlink{}{image\+\_\+border\+\_\+color} to add a single color border~\newline
+
+\item added \hyperlink{}{image\+\_\+frame} and \hyperlink{}{image\+\_\+frame\+\_\+colors} to add a multicolored frame 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+19} 29/03/2006~\newline
+
+\begin{DoxyItemize}
+\item class is now compatible i18n (thanks Sylwester).~\newline
+
+\item the class can mow manipulate local files, not only uploaded files (instanciate the class with a local filename).~\newline
+
+\item \hyperlink{}{file\+\_\+safe\+\_\+name} has been improved a bit.~\newline
+
+\item added \hyperlink{}{image\+\_\+brightness}, \hyperlink{}{image\+\_\+contrast}, \hyperlink{}{image\+\_\+tint\+\_\+color}, \hyperlink{}{image\+\_\+overlay\+\_\+color} and \hyperlink{}{image\+\_\+overlay\+\_\+percent} to do color manipulation on the images.~\newline
+
+\item added \hyperlink{}{image\+\_\+text} and all derivated settings to add a text label on the image.~\newline
+
+\item added \hyperlink{}{image\+\_\+watermark} and all derivated settings to add a watermark image on the image.~\newline
+
+\item added \hyperlink{}{image\+\_\+flip} and \hyperlink{}{image\+\_\+rotate} for more image manipulations~\newline
+
+\item added \hyperlink{}{jpeg\+\_\+size} to calculate the J\+P\+G compression quality in order to fit within one filesize. 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+18} 02/02/2006~\newline
+
+\begin{DoxyItemize}
+\item added \hyperlink{}{no\+\_\+script} to turn dangerous scripts into text files.~\newline
+
+\item added \hyperlink{}{mime\+\_\+magic\+\_\+check} to set the class to use mime\+\_\+magic.~\newline
+
+\item added \hyperlink{}{preserve\+\_\+transparency} {\itshape experimental}. Thanks Gregor.~\newline
+
+\item fixed size and mime checking, wasn\textquotesingle{}t working \+:/ Thanks Willem.~\newline
+
+\item fixed memory leak when resizing images.~\newline
+
+\item when resizing, it is not necessary anymore to set \hyperlink{}{image\+\_\+convert}.~\newline
+
+\item il is now possible to simply convert an image, with no resizing.~\newline
+
+\item sets the default \hyperlink{}{file\+\_\+max\+\_\+size} to upload\+\_\+max\+\_\+filesize from php.\+ini. Thanks Edward 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+17} 28/05/2005~\newline
+
+\begin{DoxyItemize}
+\item the class can be used with any version of G\+D.~\newline
+
+\item added security check on the file with a list of mime-\/types.~\newline
+
+\item changed the license to G\+P\+L v2 only 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+16} 19/05/2005~\newline
+
+\begin{DoxyItemize}
+\item added \hyperlink{}{file\+\_\+auto\+\_\+rename} automatic file renaming if the same filename already exists.~\newline
+
+\item added \hyperlink{}{file\+\_\+safe\+\_\+name} safe formatting of the filename (spaces to \+\_\+underscores so far).~\newline
+
+\item added some more error reporting to avoid crash if G\+D is not present 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+15} 16/04/2005~\newline
+
+\begin{DoxyItemize}
+\item added J\+P\+E\+G compression quality setting. Thanks Vad 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+14} 14/03/2005~\newline
+
+\begin{DoxyItemize}
+\item reworked the class file to allow parsing with php\+Documentor 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+13} 07/03/2005~\newline
+
+\begin{DoxyItemize}
+\item fixed a bug with \hyperlink{}{image\+\_\+ratio}. Thanks Justin.~\newline
+
+\item added \hyperlink{}{image\+\_\+ratio\+\_\+no\+\_\+zoom\+\_\+in} and \hyperlink{}{image\+\_\+ratio\+\_\+no\+\_\+zoom\+\_\+out}  
+\end{DoxyItemize}
+\item {\bfseries v 0.\+12} 21/01/2005~\newline
+
+\begin{DoxyItemize}
+\item added \hyperlink{}{image\+\_\+ratio} to resize within max values, keeping image ratio 
+\end{DoxyItemize}
+\item {\bfseries v 0.\+11} 22/08/2003~\newline
+
+\begin{DoxyItemize}
+\item update for G\+D2 (changed imageresized() into imagecopyresampled() and imagecreate() into imagecreatetruecolor()) 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+external
+
+Class upload catalan translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Antoni Canals (\href{mailto:antoni.canals@prehistoria.urv.cat}{\tt antoni.\+canals@prehistoria.\+urv.\+cat})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Antoni Canals
+\end{DoxyCopyright}
+external
+
+Class upload Czech translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Lukáš Gavenda (\href{mailto:LukasGavenda@GmaiL.com}{\tt Lukas\+Gavenda@\+Gmai\+L.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+2007 -\/ Lukáš Gavenda
+\end{DoxyCopyright}
+external
+
+Class upload german translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+some dude from Germany  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+some dude from Germany
+\end{DoxyCopyright}
+external
+
+Class upload Greek translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Christos Grezios (\href{mailto:cgrezios@link-tech.gr}{\tt cgrezios@link-\/tech.\+gr})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+2009
+\end{DoxyCopyright}
+external
+
+Class upload spanish translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Jorge Peréz Vega (\href{mailto:jorge@cocoroto.com}{\tt jorge@cocoroto.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Jorge Peréz Vega
+\end{DoxyCopyright}
+external
+
+Class upload Estonian translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+-\/lohe-\/ (\href{mailto:drache@hot.ee}{\tt drache@hot.\+ee})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+-\/lohe-\/
+\end{DoxyCopyright}
+external
+
+Class upload french translation
+
+\begin{DoxyVersion}{Version}
+0.\+28 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Colin Verot \href{mailto:colin@verot.net}{\tt colin@verot.\+net}  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Colin Verot
+\end{DoxyCopyright}
+external
+
+Class upload Hebrew translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Virtual\+Flavius  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Regular\+Basic.\+com
+\end{DoxyCopyright}
+external
+
+Class upload Croatian (hrvatski) translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Kresimir Virovic (\href{mailto:kresov@hotmail.com}{\tt kresov@hotmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Kresimir Virovic
+\end{DoxyCopyright}
+external
+
+Class upload Indonesian (Bahasa) translation. Based on class.\+upload version 0.\+25
+
+\begin{DoxyVersion}{Version}
+0.\+1 (2008-\/07-\/07) 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Irwan Butar Butar (\href{mailto:irwansah.putra@gmail.com}{\tt irwansah.\+putra@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Irwan Butar Butar 2008. All rights reserved.
+\end{DoxyCopyright}
+external
+
+Class upload italian translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Paolo Iulita (\href{mailto:paolo.iulita@gmail.com}{\tt paolo.\+iulita@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Paolo Iulita
+\end{DoxyCopyright}
+external
+
+Class upload lithuanian translation
+
+\begin{DoxyVersion}{Version}
+0.\+30 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Dainius Kaupaitis (\href{mailto:dk@sum.lt}{\tt dk@sum.\+lt})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Dainius Kaupaitis
+\end{DoxyCopyright}
+external
+
+Class upload dutch translation
+
+\begin{DoxyVersion}{Version}
+0.\+29 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Alfons Knaapen  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Alfons Knaapen
+\end{DoxyCopyright}
+external
+
+Class upload Norwegian translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Trond Torkildsen (\href{mailto:mymail@ttmin.net}{\tt mymail@ttmin.\+net})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Trond Torkildsen
+\end{DoxyCopyright}
+external
+
+Class upload polish translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Bartosz Rychlicki (\href{mailto:info@br-design.pl}{\tt info@br-\/design.\+pl})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Bartosz Rychlicki
+\end{DoxyCopyright}
+external
+
+Class upload Brazilian Portugese translation
+
+\begin{DoxyVersion}{Version}
+0.\+30 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Yuri Vecchi Baladelli (\href{mailto:y.vecchi@gmail.com}{\tt y.\+vecchi@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Yuri Vecchi Baladelli
+\end{DoxyCopyright}
+external
+
+Class upload romanian translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Cristian Datculescu (\href{mailto:cristian.datculescu@gmail.com}{\tt cristian.\+datculescu@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Cristian Datculescu
+\end{DoxyCopyright}
+external
+
+Class upload Russian translation
+
+\begin{DoxyVersion}{Version}
+0.\+25  U\+T\+F-\/8 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Chup (\href{mailto:chupzzz@ya.ru}{\tt chupzzz@ya.\+ru})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Free to change
+\end{DoxyCopyright}
+external
+
+Class upload Russian translation
+
+\begin{DoxyVersion}{Version}
+0.\+25  windows-\/1251 (default cyrillic) 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Chup (\href{mailto:chupzzz@ya.ru}{\tt chupzzz@ya.\+ru})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Free to change
+\end{DoxyCopyright}
+external
+
+Class upload Slovak translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Bryan (\href{mailto:bryan@bryan.sk}{\tt bryan@bryan.\+sk})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+2008 -\/ Bryan
+\end{DoxyCopyright}
+external
+
+Class upload swedish translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Mikael Andersson (\href{mailto:mikael@familjenmartinsson.com}{\tt mikael@familjenmartinsson.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Mikael Andersson
+\end{DoxyCopyright}
+external
+
+Class upload Turkish translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Volkan Metin (\href{mailto:metinsoft@gmail.com}{\tt metinsoft@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Volkan Metin
+\end{DoxyCopyright}
+external
+
+Class upload Ukrainian translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+S.\+Galashyn (\href{mailto:trovich@gmail.com}{\tt trovich@gmail.\+com})  U\+T\+F-\/8  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Free to modify
+\end{DoxyCopyright}
+external
+
+Class upload Ukrainian translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+S.\+Galashyn (\href{mailto:trovich@gmail.com}{\tt trovich@gmail.\+com})  windows-\/1251  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Free to modify
+\end{DoxyCopyright}
+external
+
+Class upload vietnamese translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+junzennt (\href{mailto:junzennt@gmail.com}{\tt junzennt@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Nguyen Nhu Tuan
+\end{DoxyCopyright}
+external
+
+Class upload xxxxxx translation
+
+\begin{DoxyVersion}{Version}
+0.\+28 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+xxxxxxxx (\href{mailto:xxx@xxx.xxx}{\tt xxx@xxx.\+xxx})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+xxxxxxxx
+\end{DoxyCopyright}
+external
+
+Class upload Chinese translation
+
+\begin{DoxyVersion}{Version}
+0.\+25  gb-\/2312 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Shiwei Cao (\href{mailto:caoshiwei@gmail.com}{\tt caoshiwei@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Shiwei Cao
+\end{DoxyCopyright}
+external
+
+Class upload Chinese translation
+
+\begin{DoxyVersion}{Version}
+0.\+25 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Shiwei Cao (\href{mailto:caoshiwei@gmail.com}{\tt caoshiwei@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Shiwei Cao
+\end{DoxyCopyright}
+external
+
+Class upload Traditional Chinese translation
+
+\begin{DoxyVersion}{Version}
+0.\+28 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Yang Chih-\/\+Wen (\href{mailto:chihwen.yang@gmail.com}{\tt chihwen.\+yang@gmail.\+com})  \href{http://opensource.org/licenses/gpl-license.php}{\tt http\+://opensource.\+org/licenses/gpl-\/license.\+php} G\+N\+U Public License 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Yang Chih-\/\+Wen
+\end{DoxyCopyright}
+external 

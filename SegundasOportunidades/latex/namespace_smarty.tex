@@ -1,0 +1,855 @@
+\hypertarget{namespace_smarty}{}\section{Smarty Namespace Reference}
+\label{namespace_smarty}\index{Smarty@{Smarty}}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_smarty}{Smarty} plugin to format text blocks
+
+Plugins\+Block
+
+\hyperlink{class_smarty}{Smarty} plugin
+
+Plugins\+Function
+
+\hyperlink{class_smarty}{Smarty} plugin
+
+This plugin is only for Smarty2 B\+C
+
+Plugins\+Function
+
+\hyperlink{class_smarty}{Smarty} plugin
+
+Plugins\+Modifier
+
+\hyperlink{class_smarty}{Smarty} plugin
+
+Debug
+
+\hyperlink{class_smarty}{Smarty} plugin
+
+Plugins\+Modifier\+Compiler
+
+\hyperlink{class_smarty}{Smarty} plugin
+
+Plugins\+Filter
+
+\hyperlink{class_smarty}{Smarty} shared plugin
+
+Plugins\+Shared
+
+\hyperlink{class_smarty}{Smarty} plugin
+
+Plugins\+Shared
+
+Project\+: \hyperlink{class_smarty}{Smarty}\+: the P\+H\+P compiling template engine File\+: \hyperlink{_smarty_8class_8php}{Smarty.\+class.\+php} S\+V\+N\+: \begin{DoxyParagraph}{Id}
+\hyperlink{_smarty_8class_8php}{Smarty.\+class.\+php} 4551 2012-\/02-\/06 20\+:45\+:10\+Z rodneyrehm 
+\end{DoxyParagraph}
+
+
+This library is free software; you can redistribute it and/or modify it under the terms of the G\+N\+U Lesser General Public License as published by the Free Software Foundation; either version 2.\+1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+U\+T A\+N\+Y W\+A\+R\+R\+A\+N\+T\+Y; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+T\+Y or F\+I\+T\+N\+E\+S\+S F\+O\+R A P\+A\+R\+T\+I\+C\+U\+L\+A\+R P\+U\+R\+P\+O\+S\+E. See the G\+N\+U Lesser General Public License for more details.
+
+You should have received a copy of the G\+N\+U Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, M\+A 02111-\/1307 U\+S\+A
+
+For questions, help, comments, discussion, etc., please join the \hyperlink{class_smarty}{Smarty} mailing list. Send a blank e-\/mail to \href{mailto:smarty-discussion-subscribe@googlegroups.com}{\tt smarty-\/discussion-\/subscribe@googlegroups.\+com}
+
+\hyperlink{}{2008 New Digital Group, Inc.  Monte Ohrt } \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+1.\+8
+\end{DoxyVersion}
+Load always needed external class files This is the main \hyperlink{class_smarty}{Smarty} class
+
+\hyperlink{class_smarty}{Smarty} exception class
+
+\hyperlink{class_smarty}{Smarty} compiler exception class
+
+Project\+: \hyperlink{class_smarty}{Smarty}\+: the P\+H\+P compiling template engine File\+: \hyperlink{_smarty_b_c_8class_8php}{Smarty\+B\+C.\+class.\+php} S\+V\+N\+: \begin{DoxyParagraph}{Id}
+
+\end{DoxyParagraph}
+
+
+This library is free software; you can redistribute it and/or modify it under the terms of the G\+N\+U Lesser General Public License as published by the Free Software Foundation; either version 2.\+1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+U\+T A\+N\+Y W\+A\+R\+R\+A\+N\+T\+Y; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+T\+Y or F\+I\+T\+N\+E\+S\+S F\+O\+R A P\+A\+R\+T\+I\+C\+U\+L\+A\+R P\+U\+R\+P\+O\+S\+E. See the G\+N\+U Lesser General Public License for more details.
+
+You should have received a copy of the G\+N\+U Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, M\+A 02111-\/1307 U\+S\+A
+
+For questions, help, comments, discussion, etc., please join the \hyperlink{class_smarty}{Smarty} mailing list. Send a blank e-\/mail to \href{mailto:smarty-discussion-subscribe@googlegroups.com}{\tt smarty-\/discussion-\/subscribe@googlegroups.\+com}
+
+\hyperlink{}{2008 New Digital Group, Inc.  Monte Ohrt } \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Backward Compatability Wrapper Class
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin
+
+Cacher
+
+Cache Handler A\+P\+I
+
+Cacher \begin{DoxyAuthor}{Author}
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Resource Data Object
+
+Cache Data Container for Template Files
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Cache Handler Base for Key/\+Value Storage Implementations
+
+This class implements the functionality required to use simple key/value stores for hierarchical cache groups. key/value stores like memcache or A\+P\+C do not support wildcards in keys, therefore a cache group cannot be cleared like \char`\"{}a$\vert$$\ast$\char`\"{} -\/ which is no problem to filesystem and R\+D\+B\+M\+S implementations.
+
+This implementation is based on the concept of invalidation. While one specific cache can be identified and cleared, any range of caches cannot be identified. For this reason each level of the cache group hierarchy can have its own value in the store. These values are nothing but microtimes, telling us when a particular cache group was cleared for the last time. These keys are evaluated for every cache read to determine if the cache has been invalidated since it was created and should hence be treated as inexistent.
+
+Although deep hierarchies are possible, they are not recommended. Try to keep your cache groups as shallow as possible. Anything up 3-\/5 parents should be ok. So »a$\vert$b$\vert$c« is a good depth where »a$\vert$b$\vert$c$\vert$d$\vert$e$\vert$f$\vert$g$\vert$h$\vert$i$\vert$j$\vert$k« isn\textquotesingle{}t. Try to join correlating cache groups\+: if your cache groups look somewhat like »a$\vert$b$\vert$\$page$\vert$\$items$\vert$\$whatever« consider using »a$\vert$b$\vert$c$\vert$\$page-\/\$items-\/\$whatever« instead.
+
+Cacher \begin{DoxyAuthor}{Author}
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin
+
+Template\+Resources
+
+\hyperlink{class_smarty}{Smarty} Resource Data Object
+
+Meta Data Container for Config Files
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Cache\+Resource File
+
+Cacher \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+This class does contain all necessary methods for the H\+T\+M\+L cache on file system
+
+Implements the file system as resource for the H\+T\+M\+L cache Version ussing nocache inserts.
+
+Cacher
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Append
+
+Compiles the \{append\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Append Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Assign
+
+Compiles the \{assign\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Assign Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Block
+
+Compiles the \{block\}\{/block\} tags
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Block Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Block\+Close Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Break
+
+Compiles the \{break\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Break Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Function\+\_\+\+Call
+
+Compiles the calls of user defined tags defined by \{function\}
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Function\+\_\+\+Call Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Capture
+
+Compiles the \{capture\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Capture Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Captureclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Config Load
+
+Compiles the \{config load\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Config Load Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Continue
+
+Compiles the \{continue\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Continue Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Debug
+
+Compiles the \{debug\} tag. It opens a window the the \hyperlink{class_smarty}{Smarty} Debugging Console.
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Debug Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Eval
+
+Compiles the \{eval\} tag.
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Eval Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile extend
+
+Compiles the \{extends\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile extend Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile For
+
+Compiles the \{for\} \{forelse\} \{/for\} tags
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile For Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Forelse Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Forclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Foreach
+
+Compiles the \{foreach\} \{foreachelse\} \{/foreach\} tags
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Foreach Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Foreachelse Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Foreachclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Function
+
+Compiles the \{function\} \{/function\} tags
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Function Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Functionclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile If
+
+Compiles the \{if\} \{else\} \{elseif\} \{/if\} tags
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile If Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Else Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Else\+If Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Ifclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Include
+
+Compiles the \{include\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Include Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Include P\+H\+P
+
+Compiles the \{include\+\_\+php\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Insert Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Insert
+
+Compiles the \{insert\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Ldelim
+
+Compiles the \{ldelim\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Ldelim Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Nocache
+
+Compiles the \{nocache\} \{/nocache\} tags.
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Nocache Classv
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Nocacheclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Block Plugin
+
+Compiles code for the execution of block plugin
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Block Plugin Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Function Plugin
+
+Compiles code for the execution of function plugin
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Function Plugin Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Modifier
+
+Compiles code for modifier execution
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Modifier Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Object Block Function
+
+Compiles code for registered objects as block function
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Object Block Function Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Object Funtion
+
+Compiles code for registered objects as function
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Object Function Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Print Expression
+
+Compiles any tag which will output an expression or variable
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Print Expression Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Registered Block
+
+Compiles code for the execution of a registered block function
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Registered Block Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Registered Function
+
+Compiles code for the execution of a registered function
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Registered Function Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Special \hyperlink{class_smarty}{Smarty} Variable
+
+Compiles the special \$smarty variables
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile special \hyperlink{class_smarty}{Smarty} Variable Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Rdelim
+
+Compiles the \{rdelim\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Rdelim Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Section
+
+Compiles the \{section\} \{sectionelse\} \{/section\} tags
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Section Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Sectionelse Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Sectionclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Setfilter
+
+Compiles code for setfilter tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Setfilter Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Setfilterclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile While
+
+Compiles the \{while\} tag
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile While Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile Whileclose Class
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Compile\+Base
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+This class does extend all internal compile plugins
+
+Compiler
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Config
+
+Config \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Config
+
+Main class for config variables
+
+Config
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Config File Compiler
+
+This is the config file compiler class. It calls the lexer and parser to perform the compiling.
+
+Config \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+Main config file compiler class
+
+Config
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Configfilelexer
+
+This is the lexer to break the config file source into tokens
+
+Config \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Configfileparser
+
+This is the config file parser. It is generated from the internal.\+configfileparser.\+y file
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Data
+
+This file contains the basic classes and methodes for template and variable creation
+
+Template \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+Base class with template and variable methodes
+
+Template
+
+class for the \hyperlink{class_smarty}{Smarty} data object
+
+The \hyperlink{class_smarty}{Smarty} data object will hold \hyperlink{class_smarty}{Smarty} variables in the current scope
+
+Template
+
+class for the \hyperlink{class_smarty}{Smarty} variable object
+
+This class defines the \hyperlink{class_smarty}{Smarty} variable object
+
+Template
+
+class for undefined variable object
+
+This class defines an object for undefined variable handling
+
+Template
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Debug
+
+Class to collect data for the \hyperlink{class_smarty}{Smarty} Debugging Consol
+
+Debug \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Debug Class
+
+Debug
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Filter Handler
+
+\hyperlink{class_smarty}{Smarty} filter handler class
+
+Plugins\+Internal \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+Class for filter processing
+
+Plugins\+Internal
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Function Call Handler
+
+Plugins\+Internal \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+This class does call function defined with the \{function\} tag
+
+Plugins\+Internal
+
+\hyperlink{class_smarty}{Smarty} read include path plugin
+
+Plugins\+Internal \begin{DoxyAuthor}{Author}
+Monte Ohrt
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Read Include Path Class
+
+Plugins\+Internal
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Nocache Insert
+
+Compiles the \{insert\} tag into the cache file
+
+Compiler \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Templateparser Parsetrees
+
+These are classes to build parsetrees in the template parser
+
+Compiler \begin{DoxyAuthor}{Author}
+Thue Kristensen 
+
+Uwe Tews
+\end{DoxyAuthor}
+Compiler 
+
+A complete smarty tag.
+
+Compiler 
+
+Code fragment inside a tag.
+
+Compiler 
+
+Double quoted string inside a tag.
+
+Compiler 
+
+Raw chars as part of a double quoted string.
+
+Compiler 
+
+Template element
+
+Compiler 
+
+template text
+
+Compiler 
+
+template linebreaks
+
+Compiler 
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource Eval
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource Extends
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource Extends
+
+Implements the file system as resource for \hyperlink{class_smarty}{Smarty} which \{extend\}s a chain of template files templates
+
+Template\+Resources
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource File
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource File
+
+Implements the file system as resource for \hyperlink{class_smarty}{Smarty} templates
+
+Template\+Resources
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource P\+H\+P
+
+Implements the file system as resource for P\+H\+P templates
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource Registered
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource Registered
+
+Implements the registered resource for \hyperlink{class_smarty}{Smarty} template
+
+Template\+Resources \begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]\end{DoxyRefDesc}
+
+
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource Stream
+
+Implements the streams as resource for \hyperlink{class_smarty}{Smarty} template
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Uwe Tews 
+
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Plugin Resource Stream
+
+Implements the streams as resource for \hyperlink{class_smarty}{Smarty} template
+
+\hyperlink{}{Template\+Resources Smarty Internal Plugin Resource String  Template\+Resources  Uwe Tews  Rodney Rehm Smarty Internal Plugin Smarty Template Compiler Base This file contains the basic classes and methodes for compiling Smarty templates with lexer/parser  Compiler  Uwe Tews  Class Smarty\+Template\+Compiler  Compiler Smarty Internal Plugin Template This file contains the Smarty template engine  Template  Uwe Tews Main class with template data structures and methods  Template Smarty Internal Plugin Smarty Template Base This file contains the basic shared methodes for template handling  Template  Uwe Tews Class with shared template methodes  Template Main abstract compiler class  Compiler Smarty Internal Plugin Templatelexer This is the lexer to break the template source into tokens  Compiler  Uwe Tews Smarty Internal Plugin Templateparser This is the template parser. It is generated from the internal.\+templateparser.\+y file  Compiler  Uwe Tews Project\+: Smarty\+: the P\+H\+P compiling template engine File\+: smarty\+\_\+internal\+\_\+utility.\+php S\+V\+N\+:  This library is free software; you can redistribute it and/or modify it under the terms of the G\+N\+U Lesser General Public License as published by the Free Software Foundation; either version 2.\+1 of the License, or (at your option) any later version. This library is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+U\+T A\+N\+Y W\+A\+R\+R\+A\+N\+T\+Y; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+T\+Y or F\+I\+T\+N\+E\+S\+S F\+O\+R A P\+A\+R\+T\+I\+C\+U\+L\+A\+R P\+U\+R\+P\+O\+S\+E. See the G\+N\+U Lesser General Public License for more details. You should have received a copy of the G\+N\+U Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, M\+A 02111-\/1307 U\+S\+A For questions, help, comments, discussion, etc., please join the Smarty mailing list. Send a blank e-\/mail to \href{mailto:smarty-discussion-subscribe@googlegroups.com}{\tt smarty-\/discussion-\/subscribe@googlegroups.\+com}  \href{http://www.smarty.net/}{\tt http\+://www.\+smarty.\+net/}  2008 New Digital Group, Inc.  Monte Ohrt } \begin{DoxyAuthor}{Author}
+Uwe Tews
+\end{DoxyAuthor}
+Plugins\+Internal \begin{DoxyVersion}{Version}
+3-\/\+S\+V\+N
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Rev}
+3286 
+\end{DoxyParagraph}
+
+
+Utility class
+
+Security
+
+\hyperlink{class_smarty}{Smarty} write file plugin
+
+Plugins\+Internal \begin{DoxyAuthor}{Author}
+Monte Ohrt
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Internal Write File Class
+
+Plugins\+Internal
+
+\hyperlink{class_smarty}{Smarty} Resource Plugin
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Resource Plugin
+
+Base implementation for resource plugins
+
+Template\+Resources
+
+\hyperlink{class_smarty}{Smarty} Resource Data Object
+
+Meta Data Container for Template Files
+
+Template\+Resources \begin{DoxyAuthor}{Author}
+Rodney Rehm
+\end{DoxyAuthor}
+\hyperlink{class_smarty}{Smarty} Resource Plugin
+
+Wrapper Implementation for custom resource plugins
+
+Template\+Resources
+
+\hyperlink{class_smarty}{Smarty} Resource Plugin
+
+Base implementation for resource plugins that don\textquotesingle{}t compile cache
+
+Template\+Resources
+
+\hyperlink{class_smarty}{Smarty} Resource Plugin
+
+Base implementation for resource plugins that don\textquotesingle{}t use the compiler
+
+Template\+Resources
+
+\hyperlink{class_smarty}{Smarty} plugin
+
+Security \begin{DoxyAuthor}{Author}
+Uwe Tews 
+\end{DoxyAuthor}

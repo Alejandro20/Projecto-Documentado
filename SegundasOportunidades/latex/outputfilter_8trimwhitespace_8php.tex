@@ -1,0 +1,42 @@
+\hypertarget{outputfilter_8trimwhitespace_8php}{}\section{libs/smarty/libs/plugins/outputfilter.trimwhitespace.\+php File Reference}
+\label{outputfilter_8trimwhitespace_8php}\index{libs/smarty/libs/plugins/outputfilter.\+trimwhitespace.\+php@{libs/smarty/libs/plugins/outputfilter.\+trimwhitespace.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_smarty}{Smarty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{outputfilter_8trimwhitespace_8php_a286d7ff1644ec213ed92af73546fb49f}{smarty\+\_\+outputfilter\+\_\+trimwhitespace} (\$source, \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$smarty)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{outputfilter_8trimwhitespace_8php_a286d7ff1644ec213ed92af73546fb49f}{}\index{outputfilter.\+trimwhitespace.\+php@{outputfilter.\+trimwhitespace.\+php}!smarty\+\_\+outputfilter\+\_\+trimwhitespace@{smarty\+\_\+outputfilter\+\_\+trimwhitespace}}
+\index{smarty\+\_\+outputfilter\+\_\+trimwhitespace@{smarty\+\_\+outputfilter\+\_\+trimwhitespace}!outputfilter.\+trimwhitespace.\+php@{outputfilter.\+trimwhitespace.\+php}}
+\subsubsection[{smarty\+\_\+outputfilter\+\_\+trimwhitespace}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+outputfilter\+\_\+trimwhitespace (
+\begin{DoxyParamCaption}
+\item[{}]{\$source, }
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$smarty}
+\end{DoxyParamCaption}
+)}\label{outputfilter_8trimwhitespace_8php_a286d7ff1644ec213ed92af73546fb49f}
+\hyperlink{class_smarty}{Smarty} trimwhitespace outputfilter plugin
+
+Trim unnecessary whitespace from H\+T\+M\+L markup.
+
+\begin{DoxyAuthor}{Author}
+Rodney Rehm 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$source} & input string \\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string filtered output 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]substr\+\_\+replace() is not overloaded by mbstring.\+func\+\_\+overload -\/ so this function might fail! \end{DoxyRefDesc}

@@ -1,0 +1,577 @@
+\hypertarget{class_smarty___internal___template_base}{}\section{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base Class Reference}
+\label{class_smarty___internal___template_base}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+Inheritance diagram for Smarty\+\_\+\+Internal\+\_\+\+Template\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_smarty___internal___template_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___internal___template_base_a485dfdbc35ffa5d996c8de8b24b4037b}{fetch} (\$template=null, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \$parent=null, \$\hyperlink{class_smarty___internal___template_base_a99bf3ed6256280050eb91485f5ca2c09}{display}=false, \$merge\+\_\+tpl\+\_\+vars=true, \$no\+\_\+output\+\_\+filter=false)
+\item 
+\hyperlink{class_smarty___internal___template_base_a99bf3ed6256280050eb91485f5ca2c09}{display} (\$template=null, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \$parent=null)
+\item 
+\hyperlink{class_smarty___internal___template_base_a1e432565b3597a4d6c51c03abf8474e8}{is\+Cached} (\$template=null, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \$parent=null)
+\item 
+\hyperlink{class_smarty___internal___template_base_afcf9199ce60b62e15a93d4f487f41e8a}{create\+Data} (\$parent=null)
+\item 
+\hyperlink{class_smarty___internal___template_base_afc5c1f0d058eb1d854dbe9edee757921}{register\+Plugin} (\$type, \$tag, \$callback, \$cacheable=true, \$cache\+\_\+attr=null)
+\item 
+\hyperlink{class_smarty___internal___template_base_a3fe332f4e80da882f6129ffaa5cd3551}{unregister\+Plugin} (\$type, \$tag)
+\item 
+\hyperlink{class_smarty___internal___template_base_a2f4c88561b31aa8eb753434b717011c1}{register\+Resource} (\$type, \$callback)
+\item 
+\hyperlink{class_smarty___internal___template_base_a0c77f4fa6848767f399598ca8cb3d16a}{unregister\+Resource} (\$type)
+\item 
+\hyperlink{class_smarty___internal___template_base_a2364468b32870d7cefb7adff339a62f4}{register\+Cache\+Resource} (\$type, \hyperlink{class_smarty___cache_resource}{Smarty\+\_\+\+Cache\+Resource} \$callback)
+\item 
+\hyperlink{class_smarty___internal___template_base_a0df47154a7e37324f5e4f06f0ff5cd02}{unregister\+Cache\+Resource} (\$type)
+\item 
+\hyperlink{class_smarty___internal___template_base_a62962fde3aa10bf40080ff47abe890f0}{register\+Object} (\$object\+\_\+name, \$object\+\_\+impl, \$allowed=array(), \$smarty\+\_\+args=true, \$block\+\_\+methods=array())
+\item 
+\hyperlink{class_smarty___internal___template_base_a91fb8c8c0ade382052df828a4e7ee500}{get\+Registered\+Object} (\$name)
+\item 
+\hyperlink{class_smarty___internal___template_base_a4236660295fcf58174d0fb32d2bb8a21}{unregister\+Object} (\$name)
+\item 
+\hyperlink{class_smarty___internal___template_base_ae0a95f951728523fc1387e5db58182de}{register\+Class} (\$class\+\_\+name, \$class\+\_\+impl)
+\item 
+\hyperlink{class_smarty___internal___template_base_aa4a9e4236187cd5c6c77f717ad4b4800}{register\+Default\+Plugin\+Handler} (\$callback)
+\item 
+\hyperlink{class_smarty___internal___template_base_a1480e8ebf192aaebe8633423b61cf8e9}{register\+Default\+Template\+Handler} (\$callback)
+\item 
+\hyperlink{class_smarty___internal___template_base_a9db71b45991fc21608e3f8b49b215774}{register\+Default\+Config\+Handler} (\$callback)
+\item 
+\hyperlink{class_smarty___internal___template_base_a61653c230089cfc193ad6da6dabc25e1}{register\+Filter} (\$type, \$callback)
+\item 
+\hyperlink{class_smarty___internal___template_base_aed8f1c736b9ae65768ebd2609a5d71dd}{unregister\+Filter} (\$type, \$callback)
+\item 
+\hyperlink{class_smarty___internal___template_base_accd17655aeaafeae11b81bb277306d78}{\+\_\+get\+\_\+filter\+\_\+name} (\$function\+\_\+name)
+\item 
+\hyperlink{class_smarty___internal___template_base_aa524a2268d3ab6b4cef402728a8fa893}{load\+Filter} (\$type, \$name)
+\item 
+\hyperlink{class_smarty___internal___template_base_a96e62e0765ce289273401120c1e2dfa3}{unload\+Filter} (\$type, \$name)
+\item 
+\hyperlink{class_smarty___internal___template_base_af231e86ad32039b9573ae228db5a29fa}{\+\_\+\+\_\+call} (\$name, \$args)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty___internal___template_base_af231e86ad32039b9573ae228db5a29fa}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!\+\_\+\+\_\+call@{\+\_\+\+\_\+call}}
+\index{\+\_\+\+\_\+call@{\+\_\+\+\_\+call}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{\+\_\+\+\_\+call}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+call (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$args}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_af231e86ad32039b9573ae228db5a29fa}
+Handle unknown class methods
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & unknown method-\/name \\
+\hline
+array & {\em \$args} & argument array \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smarty___internal___template_base_accd17655aeaafeae11b81bb277306d78}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!\+\_\+get\+\_\+filter\+\_\+name@{\+\_\+get\+\_\+filter\+\_\+name}}
+\index{\+\_\+get\+\_\+filter\+\_\+name@{\+\_\+get\+\_\+filter\+\_\+name}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{\+\_\+get\+\_\+filter\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+get\+\_\+filter\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{\$function\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_accd17655aeaafeae11b81bb277306d78}
+Return internal filter name
+
+
+\begin{DoxyParams}[1]{Parameters}
+callback & {\em \$function\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string internal filter name 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_afcf9199ce60b62e15a93d4f487f41e8a}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!create\+Data@{create\+Data}}
+\index{create\+Data@{create\+Data}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{create\+Data}]{\setlength{\rightskip}{0pt plus 5cm}create\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$parent = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_afcf9199ce60b62e15a93d4f487f41e8a}
+creates a data object
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$parent} & next higher level of \hyperlink{class_smarty}{Smarty} variables \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___data}{Smarty\+\_\+\+Data} data object 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_a99bf3ed6256280050eb91485f5ca2c09}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!display@{display}}
+\index{display@{display}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}display (
+\begin{DoxyParamCaption}
+\item[{}]{\$template = {\ttfamily null}, }
+\item[{}]{\$cache\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$compile\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$parent = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a99bf3ed6256280050eb91485f5ca2c09}
+displays a \hyperlink{class_smarty}{Smarty} template
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$template} & the resource handle of the template file or template object \\
+\hline
+mixed & {\em \$cache\+\_\+id} & cache id to be used with this template \\
+\hline
+mixed & {\em \$compile\+\_\+id} & compile id to be used with this template \\
+\hline
+object & {\em \$parent} & next higher level of \hyperlink{class_smarty}{Smarty} variables \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smarty___internal___template_base_a485dfdbc35ffa5d996c8de8b24b4037b}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!fetch@{fetch}}
+\index{fetch@{fetch}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{fetch}]{\setlength{\rightskip}{0pt plus 5cm}fetch (
+\begin{DoxyParamCaption}
+\item[{}]{\$template = {\ttfamily null}, }
+\item[{}]{\$cache\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$compile\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$parent = {\ttfamily null}, }
+\item[{}]{\$display = {\ttfamily false}, }
+\item[{}]{\$merge\+\_\+tpl\+\_\+vars = {\ttfamily true}, }
+\item[{}]{\$no\+\_\+output\+\_\+filter = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a485dfdbc35ffa5d996c8de8b24b4037b}
+fetches a rendered \hyperlink{class_smarty}{Smarty} template
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$template} & the resource handle of the template file or template object \\
+\hline
+mixed & {\em \$cache\+\_\+id} & cache id to be used with this template \\
+\hline
+mixed & {\em \$compile\+\_\+id} & compile id to be used with this template \\
+\hline
+object & {\em \$parent} & next higher level of \hyperlink{class_smarty}{Smarty} variables \\
+\hline
+bool & {\em \$display} & true\+: display, false\+: fetch \\
+\hline
+bool & {\em \$merge\+\_\+tpl\+\_\+vars} & if true parent template variables merged in to local scope \\
+\hline
+bool & {\em \$no\+\_\+output\+\_\+filter} & if true do not run output filter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string rendered template output 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_a91fb8c8c0ade382052df828a4e7ee500}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!get\+Registered\+Object@{get\+Registered\+Object}}
+\index{get\+Registered\+Object@{get\+Registered\+Object}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{get\+Registered\+Object}]{\setlength{\rightskip}{0pt plus 5cm}get\+Registered\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a91fb8c8c0ade382052df828a4e7ee500}
+return a reference to a registered object
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & object name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if no such object is found \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___internal___template_base_a1e432565b3597a4d6c51c03abf8474e8}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!is\+Cached@{is\+Cached}}
+\index{is\+Cached@{is\+Cached}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{is\+Cached}]{\setlength{\rightskip}{0pt plus 5cm}is\+Cached (
+\begin{DoxyParamCaption}
+\item[{}]{\$template = {\ttfamily null}, }
+\item[{}]{\$cache\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$compile\+\_\+id = {\ttfamily null}, }
+\item[{}]{\$parent = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a1e432565b3597a4d6c51c03abf8474e8}
+test if cache is valid
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | object & {\em \$template} & the resource handle of the template file or template object \\
+\hline
+mixed & {\em \$cache\+\_\+id} & cache id to be used with this template \\
+\hline
+mixed & {\em \$compile\+\_\+id} & compile id to be used with this template \\
+\hline
+object & {\em \$parent} & next higher level of \hyperlink{class_smarty}{Smarty} variables \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean cache status 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_aa524a2268d3ab6b4cef402728a8fa893}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!load\+Filter@{load\+Filter}}
+\index{load\+Filter@{load\+Filter}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{load\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}load\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_aa524a2268d3ab6b4cef402728a8fa893}
+load a filter of specified type and name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & filter type \\
+\hline
+string & {\em \$name} & filter name \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if filter could not be loaded \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___internal___template_base_a2364468b32870d7cefb7adff339a62f4}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Cache\+Resource@{register\+Cache\+Resource}}
+\index{register\+Cache\+Resource@{register\+Cache\+Resource}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Cache\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}register\+Cache\+Resource (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{{\bf Smarty\+\_\+\+Cache\+Resource}}]{\$callback}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a2364468b32870d7cefb7adff339a62f4}
+Registers a cache resource to cache a template\textquotesingle{}s output
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & name of cache resource type \\
+\hline
+\hyperlink{class_smarty___cache_resource}{Smarty\+\_\+\+Cache\+Resource} & {\em \$callback} & instance of \hyperlink{class_smarty___cache_resource}{Smarty\+\_\+\+Cache\+Resource} to handle output caching \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_ae0a95f951728523fc1387e5db58182de}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Class@{register\+Class}}
+\index{register\+Class@{register\+Class}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Class}]{\setlength{\rightskip}{0pt plus 5cm}register\+Class (
+\begin{DoxyParamCaption}
+\item[{}]{\$class\+\_\+name, }
+\item[{}]{\$class\+\_\+impl}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_ae0a95f951728523fc1387e5db58182de}
+Registers static classes to be used in templates
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & name of template class \\
+\hline
+string & {\em \$class\+\_\+impl} & the referenced P\+H\+P class to register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if \$class\+\_\+impl does not refer to an existing class \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___internal___template_base_a9db71b45991fc21608e3f8b49b215774}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Default\+Config\+Handler@{register\+Default\+Config\+Handler}}
+\index{register\+Default\+Config\+Handler@{register\+Default\+Config\+Handler}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Default\+Config\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}register\+Default\+Config\+Handler (
+\begin{DoxyParamCaption}
+\item[{}]{\$callback}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a9db71b45991fc21608e3f8b49b215774}
+Registers a default template handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & class/method name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if \$callback is not callable \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___internal___template_base_aa4a9e4236187cd5c6c77f717ad4b4800}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Default\+Plugin\+Handler@{register\+Default\+Plugin\+Handler}}
+\index{register\+Default\+Plugin\+Handler@{register\+Default\+Plugin\+Handler}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Default\+Plugin\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}register\+Default\+Plugin\+Handler (
+\begin{DoxyParamCaption}
+\item[{}]{\$callback}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_aa4a9e4236187cd5c6c77f717ad4b4800}
+Registers a default plugin handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & class/method name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if \$callback is not callable \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___internal___template_base_a1480e8ebf192aaebe8633423b61cf8e9}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Default\+Template\+Handler@{register\+Default\+Template\+Handler}}
+\index{register\+Default\+Template\+Handler@{register\+Default\+Template\+Handler}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Default\+Template\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}register\+Default\+Template\+Handler (
+\begin{DoxyParamCaption}
+\item[{}]{\$callback}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a1480e8ebf192aaebe8633423b61cf8e9}
+Registers a default template handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & class/method name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if \$callback is not callable \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___internal___template_base_a61653c230089cfc193ad6da6dabc25e1}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Filter@{register\+Filter}}
+\index{register\+Filter@{register\+Filter}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}register\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$callback}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a61653c230089cfc193ad6da6dabc25e1}
+Registers a filter function
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & filter type \\
+\hline
+callback & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_a62962fde3aa10bf40080ff47abe890f0}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Object@{register\+Object}}
+\index{register\+Object@{register\+Object}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Object}]{\setlength{\rightskip}{0pt plus 5cm}register\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$object\+\_\+name, }
+\item[{}]{\$object\+\_\+impl, }
+\item[{}]{\$allowed = {\ttfamily array()}, }
+\item[{}]{\$smarty\+\_\+args = {\ttfamily true}, }
+\item[{}]{\$block\+\_\+methods = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a62962fde3aa10bf40080ff47abe890f0}
+Registers object to be used in templates
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object} & name of template object \\
+\hline
+object & {\em \$object\+\_\+impl} & the referenced P\+H\+P object to register \\
+\hline
+array & {\em \$allowed} & list of allowed methods (empty = all) \\
+\hline
+boolean & {\em \$smarty\+\_\+args} & smarty argument format, else traditional \\
+\hline
+array & {\em \$block\+\_\+methods} & list of block-\/methods \\
+\hline
+array & {\em \$block\+\_\+functs} & list of methods that are block format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if any of the methods in \$allowed or \$block\+\_\+methods are invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___internal___template_base_afc5c1f0d058eb1d854dbe9edee757921}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Plugin@{register\+Plugin}}
+\index{register\+Plugin@{register\+Plugin}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Plugin}]{\setlength{\rightskip}{0pt plus 5cm}register\+Plugin (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$tag, }
+\item[{}]{\$callback, }
+\item[{}]{\$cacheable = {\ttfamily true}, }
+\item[{}]{\$cache\+\_\+attr = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_afc5c1f0d058eb1d854dbe9edee757921}
+Registers plugin to be used in templates
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & plugin type \\
+\hline
+string & {\em \$tag} & name of template tag \\
+\hline
+callback & {\em \$callback} & P\+H\+P callback to register \\
+\hline
+boolean & {\em \$cacheable} & if true (default) this fuction is cachable \\
+\hline
+array & {\em \$cache\+\_\+attr} & caching attributes if any \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & when the plugin tag is invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___internal___template_base_a2f4c88561b31aa8eb753434b717011c1}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!register\+Resource@{register\+Resource}}
+\index{register\+Resource@{register\+Resource}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{register\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}register\+Resource (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$callback}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a2f4c88561b31aa8eb753434b717011c1}
+Registers a resource to fetch a template
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & name of resource type \\
+\hline
+\hyperlink{class_smarty___resource}{Smarty\+\_\+\+Resource} | array & {\em \$callback} & or instance of \hyperlink{class_smarty___resource}{Smarty\+\_\+\+Resource}, or array of callbacks to handle resource (deprecated) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_a96e62e0765ce289273401120c1e2dfa3}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!unload\+Filter@{unload\+Filter}}
+\index{unload\+Filter@{unload\+Filter}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{unload\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}unload\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a96e62e0765ce289273401120c1e2dfa3}
+unload a filter of specified type and name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & filter type \\
+\hline
+string & {\em \$name} & filter name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_a0df47154a7e37324f5e4f06f0ff5cd02}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!unregister\+Cache\+Resource@{unregister\+Cache\+Resource}}
+\index{unregister\+Cache\+Resource@{unregister\+Cache\+Resource}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{unregister\+Cache\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}unregister\+Cache\+Resource (
+\begin{DoxyParamCaption}
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a0df47154a7e37324f5e4f06f0ff5cd02}
+Unregisters a cache resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & name of cache resource type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_aed8f1c736b9ae65768ebd2609a5d71dd}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!unregister\+Filter@{unregister\+Filter}}
+\index{unregister\+Filter@{unregister\+Filter}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{unregister\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}unregister\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$callback}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_aed8f1c736b9ae65768ebd2609a5d71dd}
+Unregisters a filter function
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & filter type \\
+\hline
+callback & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_a4236660295fcf58174d0fb32d2bb8a21}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!unregister\+Object@{unregister\+Object}}
+\index{unregister\+Object@{unregister\+Object}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{unregister\+Object}]{\setlength{\rightskip}{0pt plus 5cm}unregister\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a4236660295fcf58174d0fb32d2bb8a21}
+unregister an object
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & object name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_a3fe332f4e80da882f6129ffaa5cd3551}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!unregister\+Plugin@{unregister\+Plugin}}
+\index{unregister\+Plugin@{unregister\+Plugin}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{unregister\+Plugin}]{\setlength{\rightskip}{0pt plus 5cm}unregister\+Plugin (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$tag}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a3fe332f4e80da882f6129ffaa5cd3551}
+Unregister Plugin
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & of plugin \\
+\hline
+string & {\em \$tag} & name of plugin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___template_base_a0c77f4fa6848767f399598ca8cb3d16a}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}!unregister\+Resource@{unregister\+Resource}}
+\index{unregister\+Resource@{unregister\+Resource}!Smarty\+\_\+\+Internal\+\_\+\+Template\+Base@{Smarty\+\_\+\+Internal\+\_\+\+Template\+Base}}
+\subsubsection[{unregister\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}unregister\+Resource (
+\begin{DoxyParamCaption}
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___template_base_a0c77f4fa6848767f399598ca8cb3d16a}
+Unregisters a resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & name of resource type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Smarty\+\_\+\+Internal\+\_\+\+Templatebase current Smarty\+\_\+\+Internal\+\_\+\+Templatebase (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/sysplugins/\hyperlink{smarty__internal__templatebase_8php}{smarty\+\_\+internal\+\_\+templatebase.\+php}\end{DoxyCompactItemize}

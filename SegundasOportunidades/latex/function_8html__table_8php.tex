@@ -1,0 +1,90 @@
+\hypertarget{function_8html__table_8php}{}\section{libs/smarty/libs/plugins/function.html\+\_\+table.\+php File Reference}
+\label{function_8html__table_8php}\index{libs/smarty/libs/plugins/function.\+html\+\_\+table.\+php@{libs/smarty/libs/plugins/function.\+html\+\_\+table.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_smarty}{Smarty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{function_8html__table_8php_a9edf385beec24ab86c3c1fd960661ba6}{smarty\+\_\+function\+\_\+html\+\_\+table} (\$params, \$template)
+\item 
+\hyperlink{function_8html__table_8php_a70c55afc0771e08cb17afa924fe64f44}{smarty\+\_\+function\+\_\+html\+\_\+table\+\_\+cycle} (\$name, \$var, \$no)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{function_8html__table_8php_a9edf385beec24ab86c3c1fd960661ba6}{}\index{function.\+html\+\_\+table.\+php@{function.\+html\+\_\+table.\+php}!smarty\+\_\+function\+\_\+html\+\_\+table@{smarty\+\_\+function\+\_\+html\+\_\+table}}
+\index{smarty\+\_\+function\+\_\+html\+\_\+table@{smarty\+\_\+function\+\_\+html\+\_\+table}!function.\+html\+\_\+table.\+php@{function.\+html\+\_\+table.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+html\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+html\+\_\+table (
+\begin{DoxyParamCaption}
+\item[{}]{\$params, }
+\item[{}]{\$template}
+\end{DoxyParamCaption}
+)}\label{function_8html__table_8php_a9edf385beec24ab86c3c1fd960661ba6}
+\hyperlink{class_smarty}{Smarty} \{html\+\_\+table\} function plugin
+
+Type\+: function~\newline
+ Name\+: html\+\_\+table~\newline
+ Date\+: Feb 17, 2003~\newline
+ Purpose\+: make an html table from an array of data~\newline
+ Params\+: 
+\begin{DoxyPre}
+\begin{DoxyItemize}
+\item loop       - array to loop through
+\item cols       - number of columns, comma separated list of column names
+               or array of column names
+\item rows       - number of rows
+\item table\_attr - table attributes
+\item th\_attr    - table heading attributes (arrays are cycled)
+\item tr\_attr    - table row attributes (arrays are cycled)
+\item td\_attr    - table cell attributes (arrays are cycled)
+\item trailpad   - value to pad trailing cells with
+\item caption    - text for caption element
+\item vdir       - vertical direction (default: "down", means top-to-bottom)
+\item hdir       - horizontal direction (default: "right", means left-to-right)
+\item inner      - inner loop (default "cols": print $loop line by line,
+               $loop will be printed column by column otherwise)
+
+Examples:
+
+\begin{DoxyPre}
+\{table loop=$data\}
+\{table loop=$data cols=4 tr\_attr='"bgcolor=red"'\}
+\{table loop=$data cols="first,second,third" tr\_attr=$colors\}
+\end{DoxyPre}
+
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\begin{DoxyAuthor}{Author}
+Monte Ohrt <monte at="" ohrt="" dot="" com>="">
+
+
+credit to Messju Mohr <messju at="" lammfellpuschen="" dot="" de>="">
+
+
+credit to boots <boots dot="" smarty="" at="" yahoo="" dot="" com>="">
+
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.1
+\hyperlink{}{\{html\_table\}
+         (Smarty online manual)
+ array                    $params   parameters
+ Smarty\_Internal\_Template $template template object
+ string
+}
+\end{DoxyVersion}
+\end{DoxyPre}
+\hypertarget{function_8html__table_8php_a70c55afc0771e08cb17afa924fe64f44}{}\index{function.\+html\+\_\+table.\+php@{function.\+html\+\_\+table.\+php}!smarty\+\_\+function\+\_\+html\+\_\+table\+\_\+cycle@{smarty\+\_\+function\+\_\+html\+\_\+table\+\_\+cycle}}
+\index{smarty\+\_\+function\+\_\+html\+\_\+table\+\_\+cycle@{smarty\+\_\+function\+\_\+html\+\_\+table\+\_\+cycle}!function.\+html\+\_\+table.\+php@{function.\+html\+\_\+table.\+php}}
+\subsubsection[{smarty\+\_\+function\+\_\+html\+\_\+table\+\_\+cycle}]{\setlength{\rightskip}{0pt plus 5cm}smarty\+\_\+function\+\_\+html\+\_\+table\+\_\+cycle (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$var, }
+\item[{}]{\$no}
+\end{DoxyParamCaption}
+)}\label{function_8html__table_8php_a70c55afc0771e08cb17afa924fe64f44}

@@ -1,0 +1,306 @@
+﻿/* 
+-----------------------------------
+Documento CSS
+Jaisiel Delance | www.dlancedu.com
+-----------------------------------
+*/
+
+section{
+	display:flex;
+	width:99%;
+	justify-content:center;
+}
+
+#form{
+	
+	width:50%;
+	border: 1px solid #000;
+	
+
+}
+
+#logo a{color:hsla(63,92%,51%,1.00); width:100%;}
+#img_anun{width:100%;}
+input{width:100%;}
+textarea{width:100%;}
+
+.contenedor{
+	display:flex;
+	width:100%;
+	border: 2px solid hsla(0,5%,52%,1.00);
+	justify-content:center;
+	border-radius:10px;
+	
+}
+
+#edit_perfil, #hist, #admin{
+	margin-left:2%;
+	margin-right:2%;
+	width:40%;
+	margin:2%;
+}
+
+#edit_perfil input, #hist input, #admin input{
+	width:100%;
+	padding:10%;
+	background:hsla(28,85%,51%,1.00);
+	border-radius:10px;
+	color:#FFF;
+	font-family:Arial, sans-serif;
+	font-size:24px;
+	text-align:center;
+	cursor:pointer;
+}
+
+#edit_perfil input:hover, #hist input:hover, #admin input:hover{
+	width:100%;
+	padding:10%;
+	background:hsla(359,88%,49%,1.00);
+	border-radius:10px;
+	color:#FFF;
+	font-family:Arial, sans-serif;
+	font-size:24px;
+	text-align:center;
+	cursor:pointer;
+}
+
+
+body{
+	margin: 0;
+	background: #F17826;
+	font-family: Arial, sans-serif;
+}
+
+h1,h2,h3,h4 {
+	text-shadow: 0 2px 0 #FFFFFF;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px silver solid;
+}
+
+td, th {
+    padding: 3px 6px;
+}
+
+td {
+    text-align: left;
+    vertical-align: top;
+}
+
+ul {
+	list-style: circle;
+}
+
+a {
+	color: #F81317;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#nuevo{
+	color: #FFF;
+	text-decoration: none;
+	background:hsla(28,85%,51%,1.00);
+	border-radius:10px;
+	padding:10px;
+}
+
+#nuevo:hover {
+	text-decoration: none;
+}
+
+#main{
+	position: relative;
+	margin: 0 auto 0 auto;
+	width: 100%;
+	padding-top: 20px;
+}
+
+#header{
+	width: 100%;
+	height: 100px;
+}
+
+#logo{
+	width: 45%;
+	float: left;
+	margin: 0;
+	padding: 10px 10px 10px 20px;
+	height: 80px;
+	margin-left:2%;
+	background-image:url(../img/logo.png);
+	background-repeat:no-repeat;
+}
+
+#logo h1{
+	color: #E9E10F;
+	line-height: 60px;
+	text-shadow: 0 0 0;
+	margin: 0;
+}
+
+#contenido{
+	width:100%;
+	float: left;
+	background:url(../img/contenido.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	margin: 0;
+	height: 592px;
+	}
+
+#menu{
+	width: 47%;
+	height: 80px;
+	float: left;
+	margin: 0;
+	padding: 10px;
+}
+
+#content{background: #999999;
+	color: #6E6E6E;
+	width: 90%;
+	padding: 20px 20px 20px 50px;
+	background: white;
+	font-family: "Trebuchet MS", sans-serif;
+	border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	overflow: hidden;
+	margin-top:2%;
+	margin-left:2%;
+}
+
+#content h1, h2 {
+	color: #0B3861;
+}
+
+#top_menu{
+	height: 60px;
+	position: relative;
+	width: 100%;
+	margin: 0 auto 0 auto;
+	color: white;
+	overflow: hidden;
+	text-transform: uppercase;
+	background: #E14A4D;
+	border-radius: 5px;
+}
+
+#top_menu ul{
+	line-height: 60px;
+	margin: 0;
+	color: white;
+}
+
+#top_menu ul li{
+	display: inline;
+	margin-left: 15px;
+	padding-left: 15px;
+	border-left: 1px dashed;
+	color: white;
+}
+
+ #top_menu ul li:first-child {
+    border-left:none;
+	padding-left: 0;
+ }
+
+
+#top_menu ul li a{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#top_menu ul li a:hover{
+	text-decoration: none;
+}
+
+#footer{
+	color: #FFFFFF;
+	width: 100%;
+	padding:10px;
+	text-align: center;
+	margin-top:2%;
+}
+
+#footer a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	text-decoration: underline;
+}
+
+#top_menu ul li .current{
+	text-decoration: underline;
+}
+/*
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.button:active {
+	position:relative;
+	top:1px;
+}*/
+
+.button {
+	/*-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;*/
+	background:hsla(28,85%,51%,1.00);
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #b8cce6;
+	display:inline-block;
+	color:#FFF;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	/*text-shadow:1px 1px 0px #ffffff;*/
+}.button:hover {
+	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c4daf5), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #c4daf5 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4daf5', endColorstr='#ededed');*/
+	background-color:#E14A4D;;
+}.button:active {
+	position:relative;
+	top:1px;
+}

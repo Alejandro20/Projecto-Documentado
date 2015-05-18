@@ -1,0 +1,77 @@
+\hypertarget{classperfil_model}{}\section{perfil\+Model Class Reference}
+\label{classperfil_model}\index{perfil\+Model@{perfil\+Model}}
+Inheritance diagram for perfil\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classperfil_model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classperfil_model_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classperfil_model_a033b8395565196fb7755edf505d9a883}{verificar\+Usuario} (\$usuario)
+\item 
+\hyperlink{classperfil_model_a761f49dd7b8c281badea7d096c0175fa}{verificar\+Email} (\$email)
+\item 
+\hyperlink{classperfil_model_a896916e99176f5ee61453835a30db5bf}{get\+Usuario} (\$id)
+\item 
+\hyperlink{classperfil_model_aebc55320d3720dd16d234aa921488bca}{editar\+Perfil} (\$id, \$nombre, \$apellidos, \$email, \$Password, \$rol)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classperfil_model_a095c5d389db211932136b53f25f39685}{}\index{perfil\+Model@{perfil\+Model}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!perfil\+Model@{perfil\+Model}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classperfil_model_a095c5d389db211932136b53f25f39685}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classperfil_model_aebc55320d3720dd16d234aa921488bca}{}\index{perfil\+Model@{perfil\+Model}!editar\+Perfil@{editar\+Perfil}}
+\index{editar\+Perfil@{editar\+Perfil}!perfil\+Model@{perfil\+Model}}
+\subsubsection[{editar\+Perfil}]{\setlength{\rightskip}{0pt plus 5cm}editar\+Perfil (
+\begin{DoxyParamCaption}
+\item[{}]{\$id, }
+\item[{}]{\$nombre, }
+\item[{}]{\$apellidos, }
+\item[{}]{\$email, }
+\item[{}]{\$\+Password, }
+\item[{}]{\$rol}
+\end{DoxyParamCaption}
+)}\label{classperfil_model_aebc55320d3720dd16d234aa921488bca}
+Funcion para poder actualizar a un usuario desde la vista Perfil
+
+Si eres admin pasas todos los campos que nos pasan de la vista del editar del perfil
+
+Si eres usuario normal pasas todos los campos excepto el de rol que estara precargado con el valor 2 de usuario normal \hypertarget{classperfil_model_a896916e99176f5ee61453835a30db5bf}{}\index{perfil\+Model@{perfil\+Model}!get\+Usuario@{get\+Usuario}}
+\index{get\+Usuario@{get\+Usuario}!perfil\+Model@{perfil\+Model}}
+\subsubsection[{get\+Usuario}]{\setlength{\rightskip}{0pt plus 5cm}get\+Usuario (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{classperfil_model_a896916e99176f5ee61453835a30db5bf}
+Obtenemos a un usuario a traves de su id \hypertarget{classperfil_model_a761f49dd7b8c281badea7d096c0175fa}{}\index{perfil\+Model@{perfil\+Model}!verificar\+Email@{verificar\+Email}}
+\index{verificar\+Email@{verificar\+Email}!perfil\+Model@{perfil\+Model}}
+\subsubsection[{verificar\+Email}]{\setlength{\rightskip}{0pt plus 5cm}verificar\+Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)}\label{classperfil_model_a761f49dd7b8c281badea7d096c0175fa}
+Verificar que existe un usuario con ese email \hypertarget{classperfil_model_a033b8395565196fb7755edf505d9a883}{}\index{perfil\+Model@{perfil\+Model}!verificar\+Usuario@{verificar\+Usuario}}
+\index{verificar\+Usuario@{verificar\+Usuario}!perfil\+Model@{perfil\+Model}}
+\subsubsection[{verificar\+Usuario}]{\setlength{\rightskip}{0pt plus 5cm}verificar\+Usuario (
+\begin{DoxyParamCaption}
+\item[{}]{\$usuario}
+\end{DoxyParamCaption}
+)}\label{classperfil_model_a033b8395565196fb7755edf505d9a883}
+Funcion para verificar que el usuario existe 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/models/\hyperlink{perfil_model_8php}{perfil\+Model.\+php}\end{DoxyCompactItemize}

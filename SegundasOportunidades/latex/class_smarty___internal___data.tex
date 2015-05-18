@@ -1,0 +1,357 @@
+\hypertarget{class_smarty___internal___data}{}\section{Smarty\+\_\+\+Internal\+\_\+\+Data Class Reference}
+\label{class_smarty___internal___data}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+Inheritance diagram for Smarty\+\_\+\+Internal\+\_\+\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.901555cm]{class_smarty___internal___data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___internal___data_a5f97942987c58059c5f0408c950bb0b9}{assign} (\$tpl\+\_\+var, \$value=null, \$nocache=false)
+\item 
+\hyperlink{class_smarty___internal___data_af7d90ddb08c1eb9121c5f5b61712afe1}{assign\+Global} (\$varname, \$value=null, \$nocache=false)
+\item 
+\hyperlink{class_smarty___internal___data_a29903ae6eb34b6ea1dbc285f4ea78430}{assign\+By\+Ref} (\$tpl\+\_\+var, \&\$value, \$nocache=false)
+\item 
+\hyperlink{class_smarty___internal___data_ae440c91b4d3b5c221fe5243fe1e7eee9}{append} (\$tpl\+\_\+var, \$value=null, \$merge=false, \$nocache=false)
+\item 
+\hyperlink{class_smarty___internal___data_a44182877d96ea6ad3cfadf2455037ff2}{append\+By\+Ref} (\$tpl\+\_\+var, \&\$value, \$merge=false)
+\item 
+\hyperlink{class_smarty___internal___data_ae048703bf66ff6d2b0e980987c696555}{get\+Template\+Vars} (\$varname=null, \$\+\_\+ptr=null, \$search\+\_\+parents=true)
+\item 
+\hyperlink{class_smarty___internal___data_ad7d2c8b99bc3afcc2e64853eff1ac47c}{clear\+Assign} (\$tpl\+\_\+var)
+\item 
+\hyperlink{class_smarty___internal___data_aa6525c430552dc727c5539ff83a8a959}{clear\+All\+Assign} ()
+\item 
+\hyperlink{class_smarty___internal___data_aed2ef2106d271efe52ec0ae78966ca95}{config\+Load} (\$config\+\_\+file, \$sections=null)
+\item 
+\hyperlink{class_smarty___internal___data_a6019260fa5ec2ccfbb5c856f99753374}{get\+Variable} (\$variable, \$\+\_\+ptr=null, \$search\+\_\+parents=true, \$error\+\_\+enable=true)
+\item 
+\hyperlink{class_smarty___internal___data_acf6d5cd027c854ea89d514ce30082397}{get\+Config\+Variable} (\$variable, \$error\+\_\+enable=true)
+\item 
+\hyperlink{class_smarty___internal___data_af384b9c50fa8c6d6c2a3cb78d1b87674}{get\+Stream\+Variable} (\$variable)
+\item 
+\hyperlink{class_smarty___internal___data_a11ed94975ddbc02d6290e3862a519e00}{get\+Config\+Vars} (\$varname=null, \$search\+\_\+parents=true)
+\item 
+\hyperlink{class_smarty___internal___data_a2f79c14de75809c9da291e15cd2c760a}{clear\+Config} (\$varname=null)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___internal___data_aec71b73a60b0ab0f1b53d064254ea02e}{\$template\+\_\+class} = \textquotesingle{}\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}\textquotesingle{}
+\item 
+\hyperlink{class_smarty___internal___data_a7a4121f92586859cff6c2da9e3af7ade}{\$tpl\+\_\+vars} = array()
+\item 
+\hyperlink{class_smarty___internal___data_a4e2313a4b35b72a06ac45fd38960f677}{\$parent} = null
+\item 
+\hyperlink{class_smarty___internal___data_a28741040561c71d560ac683f85470955}{\$config\+\_\+vars} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty___internal___data_ae440c91b4d3b5c221fe5243fe1e7eee9}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!append@{append}}
+\index{append@{append}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}append (
+\begin{DoxyParamCaption}
+\item[{}]{\$tpl\+\_\+var, }
+\item[{}]{\$value = {\ttfamily null}, }
+\item[{}]{\$merge = {\ttfamily false}, }
+\item[{}]{\$nocache = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_ae440c91b4d3b5c221fe5243fe1e7eee9}
+appends values to template variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$tpl\+\_\+var} & the template variable name(s) \\
+\hline
+mixed & {\em \$value} & the value to append \\
+\hline
+boolean & {\em \$merge} & flag if array elements shall be merged \\
+\hline
+boolean & {\em \$nocache} & if true any output of this variable will be not cached \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_a44182877d96ea6ad3cfadf2455037ff2}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!append\+By\+Ref@{append\+By\+Ref}}
+\index{append\+By\+Ref@{append\+By\+Ref}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{append\+By\+Ref}]{\setlength{\rightskip}{0pt plus 5cm}append\+By\+Ref (
+\begin{DoxyParamCaption}
+\item[{}]{\$tpl\+\_\+var, }
+\item[{\&}]{\$value, }
+\item[{}]{\$merge = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_a44182877d96ea6ad3cfadf2455037ff2}
+appends values to template variables by reference
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tpl\+\_\+var} & the template variable name \\
+\hline
+mixed & {\em \&\$value} & the referenced value to append \\
+\hline
+boolean & {\em \$merge} & flag if array elements shall be merged \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_a5f97942987c58059c5f0408c950bb0b9}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!assign@{assign}}
+\index{assign@{assign}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}assign (
+\begin{DoxyParamCaption}
+\item[{}]{\$tpl\+\_\+var, }
+\item[{}]{\$value = {\ttfamily null}, }
+\item[{}]{\$nocache = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_a5f97942987c58059c5f0408c950bb0b9}
+assigns a \hyperlink{class_smarty}{Smarty} variable
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$tpl\+\_\+var} & the template variable name(s) \\
+\hline
+mixed & {\em \$value} & the value to assign \\
+\hline
+boolean & {\em \$nocache} & if true any output of this variable will be not cached \\
+\hline
+boolean & {\em \$scope} & the scope the variable will have (local,parent or root) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_a29903ae6eb34b6ea1dbc285f4ea78430}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!assign\+By\+Ref@{assign\+By\+Ref}}
+\index{assign\+By\+Ref@{assign\+By\+Ref}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{assign\+By\+Ref}]{\setlength{\rightskip}{0pt plus 5cm}assign\+By\+Ref (
+\begin{DoxyParamCaption}
+\item[{}]{\$tpl\+\_\+var, }
+\item[{\&}]{\$value, }
+\item[{}]{\$nocache = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_a29903ae6eb34b6ea1dbc285f4ea78430}
+assigns values to template variables by reference
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tpl\+\_\+var} & the template variable name \\
+\hline
+ & {\em mixed} & \$ \&\$value the referenced value to assign \\
+\hline
+boolean & {\em \$nocache} & if true any output of this variable will be not cached \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_af7d90ddb08c1eb9121c5f5b61712afe1}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!assign\+Global@{assign\+Global}}
+\index{assign\+Global@{assign\+Global}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{assign\+Global}]{\setlength{\rightskip}{0pt plus 5cm}assign\+Global (
+\begin{DoxyParamCaption}
+\item[{}]{\$varname, }
+\item[{}]{\$value = {\ttfamily null}, }
+\item[{}]{\$nocache = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_af7d90ddb08c1eb9121c5f5b61712afe1}
+assigns a global \hyperlink{class_smarty}{Smarty} variable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$varname} & the global variable name \\
+\hline
+mixed & {\em \$value} & the value to assign \\
+\hline
+boolean & {\em \$nocache} & if true any output of this variable will be not cached \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_aa6525c430552dc727c5539ff83a8a959}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!clear\+All\+Assign@{clear\+All\+Assign}}
+\index{clear\+All\+Assign@{clear\+All\+Assign}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{clear\+All\+Assign}]{\setlength{\rightskip}{0pt plus 5cm}clear\+All\+Assign (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_aa6525c430552dc727c5539ff83a8a959}
+clear all the assigned template variables. \begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_ad7d2c8b99bc3afcc2e64853eff1ac47c}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!clear\+Assign@{clear\+Assign}}
+\index{clear\+Assign@{clear\+Assign}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{clear\+Assign}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Assign (
+\begin{DoxyParamCaption}
+\item[{}]{\$tpl\+\_\+var}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_ad7d2c8b99bc3afcc2e64853eff1ac47c}
+clear the given assigned template variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$tpl\+\_\+var} & the template variable(s) to clear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_a2f79c14de75809c9da291e15cd2c760a}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!clear\+Config@{clear\+Config}}
+\index{clear\+Config@{clear\+Config}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{clear\+Config}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Config (
+\begin{DoxyParamCaption}
+\item[{}]{\$varname = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_a2f79c14de75809c9da291e15cd2c760a}
+Deassigns a single or all config variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$varname} & variable name or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_aed2ef2106d271efe52ec0ae78966ca95}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!config\+Load@{config\+Load}}
+\index{config\+Load@{config\+Load}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{config\+Load}]{\setlength{\rightskip}{0pt plus 5cm}config\+Load (
+\begin{DoxyParamCaption}
+\item[{}]{\$config\+\_\+file, }
+\item[{}]{\$sections = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_aed2ef2106d271efe52ec0ae78966ca95}
+load a config file, optionally load just selected sections
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$config\+\_\+file} & filename \\
+\hline
+mixed & {\em \$sections} & array of section names, single section or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} current \hyperlink{class_smarty___internal___data}{Smarty\+\_\+\+Internal\+\_\+\+Data} (or \hyperlink{class_smarty}{Smarty} or \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}) instance for chaining 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_acf6d5cd027c854ea89d514ce30082397}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!get\+Config\+Variable@{get\+Config\+Variable}}
+\index{get\+Config\+Variable@{get\+Config\+Variable}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{get\+Config\+Variable}]{\setlength{\rightskip}{0pt plus 5cm}get\+Config\+Variable (
+\begin{DoxyParamCaption}
+\item[{}]{\$variable, }
+\item[{}]{\$error\+\_\+enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_acf6d5cd027c854ea89d514ce30082397}
+gets a config variable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$variable} & the name of the config variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed the value of the config variable 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_a11ed94975ddbc02d6290e3862a519e00}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!get\+Config\+Vars@{get\+Config\+Vars}}
+\index{get\+Config\+Vars@{get\+Config\+Vars}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{get\+Config\+Vars}]{\setlength{\rightskip}{0pt plus 5cm}get\+Config\+Vars (
+\begin{DoxyParamCaption}
+\item[{}]{\$varname = {\ttfamily null}, }
+\item[{}]{\$search\+\_\+parents = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_a11ed94975ddbc02d6290e3862a519e00}
+Returns a single or all config variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$varname} & variable name or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string variable value or or array of variables 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_af384b9c50fa8c6d6c2a3cb78d1b87674}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!get\+Stream\+Variable@{get\+Stream\+Variable}}
+\index{get\+Stream\+Variable@{get\+Stream\+Variable}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{get\+Stream\+Variable}]{\setlength{\rightskip}{0pt plus 5cm}get\+Stream\+Variable (
+\begin{DoxyParamCaption}
+\item[{}]{\$variable}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_af384b9c50fa8c6d6c2a3cb78d1b87674}
+gets a stream variable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$variable} & the stream of the variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed the value of the stream variable 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_ae048703bf66ff6d2b0e980987c696555}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!get\+Template\+Vars@{get\+Template\+Vars}}
+\index{get\+Template\+Vars@{get\+Template\+Vars}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{get\+Template\+Vars}]{\setlength{\rightskip}{0pt plus 5cm}get\+Template\+Vars (
+\begin{DoxyParamCaption}
+\item[{}]{\$varname = {\ttfamily null}, }
+\item[{}]{\$\+\_\+ptr = {\ttfamily null}, }
+\item[{}]{\$search\+\_\+parents = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_ae048703bf66ff6d2b0e980987c696555}
+Returns a single or all template variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$varname} & variable name or null \\
+\hline
+string & {\em \$\+\_\+ptr} & optional pointer to data object \\
+\hline
+boolean & {\em \$search\+\_\+parents} & include parent templates? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string variable value or or array of variables 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___data_a6019260fa5ec2ccfbb5c856f99753374}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!get\+Variable@{get\+Variable}}
+\index{get\+Variable@{get\+Variable}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{get\+Variable}]{\setlength{\rightskip}{0pt plus 5cm}get\+Variable (
+\begin{DoxyParamCaption}
+\item[{}]{\$variable, }
+\item[{}]{\$\+\_\+ptr = {\ttfamily null}, }
+\item[{}]{\$search\+\_\+parents = {\ttfamily true}, }
+\item[{}]{\$error\+\_\+enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_smarty___internal___data_a6019260fa5ec2ccfbb5c856f99753374}
+gets the object of a \hyperlink{class_smarty}{Smarty} variable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$variable} & the name of the \hyperlink{class_smarty}{Smarty} variable \\
+\hline
+object & {\em \$\+\_\+ptr} & optional pointer to data object \\
+\hline
+boolean & {\em \$search\+\_\+parents} & search also in parent data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object the object of the variable 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{class_smarty___internal___data_a28741040561c71d560ac683f85470955}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!\$config\+\_\+vars@{\$config\+\_\+vars}}
+\index{\$config\+\_\+vars@{\$config\+\_\+vars}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{\$config\+\_\+vars}]{\setlength{\rightskip}{0pt plus 5cm}\$config\+\_\+vars = array()}\label{class_smarty___internal___data_a28741040561c71d560ac683f85470955}
+\hypertarget{class_smarty___internal___data_a4e2313a4b35b72a06ac45fd38960f677}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!\$parent@{\$parent}}
+\index{\$parent@{\$parent}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{\$parent}]{\setlength{\rightskip}{0pt plus 5cm}\$parent = null}\label{class_smarty___internal___data_a4e2313a4b35b72a06ac45fd38960f677}
+\hypertarget{class_smarty___internal___data_aec71b73a60b0ab0f1b53d064254ea02e}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!\$template\+\_\+class@{\$template\+\_\+class}}
+\index{\$template\+\_\+class@{\$template\+\_\+class}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{\$template\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}\$template\+\_\+class = \textquotesingle{}{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}\textquotesingle{}}\label{class_smarty___internal___data_aec71b73a60b0ab0f1b53d064254ea02e}
+\hypertarget{class_smarty___internal___data_a7a4121f92586859cff6c2da9e3af7ade}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}!\$tpl\+\_\+vars@{\$tpl\+\_\+vars}}
+\index{\$tpl\+\_\+vars@{\$tpl\+\_\+vars}!Smarty\+\_\+\+Internal\+\_\+\+Data@{Smarty\+\_\+\+Internal\+\_\+\+Data}}
+\subsubsection[{\$tpl\+\_\+vars}]{\setlength{\rightskip}{0pt plus 5cm}\$tpl\+\_\+vars = array()}\label{class_smarty___internal___data_a7a4121f92586859cff6c2da9e3af7ade}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/sysplugins/\hyperlink{smarty__internal__data_8php}{smarty\+\_\+internal\+\_\+data.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,281 @@
+\hypertarget{class_smarty___cache_resource}{}\section{Smarty\+\_\+\+Cache\+Resource Class Reference}
+\label{class_smarty___cache_resource}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+Inheritance diagram for Smarty\+\_\+\+Cache\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.499331cm]{class_smarty___cache_resource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___cache_resource_a397dea1ffad6f2ff9111ef7218cea345}{populate} (\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} \$cached, \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template)
+\item 
+\hyperlink{class_smarty___cache_resource_a4722beac1ad0bb6c485476c9d77f294b}{populate\+Timestamp} (\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} \$cached)
+\item 
+\hyperlink{class_smarty___cache_resource_a019b4a8966896231cabceac0f073d7d0}{process} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template, \hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} \$cached=null)
+\item 
+\hyperlink{class_smarty___cache_resource_af18c2dd2d421b8de6847db415fcb2a7c}{write\+Cached\+Content} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template, \$content)
+\item 
+\hyperlink{class_smarty___cache_resource_aa645ec746221da5b60c967f399bc814f}{get\+Cached\+Content} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template)
+\item 
+\hyperlink{class_smarty___cache_resource_a116dae666984bacbc85ba9ee69dff1d7}{clear\+All} (\hyperlink{class_smarty}{Smarty} \$smarty, \$exp\+\_\+time=null)
+\item 
+\hyperlink{class_smarty___cache_resource_a03b181c51244030a1173478514367b86}{clear} (\hyperlink{class_smarty}{Smarty} \$smarty, \$resource\+\_\+name, \$cache\+\_\+id, \$compile\+\_\+id, \$exp\+\_\+time)
+\item 
+\hyperlink{class_smarty___cache_resource_a25d360bf9084e5f54e9dad94697b3a3c}{locked} (\hyperlink{class_smarty}{Smarty} \$smarty, \hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} \$cached)
+\item 
+\hyperlink{class_smarty___cache_resource_a8ea21dba853364366abd58fe9a6b9bd1}{has\+Lock} (\hyperlink{class_smarty}{Smarty} \$smarty, \hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} \$cached)
+\item 
+\hyperlink{class_smarty___cache_resource_a7d1ce76cfa7371aa4e27f88ed1289460}{acquire\+Lock} (\hyperlink{class_smarty}{Smarty} \$smarty, \hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} \$cached)
+\item 
+\hyperlink{class_smarty___cache_resource_ac606c17f197b801c9c9df1b184f34910}{release\+Lock} (\hyperlink{class_smarty}{Smarty} \$smarty, \hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} \$cached)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___cache_resource_ac67235dda15979b929d453e5264553f7}{load} (\hyperlink{class_smarty}{Smarty} \$smarty, \$type=null)
+\item 
+static \hyperlink{class_smarty___cache_resource_a6b5095b6ee74b86694614b3e1fa26b82}{invalid\+Loaded\+Cache} (\hyperlink{class_smarty}{Smarty} \$smarty)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___cache_resource_ad57e7e99506ffd448d98e036b1a8da50}{\$resources} = array()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___cache_resource_a686d06923a58590ced2aae1c066d977e}{\$sysplugins}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty___cache_resource_a7d1ce76cfa7371aa4e27f88ed1289460}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!acquire\+Lock@{acquire\+Lock}}
+\index{acquire\+Lock@{acquire\+Lock}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{acquire\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}acquire\+Lock (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Cached}}]{\$cached}
+\end{DoxyParamCaption}
+)}\label{class_smarty___cache_resource_a7d1ce76cfa7371aa4e27f88ed1289460}
+\hypertarget{class_smarty___cache_resource_a03b181c51244030a1173478514367b86}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!clear@{clear}}
+\index{clear@{clear}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{}]{\$resource\+\_\+name, }
+\item[{}]{\$cache\+\_\+id, }
+\item[{}]{\$compile\+\_\+id, }
+\item[{}]{\$exp\+\_\+time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_smarty___cache_resource_a03b181c51244030a1173478514367b86}
+Empty cache for a specific template
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} object \\
+\hline
+string & {\em \$resource\+\_\+name} & template name \\
+\hline
+string & {\em \$cache\+\_\+id} & cache id \\
+\hline
+string & {\em \$compile\+\_\+id} & compile id \\
+\hline
+integer & {\em \$exp\+\_\+time} & expiration time (number of seconds, not timestamp) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of cache files deleted 
+\end{DoxyReturn}
+\hypertarget{class_smarty___cache_resource_a116dae666984bacbc85ba9ee69dff1d7}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!clear\+All@{clear\+All}}
+\index{clear\+All@{clear\+All}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{clear\+All}]{\setlength{\rightskip}{0pt plus 5cm}clear\+All (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{}]{\$exp\+\_\+time = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_smarty___cache_resource_a116dae666984bacbc85ba9ee69dff1d7}
+Empty cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} object \\
+\hline
+integer & {\em \$exp\+\_\+time} & expiration time (number of seconds, not timestamp) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of cache files deleted 
+\end{DoxyReturn}
+\hypertarget{class_smarty___cache_resource_aa645ec746221da5b60c967f399bc814f}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!get\+Cached\+Content@{get\+Cached\+Content}}
+\index{get\+Cached\+Content@{get\+Cached\+Content}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{get\+Cached\+Content}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cached\+Content (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template}
+\end{DoxyParamCaption}
+)}\label{class_smarty___cache_resource_aa645ec746221da5b60c967f399bc814f}
+Return cached content
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+string & {\em \$content} & content of cache \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smarty___cache_resource_a8ea21dba853364366abd58fe9a6b9bd1}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!has\+Lock@{has\+Lock}}
+\index{has\+Lock@{has\+Lock}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{has\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}has\+Lock (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Cached}}]{\$cached}
+\end{DoxyParamCaption}
+)}\label{class_smarty___cache_resource_a8ea21dba853364366abd58fe9a6b9bd1}
+\hypertarget{class_smarty___cache_resource_a6b5095b6ee74b86694614b3e1fa26b82}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!invalid\+Loaded\+Cache@{invalid\+Loaded\+Cache}}
+\index{invalid\+Loaded\+Cache@{invalid\+Loaded\+Cache}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{invalid\+Loaded\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}static invalid\+Loaded\+Cache (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___cache_resource_a6b5095b6ee74b86694614b3e1fa26b82}
+Invalid Loaded Cache Files
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smarty___cache_resource_ac67235dda15979b929d453e5264553f7}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!load@{load}}
+\index{load@{load}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}static load (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{}]{\$type = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___cache_resource_ac67235dda15979b929d453e5264553f7}
+Load Cache Resource Handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} object \\
+\hline
+string & {\em \$type} & name of the cache resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___cache_resource}{Smarty\+\_\+\+Cache\+Resource} Cache Resource Handler 
+\end{DoxyReturn}
+\hypertarget{class_smarty___cache_resource_a25d360bf9084e5f54e9dad94697b3a3c}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!locked@{locked}}
+\index{locked@{locked}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{locked}]{\setlength{\rightskip}{0pt plus 5cm}locked (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Cached}}]{\$cached}
+\end{DoxyParamCaption}
+)}\label{class_smarty___cache_resource_a25d360bf9084e5f54e9dad94697b3a3c}
+\hypertarget{class_smarty___cache_resource_a397dea1ffad6f2ff9111ef7218cea345}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!populate@{populate}}
+\index{populate@{populate}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{populate}]{\setlength{\rightskip}{0pt plus 5cm}populate (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Cached}}]{\$cached, }
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_smarty___cache_resource_a397dea1ffad6f2ff9111ef7218cea345}
+populate Cached Object with meta data from Resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$cached} & cached object \\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_smarty___cache_resource_a4722beac1ad0bb6c485476c9d77f294b}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!populate\+Timestamp@{populate\+Timestamp}}
+\index{populate\+Timestamp@{populate\+Timestamp}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{populate\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}populate\+Timestamp (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Cached}}]{\$cached}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_smarty___cache_resource_a4722beac1ad0bb6c485476c9d77f294b}
+populate Cached Object with timestamp and exists from Resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$source} & cached object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_smarty___cache_resource_a019b4a8966896231cabceac0f073d7d0}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!process@{process}}
+\index{process@{process}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{process}]{\setlength{\rightskip}{0pt plus 5cm}process (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template, }
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Cached}}]{\$cached = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_smarty___cache_resource_a019b4a8966896231cabceac0f073d7d0}
+Read the cached template and process header
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$cached} & cached object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booelan true or false if the cached content does not exist 
+\end{DoxyReturn}
+\hypertarget{class_smarty___cache_resource_ac606c17f197b801c9c9df1b184f34910}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!release\+Lock@{release\+Lock}}
+\index{release\+Lock@{release\+Lock}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{release\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}release\+Lock (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Cached}}]{\$cached}
+\end{DoxyParamCaption}
+)}\label{class_smarty___cache_resource_ac606c17f197b801c9c9df1b184f34910}
+\hypertarget{class_smarty___cache_resource_af18c2dd2d421b8de6847db415fcb2a7c}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!write\+Cached\+Content@{write\+Cached\+Content}}
+\index{write\+Cached\+Content@{write\+Cached\+Content}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{write\+Cached\+Content}]{\setlength{\rightskip}{0pt plus 5cm}write\+Cached\+Content (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template, }
+\item[{}]{\$content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_smarty___cache_resource_af18c2dd2d421b8de6847db415fcb2a7c}
+Write the rendered template output to cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+string & {\em \$content} & content to cache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean success 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{class_smarty___cache_resource_ad57e7e99506ffd448d98e036b1a8da50}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!\$resources@{\$resources}}
+\index{\$resources@{\$resources}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{\$resources}]{\setlength{\rightskip}{0pt plus 5cm}\$resources = array()\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___cache_resource_ad57e7e99506ffd448d98e036b1a8da50}
+\hypertarget{class_smarty___cache_resource_a686d06923a58590ced2aae1c066d977e}{}\index{Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}!\$sysplugins@{\$sysplugins}}
+\index{\$sysplugins@{\$sysplugins}!Smarty\+\_\+\+Cache\+Resource@{Smarty\+\_\+\+Cache\+Resource}}
+\subsubsection[{\$sysplugins}]{\setlength{\rightskip}{0pt plus 5cm}\$sysplugins\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{class_smarty___cache_resource_a686d06923a58590ced2aae1c066d977e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'file'} => \textcolor{keyword}{true},
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/sysplugins/\hyperlink{smarty__cacheresource_8php}{smarty\+\_\+cacheresource.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,146 @@
+\hypertarget{class_smarty___internal___utility}{}\section{Smarty\+\_\+\+Internal\+\_\+\+Utility Class Reference}
+\label{class_smarty___internal___utility}\index{Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___internal___utility_a65e177220d19695e61f74b972160a333}{compile\+All\+Templates} (\$extention, \$force\+\_\+compile, \$time\+\_\+limit, \$max\+\_\+errors, \hyperlink{class_smarty}{Smarty} \$smarty)
+\item 
+static \hyperlink{class_smarty___internal___utility_aff02fcfd8ba823768195511eb3c7d658}{compile\+All\+Config} (\$extention, \$force\+\_\+compile, \$time\+\_\+limit, \$max\+\_\+errors, \hyperlink{class_smarty}{Smarty} \$smarty)
+\item 
+static \hyperlink{class_smarty___internal___utility_a674581f5d9ff1064bb04e1e2e6f26812}{clear\+Compiled\+Template} (\$resource\+\_\+name, \$compile\+\_\+id, \$exp\+\_\+time, \hyperlink{class_smarty}{Smarty} \$smarty)
+\item 
+static \hyperlink{class_smarty___internal___utility_ac812e48bdf84b0e5a81f25881b1f7a64}{get\+Tags} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$template)
+\item 
+static \hyperlink{class_smarty___internal___utility_a70346af936b76aa358610fdc785324f5}{test\+Install} (\hyperlink{class_smarty}{Smarty} \$smarty, \&\$errors=null)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty___internal___utility_a674581f5d9ff1064bb04e1e2e6f26812}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}!clear\+Compiled\+Template@{clear\+Compiled\+Template}}
+\index{clear\+Compiled\+Template@{clear\+Compiled\+Template}!Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}}
+\subsubsection[{clear\+Compiled\+Template}]{\setlength{\rightskip}{0pt plus 5cm}static clear\+Compiled\+Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$resource\+\_\+name, }
+\item[{}]{\$compile\+\_\+id, }
+\item[{}]{\$exp\+\_\+time, }
+\item[{{\bf Smarty}}]{\$smarty}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___internal___utility_a674581f5d9ff1064bb04e1e2e6f26812}
+Delete compiled template file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$resource\+\_\+name} & template name \\
+\hline
+string & {\em \$compile\+\_\+id} & compile id \\
+\hline
+integer & {\em \$exp\+\_\+time} & expiration time \\
+\hline
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of template files deleted 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___utility_aff02fcfd8ba823768195511eb3c7d658}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}!compile\+All\+Config@{compile\+All\+Config}}
+\index{compile\+All\+Config@{compile\+All\+Config}!Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}}
+\subsubsection[{compile\+All\+Config}]{\setlength{\rightskip}{0pt plus 5cm}static compile\+All\+Config (
+\begin{DoxyParamCaption}
+\item[{}]{\$extention, }
+\item[{}]{\$force\+\_\+compile, }
+\item[{}]{\$time\+\_\+limit, }
+\item[{}]{\$max\+\_\+errors, }
+\item[{{\bf Smarty}}]{\$smarty}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___internal___utility_aff02fcfd8ba823768195511eb3c7d658}
+Compile all config files
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$extension} & config file name extension \\
+\hline
+bool & {\em \$force\+\_\+compile} & force all to recompile \\
+\hline
+int & {\em \$time\+\_\+limit} & set maximum execution time \\
+\hline
+int & {\em \$max\+\_\+errors} & set maximum allowed errors \\
+\hline
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of config files compiled 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___utility_a65e177220d19695e61f74b972160a333}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}!compile\+All\+Templates@{compile\+All\+Templates}}
+\index{compile\+All\+Templates@{compile\+All\+Templates}!Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}}
+\subsubsection[{compile\+All\+Templates}]{\setlength{\rightskip}{0pt plus 5cm}static compile\+All\+Templates (
+\begin{DoxyParamCaption}
+\item[{}]{\$extention, }
+\item[{}]{\$force\+\_\+compile, }
+\item[{}]{\$time\+\_\+limit, }
+\item[{}]{\$max\+\_\+errors, }
+\item[{{\bf Smarty}}]{\$smarty}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___internal___utility_a65e177220d19695e61f74b972160a333}
+Compile all template files
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$extension} & template file name extension \\
+\hline
+bool & {\em \$force\+\_\+compile} & force all to recompile \\
+\hline
+int & {\em \$time\+\_\+limit} & set maximum execution time \\
+\hline
+int & {\em \$max\+\_\+errors} & set maximum allowed errors \\
+\hline
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number of template files compiled 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___utility_ac812e48bdf84b0e5a81f25881b1f7a64}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}!get\+Tags@{get\+Tags}}
+\index{get\+Tags@{get\+Tags}!Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}}
+\subsubsection[{get\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Tags (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$template}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___internal___utility_ac812e48bdf84b0e5a81f25881b1f7a64}
+Return array of tag/attributes of all tags used by an template
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$templae} & template object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of tag/attributes 
+\end{DoxyReturn}
+\hypertarget{class_smarty___internal___utility_a70346af936b76aa358610fdc785324f5}{}\index{Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}!test\+Install@{test\+Install}}
+\index{test\+Install@{test\+Install}!Smarty\+\_\+\+Internal\+\_\+\+Utility@{Smarty\+\_\+\+Internal\+\_\+\+Utility}}
+\subsubsection[{test\+Install}]{\setlength{\rightskip}{0pt plus 5cm}static test\+Install (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{\&}]{\$errors = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___internal___utility_a70346af936b76aa358610fdc785324f5}
+diagnose \hyperlink{class_smarty}{Smarty} setup
+
+If \$errors is secified, the diagnostic report will be appended to the array, rather than being output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} instance to test \\
+\hline
+array & {\em \$errors} & array to push results into rather than outputting them \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool status, true if everything is fine, false else 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/sysplugins/\hyperlink{smarty__internal__utility_8php}{smarty\+\_\+internal\+\_\+utility.\+php}\end{DoxyCompactItemize}

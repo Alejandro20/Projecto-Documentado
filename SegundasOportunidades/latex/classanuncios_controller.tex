@@ -1,0 +1,138 @@
+\hypertarget{classanuncios_controller}{}\section{anuncios\+Controller Class Reference}
+\label{classanuncios_controller}\index{anuncios\+Controller@{anuncios\+Controller}}
+Inheritance diagram for anuncios\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classanuncios_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classanuncios_controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classanuncios_controller_a149eb92716c1084a935e04a8d95f7347}{index} ()
+\item 
+\hyperlink{classanuncios_controller_a71b4ad09d6c5071ceb9c5233103991b2}{nuevo} ()
+\item 
+\hyperlink{classanuncios_controller_a399b37729bdaca122345a17794f0fcb7}{editar} (\$id)
+\item 
+\hyperlink{classanuncios_controller_ada5c5ef53ef6f5ca1d1a77ad0b0a7283}{vendido} (\$id)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classanuncios_controller_a095c5d389db211932136b53f25f39685}{}\index{anuncios\+Controller@{anuncios\+Controller}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!anuncios\+Controller@{anuncios\+Controller}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classanuncios_controller_a095c5d389db211932136b53f25f39685}
+Esta sentencia hace que el controlador del administrador carge su model 
+
+\subsection{Member Function Documentation}
+\hypertarget{classanuncios_controller_a399b37729bdaca122345a17794f0fcb7}{}\index{anuncios\+Controller@{anuncios\+Controller}!editar@{editar}}
+\index{editar@{editar}!anuncios\+Controller@{anuncios\+Controller}}
+\subsubsection[{editar}]{\setlength{\rightskip}{0pt plus 5cm}editar (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{classanuncios_controller_a399b37729bdaca122345a17794f0fcb7}
+Si no tiene titulo mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Si no tiene descripcion mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Si no tiene precio mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Aqui le pasaremos los datos al modelo
+
+Nos redirije a la vista anterior
+
+Con esta linia haremos que solo se modifique el anuncio que nos pasan desde la vista
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion \hypertarget{classanuncios_controller_a149eb92716c1084a935e04a8d95f7347}{}\index{anuncios\+Controller@{anuncios\+Controller}!index@{index}}
+\index{index@{index}!anuncios\+Controller@{anuncios\+Controller}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classanuncios_controller_a149eb92716c1084a935e04a8d95f7347}
+Esta funcion del controlador carga la vista del index
+
+Con este if se mostraran los anuncios disponibles y anuncios vendidos del sistema solo si estas logeado
+
+Con esta linia llamaremos a la funcion que se encarga de obtener los anuncios de ese usuario
+
+Con esta linia llamaremos a la funcion que se encarga de obtener los anuncios vendidos de ese usuario
+
+Esto define el titulo de la pestaña de la pagina
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Con esta linia llamamos a la funcion que se encarga de mostrar todos los anuncios del sistema cuando no haya usuarios logeados
+
+Esto define el titulo de la pestaña de la pagina
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion \hypertarget{classanuncios_controller_a71b4ad09d6c5071ceb9c5233103991b2}{}\index{anuncios\+Controller@{anuncios\+Controller}!nuevo@{nuevo}}
+\index{nuevo@{nuevo}!anuncios\+Controller@{anuncios\+Controller}}
+\subsubsection[{nuevo}]{\setlength{\rightskip}{0pt plus 5cm}nuevo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classanuncios_controller_a71b4ad09d6c5071ceb9c5233103991b2}
+Esta es la funcion que se encarga de controlar los datos que se pasaran para insetar un nuevo usuario
+
+Esto define el titulo de la pestaña de la pagina
+
+Si desde el formulario clican el boton guardar se comienzan a pasar los datos
+
+Pasamos los datos por el metodo P\+O\+S\+T
+
+Si no tiene titulo mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Si no tiene descripcion mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Si no tiene precio mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Si no tiene imagen mostraremos el siguiente mensaje
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion
+
+Aqui le pasaremos los datos al modelo
+
+Nos redirije a la vista anterior
+
+Esta linia es la que se encarga de ejecutar i mostrar la pantalla de la vista que controla esta funcion \hypertarget{classanuncios_controller_ada5c5ef53ef6f5ca1d1a77ad0b0a7283}{}\index{anuncios\+Controller@{anuncios\+Controller}!vendido@{vendido}}
+\index{vendido@{vendido}!anuncios\+Controller@{anuncios\+Controller}}
+\subsubsection[{vendido}]{\setlength{\rightskip}{0pt plus 5cm}vendido (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{classanuncios_controller_ada5c5ef53ef6f5ca1d1a77ad0b0a7283}
+Esta funcion se encarga de que el anuncio seleccionado tenga el valor \char`\"{}\+Vendido\char`\"{} en la base de datos"
+
+Comprobamos que nos pasan la id del anuncio
+
+Si no la pasan nos devuelve atras
+
+Pasamos el id a la funcion para que se encarge de cambiar el valor del campo vendido
+
+Nos devuelve a la vista anterior 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/controllers/\hyperlink{anuncios_controller_8php}{anuncios\+Controller.\+php}\end{DoxyCompactItemize}

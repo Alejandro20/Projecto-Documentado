@@ -1,0 +1,372 @@
+\hypertarget{class_smarty___resource}{}\section{Smarty\+\_\+\+Resource Class Reference}
+\label{class_smarty___resource}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+Inheritance diagram for Smarty\+\_\+\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.889831cm]{class_smarty___resource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___resource_a0e40116a3d4f59cf7ea39f83441169b8}{get\+Content} (\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} \$\hyperlink{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}{source})
+\item 
+\hyperlink{class_smarty___resource_a07a771f460d625d63fcb72d0aeed0b01}{populate} (\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} \$\hyperlink{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}{source}, \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template=null)
+\item 
+\hyperlink{class_smarty___resource_a0935298de0f84d80fdb2ec7c9c52a763}{populate\+Timestamp} (\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} \$\hyperlink{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}{source})
+\item 
+\hyperlink{class_smarty___resource_a86942e3e87336b2ffea8a520eeae8428}{populate\+Compiled\+Filepath} (\hyperlink{class_smarty___template___compiled}{Smarty\+\_\+\+Template\+\_\+\+Compiled} \$compiled, \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___resource_a2b320f88df7863acf1240938712b76ee}{load} (\hyperlink{class_smarty}{Smarty} \$smarty, \$type)
+\item 
+static \hyperlink{class_smarty___resource_a31842686eab6038c1e27657d7e865195}{get\+Unique\+Template\+Name} (\$smarty, \$template\+\_\+resource)
+\item 
+static \hyperlink{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}{source} (\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template=null, \hyperlink{class_smarty}{Smarty} \$smarty=null, \$template\+\_\+resource=null)
+\item 
+static \hyperlink{class_smarty___resource_ab49eec019121574d97b0c3123b207007}{config} (\hyperlink{class_smarty___internal___config}{Smarty\+\_\+\+Internal\+\_\+\+Config} \$\+\_\+config)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___resource_a7696818dcf593c5f9471d7f76ea2e645}{\$compiler\+\_\+class} = \textquotesingle{}\hyperlink{class_smarty___internal___smarty_template_compiler}{Smarty\+\_\+\+Internal\+\_\+\+Smarty\+Template\+Compiler}\textquotesingle{}
+\item 
+\hyperlink{class_smarty___resource_a134f002da1134c7b756f1d48c9b2ad56}{\$template\+\_\+lexer\+\_\+class} = \textquotesingle{}\hyperlink{class_smarty___internal___templatelexer}{Smarty\+\_\+\+Internal\+\_\+\+Templatelexer}\textquotesingle{}
+\item 
+\hyperlink{class_smarty___resource_a5861bfb4f75ed665b42ce8eba8ae51f8}{\$template\+\_\+parser\+\_\+class} = \textquotesingle{}\hyperlink{class_smarty___internal___templateparser}{Smarty\+\_\+\+Internal\+\_\+\+Templateparser}\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___resource_aa4b437d19a2caf088c80e03e1539a316}{\$sources} = array()
+\item 
+static \hyperlink{class_smarty___resource_a6a3acf741a450a04c9af2c5627e44ed3}{\$compileds} = array()
+\item 
+static \hyperlink{class_smarty___resource_ad57e7e99506ffd448d98e036b1a8da50}{\$resources} = array()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smarty___resource_acadaf10ca33c215a82372c1144f0fe4a}{build\+Unique\+Resource\+Name} (\hyperlink{class_smarty}{Smarty} \$smarty, \$resource\+\_\+name)
+\item 
+\hyperlink{class_smarty___resource_a67a18f7875dde23663f5ea3480eaa6c1}{build\+Filepath} (\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} \$\hyperlink{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}{source}, \hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} \$\+\_\+template=null)
+\item 
+\hyperlink{class_smarty___resource_ab72388465ce255ceb259ea573558f79a}{file\+Exists} (\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} \$\hyperlink{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}{source}, \$file)
+\item 
+\hyperlink{class_smarty___resource_a91cdf7da12bdc51906539506dd26159b}{get\+Basename} (\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} \$\hyperlink{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}{source})
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___resource_ae9253b4e64eb381742045450703b1555}{parse\+Resource\+Name} (\$resource\+\_\+name, \$default\+\_\+resource, \&\$name, \&\$type)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_smarty___resource_a686d06923a58590ced2aae1c066d977e}{\$sysplugins}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smarty___resource_a67a18f7875dde23663f5ea3480eaa6c1}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!build\+Filepath@{build\+Filepath}}
+\index{build\+Filepath@{build\+Filepath}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{build\+Filepath}]{\setlength{\rightskip}{0pt plus 5cm}build\+Filepath (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Source}}]{\$source, }
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_smarty___resource_a67a18f7875dde23663f5ea3480eaa6c1}
+build template filepath by traversing the template\+\_\+dir array
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} & {\em \$source} & source object \\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string fully qualified filepath 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_smarty_exception}{Smarty\+Exception}} & if default template handler is registered but not callable \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_smarty___resource_acadaf10ca33c215a82372c1144f0fe4a}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!build\+Unique\+Resource\+Name@{build\+Unique\+Resource\+Name}}
+\index{build\+Unique\+Resource\+Name@{build\+Unique\+Resource\+Name}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{build\+Unique\+Resource\+Name}]{\setlength{\rightskip}{0pt plus 5cm}build\+Unique\+Resource\+Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{}]{\$resource\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_smarty___resource_acadaf10ca33c215a82372c1144f0fe4a}
+modify resource\+\_\+name according to resource handlers specifications
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} instance \\
+\hline
+string & {\em \$resource\+\_\+name} & resource\+\_\+name to make unique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string unique resource name 
+\end{DoxyReturn}
+\hypertarget{class_smarty___resource_ab49eec019121574d97b0c3123b207007}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!config@{config}}
+\index{config@{config}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}static config (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Config}}]{\$\+\_\+config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___resource_ab49eec019121574d97b0c3123b207007}
+initialize Config Source Object for given resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___config}{Smarty\+\_\+\+Internal\+\_\+\+Config} & {\em \$\+\_\+config} & config object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___config___source}{Smarty\+\_\+\+Config\+\_\+\+Source} Source Object 
+\end{DoxyReturn}
+\hypertarget{class_smarty___resource_ab72388465ce255ceb259ea573558f79a}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!file\+Exists@{file\+Exists}}
+\index{file\+Exists@{file\+Exists}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{file\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}file\+Exists (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Source}}]{\$source, }
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_smarty___resource_ab72388465ce255ceb259ea573558f79a}
+test is file exists and save timestamp
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} & {\em \$source} & source object \\
+\hline
+string & {\em \$file} & file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if file exists 
+\end{DoxyReturn}
+\hypertarget{class_smarty___resource_a91cdf7da12bdc51906539506dd26159b}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!get\+Basename@{get\+Basename}}
+\index{get\+Basename@{get\+Basename}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{get\+Basename}]{\setlength{\rightskip}{0pt plus 5cm}get\+Basename (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Source}}]{\$source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_smarty___resource_a91cdf7da12bdc51906539506dd26159b}
+Determine basename for compiled filename
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} & {\em \$source} & source object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string resource\textquotesingle{}s basename 
+\end{DoxyReturn}
+\hypertarget{class_smarty___resource_a0e40116a3d4f59cf7ea39f83441169b8}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{get\+Content}]{\setlength{\rightskip}{0pt plus 5cm}get\+Content (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Source}}]{\$source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_smarty___resource_a0e40116a3d4f59cf7ea39f83441169b8}
+Load template\textquotesingle{}s source into current template object
+
+\{ \hypertarget{class_smarty___resource_a31842686eab6038c1e27657d7e865195}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!get\+Unique\+Template\+Name@{get\+Unique\+Template\+Name}}
+\index{get\+Unique\+Template\+Name@{get\+Unique\+Template\+Name}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{get\+Unique\+Template\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Unique\+Template\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$smarty, }
+\item[{}]{\$template\+\_\+resource}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___resource_a31842686eab6038c1e27657d7e865195}
+modify resource\+\_\+name according to resource handlers specifications
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} instance \\
+\hline
+string & {\em \$resource\+\_\+name} & resource\+\_\+name to make unique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string unique resource name modify template\+\_\+resource according to resource handlers specifications
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$smarty} & \hyperlink{class_smarty}{Smarty} instance \\
+\hline
+string & {\em \$template\+\_\+resource} & template\+\_\+resource to extracate resource handler and name of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string unique resource name 
+\end{DoxyReturn}
+\hypertarget{class_smarty___resource_a2b320f88df7863acf1240938712b76ee}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!load@{load}}
+\index{load@{load}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}static load (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty}}]{\$smarty, }
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___resource_a2b320f88df7863acf1240938712b76ee}
+Load Resource Handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & smarty object \\
+\hline
+string & {\em \$type} & name of the resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___resource}{Smarty\+\_\+\+Resource} Resource Handler 
+\end{DoxyReturn}
+\hypertarget{class_smarty___resource_ae9253b4e64eb381742045450703b1555}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!parse\+Resource\+Name@{parse\+Resource\+Name}}
+\index{parse\+Resource\+Name@{parse\+Resource\+Name}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{parse\+Resource\+Name}]{\setlength{\rightskip}{0pt plus 5cm}static parse\+Resource\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$resource\+\_\+name, }
+\item[{}]{\$default\+\_\+resource, }
+\item[{\&}]{\$name, }
+\item[{\&}]{\$type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{class_smarty___resource_ae9253b4e64eb381742045450703b1555}
+extract resource\+\_\+type and resource\+\_\+name from template\+\_\+resource and config\+\_\+resource
+
+\begin{DoxyNote}{Note}
+\char`\"{}\+C\+:/foo.\+tpl\char`\"{} was forced to file resource up till \hyperlink{class_smarty}{Smarty} 3.\+1.\+3 (including). 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$resource\+\_\+name} & template\+\_\+resource or config\+\_\+resource to parse \\
+\hline
+string & {\em \$default\+\_\+resource} & the default resource\+\_\+type defined in \$smarty \\
+\hline
+string & {\em \&\$name} & the parsed resource name \\
+\hline
+string & {\em \&\$type} & the parsed resource type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_smarty___resource_a07a771f460d625d63fcb72d0aeed0b01}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!populate@{populate}}
+\index{populate@{populate}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{populate}]{\setlength{\rightskip}{0pt plus 5cm}populate (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Source}}]{\$source, }
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{class_smarty___resource_a07a771f460d625d63fcb72d0aeed0b01}
+populate Source Object with meta data from Resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} & {\em \$source} & source object \\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smarty___resource_a86942e3e87336b2ffea8a520eeae8428}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!populate\+Compiled\+Filepath@{populate\+Compiled\+Filepath}}
+\index{populate\+Compiled\+Filepath@{populate\+Compiled\+Filepath}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{populate\+Compiled\+Filepath}]{\setlength{\rightskip}{0pt plus 5cm}populate\+Compiled\+Filepath (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Compiled}}]{\$compiled, }
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template}
+\end{DoxyParamCaption}
+)}\label{class_smarty___resource_a86942e3e87336b2ffea8a520eeae8428}
+populate Compiled Object with compiled filepath
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___template___compiled}{Smarty\+\_\+\+Template\+\_\+\+Compiled} & {\em \$compiled} & compiled object \\
+\hline
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smarty___resource_a0935298de0f84d80fdb2ec7c9c52a763}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!populate\+Timestamp@{populate\+Timestamp}}
+\index{populate\+Timestamp@{populate\+Timestamp}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{populate\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}populate\+Timestamp (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Template\+\_\+\+Source}}]{\$source}
+\end{DoxyParamCaption}
+)}\label{class_smarty___resource_a0935298de0f84d80fdb2ec7c9c52a763}
+populate Source Object with timestamp and exists from Resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} & {\em \$source} & source object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!source@{source}}
+\index{source@{source}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{source}]{\setlength{\rightskip}{0pt plus 5cm}static source (
+\begin{DoxyParamCaption}
+\item[{{\bf Smarty\+\_\+\+Internal\+\_\+\+Template}}]{\$\+\_\+template = {\ttfamily null}, }
+\item[{{\bf Smarty}}]{\$smarty = {\ttfamily null}, }
+\item[{}]{\$template\+\_\+resource = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___resource_ab6ac6b66dac2da6c41a178102f7d53e4}
+initialize Source Object for given resource
+
+Either \mbox{[}\$\+\_\+template\mbox{]} or \mbox{[}\$smarty, \$template\+\_\+resource\mbox{]} must be specified
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+\hyperlink{class_smarty}{Smarty} & {\em \$smarty} & smarty object \\
+\hline
+string & {\em \$template\+\_\+resource} & resource identifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_smarty___template___source}{Smarty\+\_\+\+Template\+\_\+\+Source} Source Object 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{class_smarty___resource_a6a3acf741a450a04c9af2c5627e44ed3}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!\$compileds@{\$compileds}}
+\index{\$compileds@{\$compileds}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{\$compileds}]{\setlength{\rightskip}{0pt plus 5cm}\$compileds = array()\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___resource_a6a3acf741a450a04c9af2c5627e44ed3}
+\hypertarget{class_smarty___resource_a7696818dcf593c5f9471d7f76ea2e645}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!\$compiler\+\_\+class@{\$compiler\+\_\+class}}
+\index{\$compiler\+\_\+class@{\$compiler\+\_\+class}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{\$compiler\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}\$compiler\+\_\+class = \textquotesingle{}{\bf Smarty\+\_\+\+Internal\+\_\+\+Smarty\+Template\+Compiler}\textquotesingle{}}\label{class_smarty___resource_a7696818dcf593c5f9471d7f76ea2e645}
+\hypertarget{class_smarty___resource_ad57e7e99506ffd448d98e036b1a8da50}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!\$resources@{\$resources}}
+\index{\$resources@{\$resources}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{\$resources}]{\setlength{\rightskip}{0pt plus 5cm}\$resources = array()\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___resource_ad57e7e99506ffd448d98e036b1a8da50}
+\hypertarget{class_smarty___resource_aa4b437d19a2caf088c80e03e1539a316}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!\$sources@{\$sources}}
+\index{\$sources@{\$sources}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{\$sources}]{\setlength{\rightskip}{0pt plus 5cm}\$sources = array()\hspace{0.3cm}{\ttfamily [static]}}\label{class_smarty___resource_aa4b437d19a2caf088c80e03e1539a316}
+\hypertarget{class_smarty___resource_a686d06923a58590ced2aae1c066d977e}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!\$sysplugins@{\$sysplugins}}
+\index{\$sysplugins@{\$sysplugins}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{\$sysplugins}]{\setlength{\rightskip}{0pt plus 5cm}\$sysplugins\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{class_smarty___resource_a686d06923a58590ced2aae1c066d977e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'file'} => \textcolor{keyword}{true},
+        \textcolor{stringliteral}{'string'} => \textcolor{keyword}{true},
+        \textcolor{stringliteral}{'extends'} => \textcolor{keyword}{true},
+        \textcolor{stringliteral}{'stream'} => \textcolor{keyword}{true},
+        \textcolor{stringliteral}{'eval'} => \textcolor{keyword}{true},
+        \textcolor{stringliteral}{'php'} => \textcolor{keyword}{true}
+    )
+\end{DoxyCode}
+\hypertarget{class_smarty___resource_a134f002da1134c7b756f1d48c9b2ad56}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!\$template\+\_\+lexer\+\_\+class@{\$template\+\_\+lexer\+\_\+class}}
+\index{\$template\+\_\+lexer\+\_\+class@{\$template\+\_\+lexer\+\_\+class}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{\$template\+\_\+lexer\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}\$template\+\_\+lexer\+\_\+class = \textquotesingle{}{\bf Smarty\+\_\+\+Internal\+\_\+\+Templatelexer}\textquotesingle{}}\label{class_smarty___resource_a134f002da1134c7b756f1d48c9b2ad56}
+\hypertarget{class_smarty___resource_a5861bfb4f75ed665b42ce8eba8ae51f8}{}\index{Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}!\$template\+\_\+parser\+\_\+class@{\$template\+\_\+parser\+\_\+class}}
+\index{\$template\+\_\+parser\+\_\+class@{\$template\+\_\+parser\+\_\+class}!Smarty\+\_\+\+Resource@{Smarty\+\_\+\+Resource}}
+\subsubsection[{\$template\+\_\+parser\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}\$template\+\_\+parser\+\_\+class = \textquotesingle{}{\bf Smarty\+\_\+\+Internal\+\_\+\+Templateparser}\textquotesingle{}}\label{class_smarty___resource_a5861bfb4f75ed665b42ce8eba8ae51f8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/smarty/libs/sysplugins/\hyperlink{smarty__resource_8php}{smarty\+\_\+resource.\+php}\end{DoxyCompactItemize}
